@@ -1,3 +1,4 @@
+@import "../styles/variables/mixins";
 .main-layout {
     width: 60%;
     // display: flex;
@@ -5,9 +6,11 @@
     // background-color: aquamarine;
     background-color: #ffffff;
     // align-items: center;
+    @include mediaQuery(phone){
+        width: 100%;
+    }
 .content{
     width: 100%;
-    background-color: red;
 }
 .footer{
     background-color:purple ;
