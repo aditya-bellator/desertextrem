@@ -6,4 +6,7 @@ export const router = createBrowserRouter([
       element: "mkmkm"
   
     },
+    // path: "/home",
+    //   element: "mkmkmjdjaj",
+
   ]);
