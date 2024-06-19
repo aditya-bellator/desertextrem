@@ -21,7 +21,8 @@ const Home = () => {
               <img src={unleashImg} alt="unleash-img" />
             </div>
          */}
-            <button className='btn btn-explore'>explore now</button>
+         
+            <button className='btn-explore'>explore now</button>
           </div>
         </div>
 
