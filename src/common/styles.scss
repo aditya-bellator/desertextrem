@@ -2,10 +2,19 @@
     width: 60%;
     // display: flex;
     margin: auto;
-    background-color: aquamarine;
+    // background-color: aquamarine;
+    background-color: #ffffff;
     // align-items: center;
 .content{
     width: 100%;
     background-color: red;
+}
+.footer{
+    background-color:purple ;
+    position: absolute;
+    width: 60%;
+    // display: flex;
+    margin: auto;
+    bottom: 0%;
 }
 }

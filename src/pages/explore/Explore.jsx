@@ -4,7 +4,13 @@ const Explore = () => {
   return (
     <div style={{width:"100%"}}>
       this is explore
-      lore
+      lorelkddsakjdsa
+      kjdskjdsakjkjdsa
+      
+      kjdskjdsa
+      njdsakjkjdsa
+      kjdsakjdsakjdsakjdsakjkjdsakjdsakjdsakjdsakjdsakjsa
+      kndskjakjkjdsa
     </div>
   )
 }
