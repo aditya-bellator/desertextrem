@@ -3,13 +3,11 @@
     width: 60%;
     // display: flex;
     margin: auto;
-    background-color: aquamarine;
     // align-items: center;
     @include mediaQuery(phone){
         width: 100%;
     }
 .content{
     width: 100%;
-    background-color: red;
 }
 }
