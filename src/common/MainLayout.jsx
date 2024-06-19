@@ -1,12 +1,14 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom'
 
+import Navbar from "../component/navbar/Navbar"
 import "./styles.scss"
+import { Outlet } from 'react-router-dom'
 const MainLayout = () => {
   return (
-    <div className='main-layout'>
-        <div className="navbar-layout"></div>
-        <div className="content container">
+    <div className='main-layout container'>
+        <div className="navbar-layout">
+          <Navbar />
+        </div>
+        <div className="content ">
             <Outlet/>
         </div>
         <div className="footer"></div>
