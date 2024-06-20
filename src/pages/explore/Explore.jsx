@@ -42,7 +42,8 @@ const Explore = () => {
           </span></p>
 
         </div>
-    
+    <div className="slider-container">
+
       <Slider {...settings}>
         {[1,2,3,4,5].map((item,index)=>{
           return(
@@ -53,7 +54,18 @@ const Explore = () => {
          
         
       </Slider>
+          </div>
         {/* <Slider /> */}
+        <section className="gallery-sec">
+        <div className="title">
+        <img src={desertImg} alt="desert" />
+        </div>
+        <div className="gallery">
+          <p>Gallery</p>
+        </div>
+        
+
+        </section>
       </section>
       <section className="twin-rider-sec">
         <div className="title">
