@@ -62,9 +62,30 @@
     .sub-heading{
         width: 90%;
         margin: auto;
-        font-size: 18px;
+        font-size: 19px;
 color: #0e161d;
 font-weight: bold;
 text-align: center;
+p{
+    margin: 0;
+    padding: 0;
+ 
+        span{
+            background-color: #f9aa5a;
+            color: white;
+            padding-inline: 10px;
+            padding-block: 0px;
+            padding-bottom: 5px;
+            border-radius: 5px;
+        
+        word-wrap: nowrap;
+        
     }
+
+}
+
+}
+}
+.slider-container{
+    margin-top: 5%;
 }

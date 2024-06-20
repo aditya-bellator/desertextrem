@@ -2,7 +2,25 @@ import React from 'react'
 import { headingImg ,twinRider} from '../../assets'
 import "./styles.scss"
 import Rider from '../../component/slider/Rider'
+
+
+import Slider from 'react-slick';
+////styles
+import "./styles.scss"
+import SliderCard from '../../component/sliderCard/SliderCard';
 const Explore = () => {
+
+
+  const settings = {
+    className: "center",
+    centerMode: true,
+    infinite: true,
+    centerPadding: "60px",
+    slidesToShow: 1,
+    speed: 500,
+    arrows:false
+    
+  };
   return (
 
     <div style={{width:"100%"}}>
@@ -15,11 +33,22 @@ const Explore = () => {
           <img src={headingImg} alt="" />
         </div>
         <div className="sub-heading">
-        driving a desert buggy
-        across stunning <span>
+          <p> driving a desert buggy</p>
+          <p>across stunning <span>
             sandy dunes.
-          </span>
+          </span></p>
+       
         </div>
+        <div className="slider-container">
+      <Slider {...settings}>
+          <SliderCard/>
+          <SliderCard/>
+          <SliderCard/>
+          <SliderCard/>
+        
+      </Slider>
+    </div>
+        {/* <Slider /> */}
       </section>
       <section className="twin-rider-sec">
   <div className="title">
