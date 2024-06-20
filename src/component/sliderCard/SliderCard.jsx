@@ -4,7 +4,9 @@ import cardImage from '../../assets/mobile_slider_top_one.png';
 const SliderCard = () => {
   return (
     <div className="sliderCard">
-      <img src={cardImage} alt="Slider" />
+      <div className="slider-card-top-col">
+        
+      </div>
       <div className="sliderCardContent">
         <p className="sliderCardTitle">
           polaris rzr 1000 cc<br />

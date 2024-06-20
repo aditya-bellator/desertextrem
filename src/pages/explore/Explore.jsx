@@ -1,14 +1,10 @@
 
 import { headingImg } from '../../assets'
 
+import Slider from 'react-slick';
 ////styles
 import "./styles.scss"
-<<<<<<< HEAD
-import Slider from 'react-slick';
-=======
-import Slider from '../../component/slider/Slider'
-
->>>>>>> 1439270fcdd101bb17e772c5984abc356d3474fb
+import SliderCard from '../../component/sliderCard/SliderCard';
 const Explore = () => {
 
 
@@ -17,8 +13,9 @@ const Explore = () => {
     centerMode: true,
     infinite: true,
     centerPadding: "60px",
-    slidesToShow: 3,
+    slidesToShow: 1,
     speed: 500,
+    arrows:false
     
   };
   return (
@@ -46,27 +43,14 @@ const Explore = () => {
         </div>
         <div className="slider-container">
       <Slider {...settings}>
-        <div >
-          <h3>dafdsafsdfdsf1</h3>
-        </div>
-        <div>
-          <h3>asdasdfaf2</h3>
-        </div>
-        <div>
-          <h3>dsfsdfisfd</h3>
-        </div>
-        <div>
-          <h3>asdhbfdhbh</h3>
-        </div>
-        <div>
-          <h3>5</h3>
-        </div>
-        <div>
-          <h3>6</h3>
-        </div>
+          <SliderCard/>
+          <SliderCard/>
+          <SliderCard/>
+          <SliderCard/>
+        
       </Slider>
     </div>
-        <Slider />
+        {/* <Slider /> */}
       </section>
     </div>
   )
