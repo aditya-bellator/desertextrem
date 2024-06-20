@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { headingImg ,twinRider} from '../../assets'
 import "./styles.scss"
 import Rider from '../../component/slider/Rider'
@@ -10,7 +10,7 @@ import "./styles.scss"
 import SliderCard from '../../component/sliderCard/SliderCard';
 const Explore = () => {
 
-
+  const [activeSlide, setActiveSlide] = useState(0);
   const settings = {
     className: "center",
     centerMode: true,
@@ -18,7 +18,9 @@ const Explore = () => {
     centerPadding: "60px",
     slidesToShow: 1,
     speed: 500,
-    arrows:false
+    dots:true,
+    arrows:false,
+    beforeChange: (current, next) => setActiveSlide(next),
     
   };
   return (
@@ -41,10 +43,13 @@ const Explore = () => {
         </div>
         <div className="slider-container">
       <Slider {...settings}>
-          <SliderCard/>
-          <SliderCard/>
-          <SliderCard/>
-          <SliderCard/>
+        {[1,2,3,4,5].map((item,index)=>{
+          return(
+
+            <SliderCard key={item} animation={activeSlide} index={index}/>
+          )
+        })}
+         
         
       </Slider>
     </div>
