@@ -1,9 +1,14 @@
-import React from 'react'
+
 import { headingImg } from '../../assets'
 
 ////styles
 import "./styles.scss"
+<<<<<<< HEAD
 import Slider from 'react-slick';
+=======
+import Slider from '../../component/slider/Slider'
+
+>>>>>>> 1439270fcdd101bb17e772c5984abc356d3474fb
 const Explore = () => {
 
 
@@ -17,16 +22,27 @@ const Explore = () => {
     
   };
   return (
+
     <div style={{width:"100%"}}>
+
+ <section className="twin-rider-sec">
+  <div className="title">
+    <img src="" alt="" />
+    <img src="" alt="" />
+  </div>
+</section>
+
+
       <section className='experience-sec'>
         <div className="experience-heading">
           <img src={headingImg} alt="" />
         </div>
         <div className="sub-heading">
-        driving a desert buggy
-        across stunning <span>
+          <p> driving a desert buggy</p>
+          <p>across stunning <span>
             sandy dunes.
-          </span>
+          </span></p>
+       
         </div>
         <div className="slider-container">
       <Slider {...settings}>
@@ -50,6 +66,7 @@ const Explore = () => {
         </div>
       </Slider>
     </div>
+        <Slider />
       </section>
     </div>
   )

@@ -22,6 +22,14 @@ span{
     padding-bottom: 5px;
     border-radius: 5px;
 
-}
+word-wrap: nowrap;
+ p{
+    margin: 0;
+    padding: 0;
+    span{
+        color: #FFF;
+        background-color: #dd7f3b;
     }
+}
+}}
 }
