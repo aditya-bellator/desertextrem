@@ -5,6 +5,7 @@ import "./styles.scss"
 import { Outlet } from 'react-router-dom'
 const MainLayout = () => {
   return (
+    <>
     <div className='main-layout container'>
         <div className="navbar-layout">
           <Navbar />
@@ -12,10 +13,12 @@ const MainLayout = () => {
         <div className="content ">
             <Outlet/>
         </div>
+    </div>
         <div className="footer">
           <Footer />
         </div>
-    </div>
+    </>
+
   )
 }
 
