@@ -1,10 +1,12 @@
 import './slidercard.scss';
 import cardImage from '../../assets/mobile_slider_top_one.png';
 
-const SliderCard = () => {
+const SliderCard = ({animation,index}) => {
   return (
-    <div className="sliderCard">
-      <img src={cardImage} alt="Slider" />
+    <div className={`sliderCard ${index === animation ? 'active-slide' : ''}`}>
+      <div className="slider-card-top-col">
+        
+      </div>
       <div className="sliderCardContent">
         <p className="sliderCardTitle">
           polaris rzr 1000 cc<br />

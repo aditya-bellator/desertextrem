@@ -5,6 +5,7 @@
     margin: auto;
     // background-color: aquamarine;
     background-color: #ffffff;
+    height: 100vh !important;
     // align-items: center;
     @include mediaQuery(phone){
         width: 100%;
@@ -12,15 +13,15 @@
 .content{
     width: 100%;
 }
+}
 .footer{
-    background-color: purple;
-    position: absolute;
-    width: 60%;
+    position: fixed;
+    width: 480px;
     // display: flex;
     margin: auto;
+
     bottom: 0%;
     @include mediaQuery(phone){
         width: 100%;
     }
-}
 }
