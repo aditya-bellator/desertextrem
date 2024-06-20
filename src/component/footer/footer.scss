@@ -1,6 +1,7 @@
 .footer-container{
-    background-color: brown;
-    width: 100%;
+    width:calc(100% - 40px);
+    padding-inline: 20px;
+    padding-block: 20px;
     justify-content: space-between;
     display: flex;
     align-items: center;

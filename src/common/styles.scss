@@ -13,11 +13,14 @@
     width: 100%;
 }
 .footer{
-    background-color:purple ;
+    background-color: purple;
     position: absolute;
     width: 60%;
     // display: flex;
     margin: auto;
     bottom: 0%;
+    @include mediaQuery(phone){
+        width: 100%;
+    }
 }
 }

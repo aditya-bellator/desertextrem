@@ -1,7 +1,9 @@
-import React from 'react'
+
 import { headingImg } from '../../assets'
 ////styles
 import "./styles.scss"
+import Slider from '../../component/slider/Slider'
+
 const Explore = () => {
   return (
 
@@ -20,11 +22,13 @@ const Explore = () => {
           <img src={headingImg} alt="" />
         </div>
         <div className="sub-heading">
-        driving a desert buggy
-        across stunning <span>
+          <p> driving a desert buggy</p>
+          <p>across stunning <span>
             sandy dunes.
-          </span>
+          </span></p>
+       
         </div>
+        <Slider />
       </section>
     </div>
   )
