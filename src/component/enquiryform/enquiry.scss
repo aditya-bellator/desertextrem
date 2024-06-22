@@ -2,18 +2,22 @@
 
 .enquiry-main {
   width: 100%;
-
+// margin-top: 25%;
+height: 100vh;
+padding-top: 15%;
+background-image: url("../../assets/white_bg_02.jpg");
   img {
     width: 100%;
   }
 
   h1 {
     font-size: 35px;
-    letter-spacing: -1px;
+    letter-spacing: -1.5px;
+    font-style: italic;
    margin: 0;
     color: #454a4f;
-    font-weight: 800;
-    font-family: "Akira Expanded";
+    font-weight: 900;
+    // font-family: "Akira Expanded";
     text-align: center;
     text-transform: uppercase;
   }

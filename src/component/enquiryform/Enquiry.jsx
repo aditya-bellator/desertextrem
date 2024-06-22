@@ -1,10 +1,10 @@
 import "./enquiry.scss";
-import { enqImg } from "../../assets";
+import { desertEx } from "../../assets";
 
 const Enquiry = () => {
   return (
     <div className="enquiry-main">
-      <img src={enqImg} alt="" />
+      <img src={desertEx} alt="" />
 
       <div className="enquiry-form-container">
         <div className="form-center-col">

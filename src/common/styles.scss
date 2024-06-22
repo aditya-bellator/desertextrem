@@ -10,6 +10,7 @@
     @include mediaQuery(phone){
         width: 100%;
     }
+    
 .content{
     width: 100%;
 }
@@ -17,6 +18,7 @@
 .footer{
     position: fixed;
     width: 480px;
+    z-index: 9999;
     // display: flex;
     margin: auto;
 

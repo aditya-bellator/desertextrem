@@ -4,4 +4,7 @@ import sliderImg from "./ADULT-DOUBLE-01.png"
 import desertImg from "./desert_ex.jpg"
 import singleImg from "./Single-Riders.png"
 import adventureImg from "./Adventure-TRNS.png"
-export {headingImg, twinRider, sliderImg, desertImg, singleImg, adventureImg }
+import desertEx from "./desert_ex.jpg"
+import galleryImg from "./gallery_m1.jpg"
+import whiteBg from "./white_bg_02.jpg"
+export {headingImg, twinRider, sliderImg, desertImg, singleImg, adventureImg, desertEx, galleryImg,whiteBg }

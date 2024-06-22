@@ -3,6 +3,7 @@ import React from 'react'
 // import unleashImg from "../../assets/unleash.png"
 import logo from "../../assets/logo_images.png"
 import "./style.scss"
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
@@ -22,7 +23,9 @@ const Home = () => {
             </div>
          */}
          
-            <button className='btn-explore'>explore now</button>
+          <Link to={"/explore"}>
+           <button className='btn-explore'>explore now</button>
+          </Link> 
           </div>
         </div>
 
