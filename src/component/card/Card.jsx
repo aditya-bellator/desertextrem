@@ -7,13 +7,13 @@ const Card = () => {
   return (
     <div className='card-container'>
       
-      <div className="rating">
+      {/* <div className="rating">
         <span>
 
       <CiHeart />
         </span>
 
-      </div>
+      </div> */}
       <div className="img-sec">
         <img src={sliderImg} alt="cardImg" />
       </div>
@@ -27,9 +27,12 @@ const Card = () => {
             <span>1 Hour : 400 AED</span>
           </div>
           <div className="booknow">
+            <a href="#enquire-now">
             <button className="book-btn">
               book now
             </button>
+
+            </a>
           </div>
         </div>
       </div>

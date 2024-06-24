@@ -169,6 +169,175 @@ z-index: 99;
 }
 
 
+.Dune-buggy-section {
+  width: 100%;
+  padding-top: 5%;
+  height: 100vh;
+  background-size: cover;
+  background-image: url("../../assets/white_bg_02.jpg");
+  .slick-prev {
+    z-index: 99;
+    left: 2%;
+    &::before {
+      color: black;
+    }
+  }
+  .slick-next {
+    z-index: 99;
+    right: 2%;
+    &::before {
+      color: black;
+    }
+  }
+  // .slick-list{
+  //     padding: 0% !important;
+  // }
+  .twin-rider-slider {
+    margin-top: 5%;
+    position: relative;
+height: 320px;
+padding-bottom: 20px;
+z-index: 99;
+
+    .overlay{
+        position: absolute;
+        bottom: 20px;
+        border-radius: 10px;
+        height: 100px;
+        z-index: -1;
+        width: 95%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #f5ede7; 
+    }
+  }
+  .slick-list {
+    margin-inline: auto;
+  }
+  .slick-slide div {
+    width: 90%;
+    margin: auto;
+  }
+
+  .twin-rider-title {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+ 
+  .title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    img {
+      width: 100%;
+    }
+  }
+  .twin-detail{
+    padding: 5px 0;
+    h1{
+        color:#f9aa5a;
+        text-align: center;
+        margin: 0;
+        text-transform: uppercase;
+        padding: 0;
+    }
+    p{
+        color: #454a4f;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+
+    }
+  }
+}
+
+.Offroad-Bike-section {
+  width: 100%;
+  padding-top: 5%;
+  height: 100vh;
+  background-size: cover;
+  background-image: url("../../assets/white_bg_02.jpg");
+  .slick-prev {
+    z-index: 99;
+    left: 2%;
+    &::before {
+      color: black;
+    }
+  }
+  .slick-next {
+    z-index: 99;
+    right: 2%;
+    &::before {
+      color: black;
+    }
+  }
+  // .slick-list{
+  //     padding: 0% !important;
+  // }
+  .twin-rider-slider {
+    margin-top: 5%;
+    position: relative;
+height: 320px;
+padding-bottom: 20px;
+z-index: 99;
+
+    .overlay{
+        position: absolute;
+        bottom: 20px;
+        border-radius: 10px;
+        height: 100px;
+        z-index: -1;
+        width: 95%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #f5ede7; 
+    }
+  }
+  .slick-list {
+    margin-inline: auto;
+  }
+  .slick-slide div {
+    width: 90%;
+    margin: auto;
+  }
+
+  .twin-rider-title {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+ 
+  .title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    img {
+      width: 100%;
+    }
+  }
+  .twin-detail{
+    padding: 5px 0;
+    h1{
+        color:#f9aa5a;
+        text-align: center;
+        margin: 0;
+        text-transform: uppercase;
+        padding: 0;
+    }
+    p{
+        color: #454a4f;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+
+    }
+  }
+}
+
+
 
 
 
@@ -260,7 +429,7 @@ background-image: url("../../assets/white_bg_02.jpg");
   // margin: 5% 10%;
   .slick-dots li {
     width: 10px;
-    margin: 0% !important;
+    margin: 0% 2px !important;
   }
   .slick-dots li.slick-active button:before {
     opacity: 0.75;
@@ -329,4 +498,83 @@ background-image: url("../../assets/white_bg_02.jpg");
       }
     }
   }
+}
+.footer-sec{
+  .footer2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+  .footer-menu{
+  
+   display: flex;
+   width: 100%;
+   list-style: none; 
+   text-transform: uppercase;
+   font-size: 10px;
+   justify-content: center;
+   margin: 0%;
+   padding: 0%;
+  
+   li{
+    
+    text-align: center;
+    color: #3c3c3c;
+    padding-inline: 10px;
+    border-right: 1px solid #3c3c3c;
+    &:last-child{
+  border-right: 0px;
+    }
+   }
+  }
+  .footer-icon{
+    display: flex;
+   width: 50%;
+   list-style: none;
+   justify-content:center;
+   gap: 10px;
+  //  margin: 0%;
+   padding: 0%;
+    li{
+      width: 30px;
+      height: 30px;
+      border: 1px solid #3c3c3c;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    
+    svg{
+      color: #3c3c3c;
+    }
+    }
+  }
+  .copywrite{
+    width: 100%;
+    background: #3c3c3c;
+    color: white;text-align: center;
+    p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+  
+      span{
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 30px;
+        background: red;
+        border: 2px solid white;
+        border-radius: 50%;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+  }
+
 }

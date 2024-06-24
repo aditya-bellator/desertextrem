@@ -3,7 +3,7 @@ import { desertEx } from "../../assets";
 
 const Enquiry = () => {
   return (
-    <div className="enquiry-main">
+    <div className="enquiry-main" id="enquire-now">
       <img src={desertEx} alt="" />
 
       <div className="enquiry-form-container">
@@ -18,18 +18,18 @@ const Enquiry = () => {
             <div className="form-col">
               <div className="input-col">
                 <label htmlFor="">First Name</label>
-                <input type="text" name="firstName" />
+                <input type="text" name="firstName" placeholder="First Name" />
               </div>
               <div className="input-col">
                 <label htmlFor="">Last Name</label>
-                <input type="text" name="lastName" />
+                <input type="text" name="lastName" placeholder="Last Name" />
               </div>
              
             </div>
             <div className="form-col">
               <div className="input-col">
                 <label htmlFor="">Email Adress</label>
-                <input type="text" name="email" />
+                <input type="text" name="email" placeholder="Email"/>
               </div>
               <div className="input-col">
                 <label htmlFor="">Phone Number</label>
@@ -40,7 +40,7 @@ const Enquiry = () => {
             <div className="form-col">
               <div className="input-col">
                 <label htmlFor="">Message</label>
-                <textarea name="message" />
+                <textarea name="message" placeholder="Message" />
               </div>
             </div>
             <button type="submit">Submit Query</button>

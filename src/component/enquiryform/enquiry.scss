@@ -26,24 +26,25 @@ background-image: url("../../assets/white_bg_02.jpg");
 .enquiry-form-container {
   height: auto;
   margin: auto;
-  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   filter: drop-shadow(0px 6px 24.5px rgba(22, 20, 22, 0.09));
-
+  
   .form-center-col {
-    width: calc(100% - 40px);
-    border-radius: 5px;
+    width: calc(100% - 70px);
+    border-radius: 8px;
     margin-block: 30px;
     filter: drop-shadow(0px 6px 24.5px rgba(22, 19, 22, 0.09));
     background-color: #ffffff;
+    // background-color: rgb(208, 41, 41);
     padding: 20px;
     h2 {
       font-size: 28px;
       letter-spacing: 0px;
       line-height: 32px;
       color: #4a4a4a;
+      font-style: italic;
       margin: 0%;
     }
     p {
@@ -53,7 +54,7 @@ background-image: url("../../assets/white_bg_02.jpg");
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         background-color: #e7caaf;
-        font-size: 14px;
+        font-size: 12.5px;
         text-align: center;
         padding: 14px 0px;
         margin: 0;
