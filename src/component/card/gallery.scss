@@ -2,7 +2,7 @@
     width: 90% !important;
     height: auto;
     border-radius: 10px;
-    // overflow: hidden;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -35,13 +35,15 @@
 }
     .img-sec{
         width: 100% !important;
-        // background: green;
-
+        background: #D7CDC6;
+height: 200px;
+object-fit: cover;
 
         img{
             width: 100%;
             height: 100%;
             background-size: 100% 100%;
+
         }
     }
     .detail-sec{
@@ -53,6 +55,12 @@
         display: flex;
         flex-direction: column;
         text-transform: uppercase;
+        p{
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
         .price-sec{
             display: flex;
             justify-content: space-between;

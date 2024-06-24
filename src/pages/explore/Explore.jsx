@@ -1,4 +1,4 @@
-import { adventureImg, desertImg, headingImg, logo, singleImg, twinRider } from '../../assets'
+import { adventureImg, bike, bluebuggy, cannam1000, cannam4, desertImg, headingImg, logo, polaris1000, road1, road2, sharma180, sharma320, sharmaatv250, singleImg, sliderImg, twinRider } from '../../assets'
 import React, { useState } from 'react'
 import "./styles.scss"
 import Enquiry from '../../component/enquiryform/Enquiry'
@@ -52,7 +52,7 @@ const Explore = () => {
 
 
 
-      <section className='experience-sec'>
+      <section className='experience-sec' id='top'>
         <div className="experience-heading">
           <img src={headingImg} alt="" />
         </div>
@@ -98,9 +98,9 @@ const Explore = () => {
         <div className="twin-rider-slider">
 
           <Slider {...settings2}>
-            <Card />
-            <Card />
-            <Card />
+            <Card title="kymko mxu 250 cc" min="30 min : 250 AED" hours="1 Hour : 400 AED" img={sliderImg}/>
+            <Card title="SHARMAX hummer 320 CC" min="30 min : 300 AED" hours="1 Hour : 500 AED" img={sharma320}/>
+            <Card title="kymko mxu 250 cc" min="30 min : 350 AED" hours="1 Hour : 550 AED" img={bluebuggy} />
 
           </Slider>
           <div className="overlay"></div>
@@ -126,9 +126,10 @@ const Explore = () => {
         <div className="twin-rider-slider">
 
           <Slider {...settings2}>
-            <Card />
-            <Card />
-            <Card />
+          <Card title="kymko mxu 250 cc" min="30 min : 150 AED" hours="1 Hour : 300 AED" img={sliderImg}/>
+            <Card title="SHARMAX hummer 320 CC" min="30 min : 200 AED" hours="1 Hour : 350 AED" img={sharma320}/>
+            <Card title="kymko mxu 250 cc" min="30 min : 150 AED" hours="1 Hour : 300 AED" img={sharmaatv250} />
+
 
           </Slider>
           <div className="overlay"></div>
@@ -154,9 +155,10 @@ const Explore = () => {
         <div className="twin-rider-slider">
 
           <Slider {...settings2}>
-            <Card />
-            <Card />
-            <Card />
+          <Card title="polaris rzr 1000 cc (4 seater)" min="30 min : 1500 AED " hours="1 Hour : 2000 AED" img={cannam4}/>
+            <Card title="CANNAM rzr 1000 cc (2 seater)" min="30 min : 150 AED " hours="1 Hour : 300 AED" img={cannam1000}/>
+            <Card title="polaris rzr 1000 cc (2 seater)" min="30 min : 1000 AED " hours="1 Hour : 1500 AED" img={polaris1000} />
+
 
           </Slider>
           <div className="overlay"></div>
@@ -183,9 +185,10 @@ const Explore = () => {
         <div className="twin-rider-slider">
 
           <Slider {...settings2}>
-            <Card />
-            <Card />
-            <Card />
+          <Card title="yamaha rapto 700 cc" min="30 min : 700 AED " hours="1 Hour : 1200 AED" img={road1}/>
+            <Card title="dirt bike 280/320 cc" min="30 min : 500 AED " hours="1 Hour : 800 AED" img={bike}/>
+            <Card title="polaris sportsman 570 cc" min="30 min : 350 AED " hours="1 Hour : 700 AED" img={road2} />
+
 
           </Slider>
           <div className="overlay"></div>
@@ -241,7 +244,10 @@ const Explore = () => {
       <section className='footer-sec'>
       <div className="footer2">
         <div className="logo">
+          <a href="#top">
+
           <img src={logo} alt="logo" />
+          </a>
         </div>
         <ul className='footer-menu'>
           <li>About</li>
@@ -262,7 +268,7 @@ const Explore = () => {
             </li>
           </ul>
       <div className="copywrite">
-        <p><span>c</span>2024 DESERT XTREME</p>
+        <p>@ 2024 DESERT XTREME</p>
       </div>
       </div>
       </section>

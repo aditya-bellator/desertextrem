@@ -14,7 +14,10 @@ const SliderCard = ({animation,index}) => {
           30 min : 1000 aed<br />
           1 hour: 1500 aed
         </p>
-        <button className="sliderCardButton">Book Now</button>
+          <a href="#enquire-now">
+        <button className="sliderCardButton">
+          Book Now</button>
+          </a>
       </div>
     </div>
   );

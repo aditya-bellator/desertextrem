@@ -32,7 +32,7 @@ z-index: 99;
 
     .overlay{
         position: absolute;
-        bottom: 20px;
+        bottom: -10px;
         border-radius: 10px;
         height: 100px;
         z-index: -1;
@@ -79,6 +79,10 @@ z-index: 99;
         text-align: center;
         margin: 0;
         padding: 0;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
 
     }
   }
@@ -116,7 +120,7 @@ z-index: 99;
 
     .overlay{
         position: absolute;
-        bottom: 20px;
+        bottom: -10px;
         border-radius: 10px;
         height: 100px;
         z-index: -1;
@@ -163,6 +167,10 @@ z-index: 99;
         text-align: center;
         margin: 0;
         padding: 0;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
 
     }
   }
@@ -201,7 +209,7 @@ z-index: 99;
 
     .overlay{
         position: absolute;
-        bottom: 20px;
+        bottom: -35px;
         border-radius: 10px;
         height: 100px;
         z-index: -1;
@@ -248,6 +256,10 @@ z-index: 99;
         text-align: center;
         margin: 0;
         padding: 0;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
 
     }
   }
@@ -285,7 +297,7 @@ z-index: 99;
 
     .overlay{
         position: absolute;
-        bottom: 20px;
+        bottom: -10px;
         border-radius: 10px;
         height: 100px;
         z-index: -1;
@@ -332,6 +344,10 @@ z-index: 99;
         text-align: center;
         margin: 0;
         padding: 0;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
 
     }
   }
@@ -369,6 +385,12 @@ background-image: url("../../assets/white_bg_02.jpg");
     display: flex;
     justify-content: center;
     margin-block: 10%;
+    p{
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
     img {
       width: 100%;
     }
@@ -385,6 +407,7 @@ background-image: url("../../assets/white_bg_02.jpg");
       font-style: italic;
       font-family: "Akira Expanded";
       text-align: center;
+  
     }
   }
 
@@ -562,10 +585,10 @@ background-image: url("../../assets/white_bg_02.jpg");
   
       span{
         width: 30px;
+        height: auto;
         display: flex;
         justify-content: center;
-        align-items: center;
-        text-align: center;
+
         height: 30px;
         background: red;
         border: 2px solid white;

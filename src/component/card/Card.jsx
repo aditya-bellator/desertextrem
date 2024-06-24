@@ -1,9 +1,10 @@
 import React from 'react'
-import "./styles.scss"
+// import "./styles.scss"
+import "./gallery.scss"
 import { sliderImg } from '../../assets'
 import { CiHeart } from "react-icons/ci";
 
-const Card = () => {
+const Card = ({title,hours,min,img}) => {
   return (
     <div className='card-container'>
       
@@ -15,16 +16,16 @@ const Card = () => {
 
       </div> */}
       <div className="img-sec">
-        <img src={sliderImg} alt="cardImg" />
+        <img src={img} alt="cardImg" />
       </div>
       <div className="detail-sec">
         <div className="title">
-          <p>kymko mxu 250 cc</p>
+          <p>{title}</p>
         </div>
         <div className="price-sec">
           <div className="price">
-            <span>30 min : 250 AED</span>
-            <span>1 Hour : 400 AED</span>
+            <span>{min}</span>
+            <span>{hours}</span>
           </div>
           <div className="booknow">
             <a href="#enquire-now">
