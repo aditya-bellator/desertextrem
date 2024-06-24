@@ -7,4 +7,5 @@ import adventureImg from "./Adventure-TRNS.png"
 import desertEx from "./desert_ex.jpg"
 import galleryImg from "./gallery_m1.jpg"
 import whiteBg from "./white_bg_02.jpg"
-export {headingImg, twinRider, sliderImg, desertImg, singleImg, adventureImg, desertEx, galleryImg,whiteBg }
+import logo from "./logo_images.png"
+export {headingImg, twinRider, sliderImg, desertImg, singleImg, adventureImg, desertEx,logo, galleryImg,whiteBg }

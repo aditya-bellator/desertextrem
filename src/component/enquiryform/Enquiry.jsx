@@ -28,7 +28,7 @@ Message: ${message}`;
   };
 
   return (
-    <div className="enquiry-main">
+    <div className="enquiry-main" id="enquire-now">
       <img src={desertEx} alt="" />
       <div className="enquiry-form-container">
         <div className="form-center-col">

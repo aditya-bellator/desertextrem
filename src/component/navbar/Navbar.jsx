@@ -1,7 +1,8 @@
 import React from 'react'
 import "./navbar.scss";
-import logo from "../../assets/logo_images.png"
+// import logo from "../../assets/logo_images.png"
 import { FiAlignLeft } from "react-icons/fi";
+import { logo } from '../../assets';
 
 const Navbar = () => {
   return (
