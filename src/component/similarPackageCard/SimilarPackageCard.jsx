@@ -3,6 +3,7 @@ import StarIcon from "@mui/icons-material/Star";
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 ///styles
 import "./styles.scss";
+// import {favorite}from "../../assets"
 
 const SimilarPackageCard = ({fun}) => {
 
@@ -11,6 +12,7 @@ const SimilarPackageCard = ({fun}) => {
     <div className="similar-package-card-col">
       <div className="similar-card-img">
       <div className="heart-icon" ><FavoriteBorderOutlinedIcon/></div>
+      {/* <img src={favorite} alt="new" /> */}
       </div>
       <div className="similar-card-content">
         <h4>Luxury Heritage Evening Desert Safari</h4>

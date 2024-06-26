@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 // import { cardImage } from "../../assets/images";
 ////styles
 import "./styles.scss";
-const SliderCard2 = ({ data }) => {
+const SliderCard2 = ({ image ,name,description,price}) => {
   const nav = useNavigate()
   const navHandler = (url)=>{
     nav("/tour-detail/"+url)
@@ -10,15 +10,15 @@ const SliderCard2 = ({ data }) => {
   return (
     <a href="#">
 
-    <div className="slider-card2" onClick={()=>navHandler(data?._id)}>
-      <div className="top-col" style={{ backgroundImage: `url(${data?.images})` }}>
+    <div className="slider-card2" >
+      <div className="top-col" style={{ backgroundImage: `url(${image})` }}>
         {/* <img src={cardImage}/> */}
         {/* <img src={data?.image}/> */}
       </div>
       <div className="bottom-col">
-        <h4 className="card-heading">{data?.name}</h4>
-        <p>{data?.description}</p>
-        <span>AED {data?.price}</span>
+        <h4 className="card-heading">{name}</h4>
+        <p>{description}</p>
+        <span>AED {price}</span>
       </div>
     </div>
     </a>

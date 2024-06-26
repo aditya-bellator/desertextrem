@@ -1,15 +1,15 @@
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 ////styles
 import "./styles.scss"
+import Chart from '../tablechart/Chart';
 // import { desertExtreme } from '../../assets/images';
 const DesertExtremeCard = ({fun}) => {
   return (
     <div className='desert-extreme-card-col'>
-        <div className="heading-extreme-card">
-           <img src={""} alt="" />
-        </div>
+        
         <div className="desert-extreme-content">
-            <h3>Property Highlights</h3>
+            <Chart />
+            {/* <h3>Property Highlights</h3>
             <p className='desert-extreme-subtitle m-0'>Perfect for a 1-night stay!</p>
             <ul>
                 <li className='desert-extreme-list'><span>
@@ -36,10 +36,10 @@ const DesertExtremeCard = ({fun}) => {
                     <li className='desert-extreme-list'><span>
                     <LocationOnOutlinedIcon/>
                     </span>There are more repeat guests here than most other properties</li>
-            </ul>
-            <div className="reserve-btn">
+            </ul> */}
+            {/* <div className="reserve-btn">
                 <button onClick={()=>fun()}>Reserve</button>
-            </div>
+            </div> */}
         </div>
     </div>
   )

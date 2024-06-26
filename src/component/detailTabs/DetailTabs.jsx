@@ -6,6 +6,7 @@ import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlin
 import "./styles.scss"
 import { Rating } from "@mui/material";
 import FavoriteOutlinedIcon from '@mui/icons-material/FavoriteOutlined';
+import {desert,desert1,desert2,desert3,desert4,desert5}from "../../assets"
 
 
 const DetailTabs = ({sliderData,fun}) => {
@@ -84,14 +85,14 @@ const DetailTabs = ({sliderData,fun}) => {
       <div className="tabs-content">
         <div className="slides">
           <div className="preview-slide">
-            <img src={""} alt="" />
+            <img src={desert1} alt="" />
             <div className={` ${checkFavourite ?"heart-icon2":"heart-icon"}`}>{!checkFavourite ?<FavoriteBorderOutlinedIcon/>:<FavoriteOutlinedIcon /> }</div>
           </div>
           <div className="slides-list">
           <Slider {...settings}>
               
          
-            {[1].map((item) => (
+            {[desert2,desert3,desert4,desert,desert5].map((item) => (
               <img src={item} alt={item} key={item} />
             ))}
     </Slider>

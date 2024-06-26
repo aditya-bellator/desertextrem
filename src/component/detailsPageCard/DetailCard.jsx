@@ -6,14 +6,23 @@ const DetailCard = ({ name, list }) => {
     <div className="detail-card">
       <h2>{name}</h2>
       <ul>
-      {/* {list?.map((item, index) => (
-            <React.Fragment key={index}> */}
-               <div dangerouslySetInnerHTML={{ __html: list }} />
-            {/* </React.Fragment>
-          ))} */}
+    
+               {/* <div dangerouslySetInnerHTML={{ __html: list }} /> */}
+         {list}
+         
       </ul>
+
     </div>
   );
 };
 
 export default DetailCard;
+
+
+
+
+
+
+
+
+

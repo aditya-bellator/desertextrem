@@ -2,7 +2,7 @@ import React from 'react'
 import { logo } from "../../assets";
 import { IoIosStar } from "react-icons/io";
 import { SiNike } from "react-icons/si";
-import banner from "../../assets/banner-s.png";
+import banner from "../../assets/banner.png";
 import whatsApp from "../../assets/whtaup.png";
 
 import "./styles.scss"

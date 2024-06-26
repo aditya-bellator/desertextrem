@@ -251,3 +251,37 @@ font-weight: bold;
     width: 96%;
   }
 }
+
+.slider-section {
+  width: 100%;
+  margin: 5% auto auto auto;
+  .slider-heading {
+    text-transform: uppercase;
+    font-size: 29px;
+    letter-spacing: -1px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+   
+    text-align: center;
+    @include mediaQuery(phone){
+      font-size: 22px;
+
+    }
+    .para {
+      margin: 0%;
+      opacity: 0.741;
+      font-size: 18px;
+      letter-spacing: 0px;
+      line-height: 26px;
+      text-transform: uppercase;
+      color: #585858;
+      font-weight: bold;
+      @include mediaQuery(phone){
+        font-size: 16px;
+
+      }
+    }
+  }
+}

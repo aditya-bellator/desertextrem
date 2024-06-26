@@ -24,5 +24,15 @@ import great from "./greate_deal.png"
 import half from "./half_celcal.png"
 import last from "./last.jpg"
 import user from "./user.jpg"
+import desert from "./desertxtrem_1.png"
+import desert1 from "./desert1.jpg"
+import desert2 from "./desert2.jpg"
+import desert3 from "./desert3.png"
+import desert4 from "./desert4.png"
+import desert5 from "./desert5.jpg"
+import favorite from "./favorute1.jpg"
+import favorite1 from "./favorate2.jpg"
+import favorite2 from "./favorate3.png"
 
-export {headingImg,last,sharma320,user, road1,half ,great ,bike, road2, cannam1000, cannam4,sharma180,kymko250 , bluebuggy ,polaris1000,sharmaATV250,sharmaatv250 ,twinRider, sliderImg, desertImg, singleImg, adventureImg, desertEx,logo, galleryImg,whiteBg, }
+
+export {favorite,favorite1,favorite2, desert,desert1,desert2,desert3,desert4,desert5,headingImg,last,sharma320,user, road1,half ,great ,bike, road2, cannam1000, cannam4,sharma180,kymko250 , bluebuggy ,polaris1000,sharmaATV250,sharmaatv250 ,twinRider, sliderImg, desertImg, singleImg, adventureImg, desertEx,logo, galleryImg,whiteBg, }

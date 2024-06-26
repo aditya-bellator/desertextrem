@@ -78,7 +78,7 @@ const WebHome = () => {
         loop={true}
         modules={[Autoplay]}
           autoplay={{
-                    delay: 2500,
+                    delay: 555500,
                     disableOnInteraction: false
                 }}
         // loopAdditionalSlides={30}
@@ -158,10 +158,10 @@ const WebHome = () => {
             </div>
           </div>
         </div>
-        <div className="great-col-right">
-          <div className="img-top">
+        <div className="great-col-right" style={{backgroundImage:`url(${last})`}}>
+          {/* <div className="img-top">
             <img src={last} alt="buggynew" />
-          </div>
+          </div> */}
           <div className="testimonial">
             <div className="slider">
               <Slider {...settings}>
@@ -181,15 +181,14 @@ const WebHome = () => {
       </section>
 
       <section className="location-sec">
-        <div className="loc-top">
+       
+        <div className="loc-bottom">
+          <div className="detail-sec">
+          <div className="loc-top">
           <h1>LOCATION MAP</h1>
           <p>DESERT XTREME ADVENTURES</p>
         </div>
-        <div className="loc-bottom">
-          <div className="detail-sec">
-            <p>
-              <b>DESERT XTREME ADVENTURES</b>
-            </p>
+            
             <p>
               Retreat by Sharjah Collection - Madam Rd <br /> Near Al Badayer - Al
               Badayer <br /> Sharjah - United Arab Emirates
@@ -201,7 +200,7 @@ const WebHome = () => {
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14469.581523690338!2d55.7187776!3d24.9526592!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef577160f93faad%3A0xd593a598b2c7b63d!2sDESERT%20XTREME%20ADVENTURES!5e0!3m2!1sen!2sin!4v1719220932118!5m2!1sen!2sin"
                 width="100%"
-                height="400"
+                height="300"
                 style={{ border: 0 }}
                 allowfullscreen=""
                 loading="lazy"
