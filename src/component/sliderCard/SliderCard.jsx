@@ -1,5 +1,6 @@
 import './slidercard.scss';
 import cardImage from '../../assets/mobile_slider_top_one.png';
+import { Link } from 'react-router-dom';
 
 const SliderCard = ({animation,index,openModal}) => {
   return (
@@ -14,10 +15,12 @@ const SliderCard = ({animation,index,openModal}) => {
           30 min : 1000 aed<br />
           1 hour: 1500 aed
         </p>
-          <a href="#enquire-now">
-        <button className="sliderCardButton" onClick={openModal}>
+          
+        <Link to="/tour-detail/">
+        <button className="sliderCardButton" >
           Book Now</button>
-          </a>
+        </Link>
+     
       </div>
     </div>
   );
