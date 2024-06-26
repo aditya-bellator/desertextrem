@@ -34,6 +34,7 @@ const WebHome = () => {
   return (
     <div>
       <section className="banenrSecttop">
+        <div className="banner">
         <div className="manuWapper">
           <div className="whatupbox">
             <span>
@@ -77,7 +78,6 @@ const WebHome = () => {
             </ul>
           </nav>
         </div>
-        <div className="banner">
           <img src={banner} className="img-fluid" alt="" />
           <div className="top-banner-bottom-rectangle">
             <ul>

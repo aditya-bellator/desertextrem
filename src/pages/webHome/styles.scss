@@ -2,7 +2,50 @@
   /* width: ; */
 }
 .banner {
-  // position: relative;
+  position: relative;
+  .manuWapper {
+    position: absolute;
+    z-index: 999999;
+    width: 100%;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    z-index: 10px;
+    display: flex;
+    flex-direction: column;
+
+    .whatupbox {
+      display: flex;
+      justify-content: end;
+      padding: 8px 50px;
+      span {
+        a {
+          display: flex;
+          align-items: center;
+          color: white;
+          letter-spacing: 2px;
+          font-size: 21px;
+        }
+  
+      }
+    }
+    .navbart {
+      display: flex;
+      justify-content: center;
+      ul {
+        display: flex;
+        gap: 35px;
+        align-items: center;
+        li {
+          list-style: none;
+          text-transform: uppercase;
+          a {
+            color: black;
+          }
+        }
+      }
+    }
+  }
   .top-banner-bottom-rectangle {
     position: absolute;
     width: 80%;
@@ -32,6 +75,7 @@
       li {
         width: 25%;
         list-style: none;
+        text-transform: uppercase;
         color: black;
         border-right: 1px solid black;
         display: flex;
@@ -62,48 +106,12 @@
       }
     }
   }
-  img {
+  .img-fluid {
     width: 100%;
   }
 }
-.whatupbox {
-  display: flex;
-  justify-content: end;
-  padding: 8px 50px;
-}
-.manuWapper {
-  position: absolute;
-  width: 100%;
-  left: 0px;
-  right: 0px;
-  top: 0px;
-  z-index: 10px;
-  display: flex;
-  flex-direction: column;
-  .whatupbox {
-    span {
-      a {
-        display: flex;
-        align-items: center;
-      }
-    }
-  }
-  .navbart {
-    display: flex;
-    justify-content: center;
-    ul {
-      display: flex;
-      gap: 35px;
-      align-items: center;
-      li {
-        list-style: none;
-        a {
-          color: black;
-        }
-      }
-    }
-  }
-}
+
+
 .right-row {
   display: flex;
   .col-md-12 {
@@ -427,7 +435,6 @@
 .swiper-slide {
   height: 300px;
   display: flex;
-  background: #eee;
   align-items: center;
   justify-content: center;
   transition: all 200ms linear;
@@ -435,7 +442,6 @@
 }
 .swiper-slide.swiper-slide-active {
   transform: scale(1);
-  background: #fc0;
 }
 
 .swiper-slide__content {
