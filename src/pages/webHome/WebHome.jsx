@@ -170,17 +170,21 @@ const WebHome = () => {
       </Swiper>
       <SliderSection
         name={"Adult (double)"}
+        openModal={openModal}
         para={"EMBRACE ADVENTURE: THRILLING BUGGY TOURS AWAIT"}
       />
       <SliderSection
+      openModal={openModal}
         name={"Adult (Singal)"}
         para={"EMBRACE ADVENTURE: THRILLING BUGGY TOURS AWAIT"}
       />
       <SliderSection
+      openModal={openModal}
         name={"DUNE BUGGY"}
         para={"EMBRACE ADVENTURE: THRILLING BUGGY TOURS AWAIT"}
       />
       <SliderSection
+      openModal={openModal}
         name={"OTHER OFFROAD BIKES & ATV'S (SINGLE)"}
         para={"EMBRACE ADVENTURE: THRILLING BUGGY TOURS AWAIT"}
       />
