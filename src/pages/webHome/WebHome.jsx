@@ -16,6 +16,7 @@ import "swiper/css";
 import SliderCard from "../../component/sliderCard/SliderCard";
 import { great, last } from "../../assets";
 import Greatcard from "../../component/greatcard/Greatcard";
+import Modal from "../../component/modal/Modal";
 
 const WebHome = () => {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -31,8 +32,21 @@ const WebHome = () => {
     beforeChange: (current, next) => setActiveSlide(next),
   };
 
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openModal = () => {
+    setIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+  };
   return (
     <div>
+       <Modal isOpen={isOpen} onClose={closeModal}>
+        <h2>This is your custom modal!</h2>
+        <p>You can put any content here.</p>
+      </Modal>
       <section className="banenrSecttop">
         <div className="banner">
         <div className="manuWapper">
@@ -139,50 +153,14 @@ const WebHome = () => {
           clickable: true,
         }}
       >
-        <SwiperSlide>
-          {" "}
-          <SliderCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          {" "}
-          <SliderCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          {" "}
-          <SliderCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          {" "}
-          <SliderCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          {" "}
-          <SliderCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          {" "}
-          <SliderCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          {" "}
-          <SliderCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          {" "}
-          <SliderCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          {" "}
-          <SliderCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          {" "}
-          <SliderCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          {" "}
-          <SliderCard />
-        </SwiperSlide>
+        {[1,2,3,4,5,6,7,8,9,10,11].map((item)=><SwiperSlide key={item}>
+    
+    <SliderCard openModal={openModal}/>
+  </SwiperSlide>)}
+        
+      
+       
+       
       </Swiper>
       <SliderSection
         name={"Adult (double)"}

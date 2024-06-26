@@ -4,15 +4,12 @@ import Home from "../pages/home/Home";
 import Explore from "../pages/explore/Explore";
 import WebHome from "../pages/webHome/WebHome";
 
-export const router = createBrowserRouter([
+export const mobilerouter = createBrowserRouter([
   {
     path:"/",
     element:<Home/>
   },
-  {
-    path:"/web-home",
-    element:<WebHome/>
-  },
+ 
     {
       path: "/",
       element: <MainLayout/>,
@@ -20,14 +17,17 @@ export const router = createBrowserRouter([
     {
       path:"/explore",
       element:<Explore/>
-    },
-    
-    
-    
+    }, 
 ],
 
 },
 
    
 
+  ]);
+export const webRouter = createBrowserRouter([
+  {
+    path:"/",
+    element:<WebHome/>
+  },
   ]);
