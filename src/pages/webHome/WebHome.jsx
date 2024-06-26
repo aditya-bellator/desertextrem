@@ -125,6 +125,7 @@ const WebHome = () => {
           </div>
         </div>
       </section>
+<div className="content-center-col">
 
       <div className="right-row">
         <div className="col-md-12">
@@ -283,6 +284,7 @@ const WebHome = () => {
           </div>
         </div>
       </section>
+</div>
     </div>
   );
 };

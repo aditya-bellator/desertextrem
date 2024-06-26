@@ -1,6 +1,14 @@
+@import "../../styles/variables/mixins";
 .banenrSecttop {
-  /* width: ; */
+  width: 100%;
+  overflow: hidden; 
+
 }
+.content-center-col{
+  max-width: 1140px;
+  margin: auto;
+}
+
 .banner {
   position: relative;
   .manuWapper {
@@ -59,9 +67,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    // @include media(phone){
-    // display: none;
-    // }
+  
+    @include mediaQuery(desktop){
+    bottom: 0%;
+    }
     // @include media(largeHug){
     // bottom: -2%;
     // }
@@ -114,6 +123,7 @@
 
 .right-row {
   display: flex;
+  margin: auto;
   .col-md-12 {
     width: 100%;
     min-height: 1px;
@@ -156,7 +166,6 @@
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  max-width: 1140px;
   .web-rider-title {
     display: flex;
     align-items: center;
@@ -188,7 +197,6 @@
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  max-width: 1140px;
   .gallery-heading {
     width: 100%;
     font-size: 29px;
@@ -302,7 +310,6 @@
   height: 500px;
   color: #4d545a;
   display: flex;
-
   .great-col-left {
     padding-block: 40px;
     height: fit-content;
@@ -449,10 +456,9 @@
 }
 
 .location-sec {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol";
+  font-family: sans-serif;
   color: black;
+  margin: auto;
   .loc-top {
    
     text-align: center;
