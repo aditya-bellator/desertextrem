@@ -17,6 +17,7 @@ import SliderCard from "../../component/sliderCard/SliderCard";
 import { great, last } from "../../assets";
 import Greatcard from "../../component/greatcard/Greatcard";
 import Modal from "../../component/modal/Modal";
+import { Autoplay } from "swiper/modules";
 
 const WebHome = () => {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -41,6 +42,7 @@ const WebHome = () => {
   const closeModal = () => {
     setIsOpen(false);
   };
+  
   return (
     <div>
        <Modal isOpen={isOpen} onClose={closeModal}>
@@ -147,7 +149,11 @@ const WebHome = () => {
         centeredSlides={true}
         roundLengths={true}
         loop={true}
-        autoplay={true}
+        modules={[Autoplay]}
+          autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false
+                }}
         // loopAdditionalSlides={30}
         pagination={{
           clickable: true,
