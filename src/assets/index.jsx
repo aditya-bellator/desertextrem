@@ -20,4 +20,9 @@ import cannam4 from "./cannam4.png"
 import road1 from "./1.webp"
 import bike from "./bike.webp"
 import road2 from "./other_3.webp"
-export {headingImg,sharma320, road1, bike, road2, cannam1000, cannam4,sharma180,kymko250 , bluebuggy ,polaris1000,sharmaATV250,sharmaatv250 ,twinRider, sliderImg, desertImg, singleImg, adventureImg, desertEx,logo, galleryImg,whiteBg }
+import great from "./greate_deal.png"
+import half from "./half_celcal.png"
+import last from "./last.jpg"
+import user from "./user.jpg"
+
+export {headingImg,last,sharma320,user, road1,half ,great ,bike, road2, cannam1000, cannam4,sharma180,kymko250 , bluebuggy ,polaris1000,sharmaATV250,sharmaatv250 ,twinRider, sliderImg, desertImg, singleImg, adventureImg, desertEx,logo, galleryImg,whiteBg, }
