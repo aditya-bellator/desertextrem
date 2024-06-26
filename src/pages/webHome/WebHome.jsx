@@ -17,6 +17,7 @@ import SliderCard from "../../component/sliderCard/SliderCard";
 import { great, last } from "../../assets";
 import Greatcard from "../../component/greatcard/Greatcard";
 import Modal from "../../component/modal/Modal";
+import Form from "../../component/form/Form";
 
 const WebHome = () => {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -44,8 +45,7 @@ const WebHome = () => {
   return (
     <div>
        <Modal isOpen={isOpen} onClose={closeModal}>
-        <h2>This is your custom modal!</h2>
-        <p>You can put any content here.</p>
+       <Form/>
       </Modal>
       <section className="banenrSecttop">
         <div className="banner">
