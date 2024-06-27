@@ -12,31 +12,19 @@ import "./mobileDetail.scss";
 import { Rating } from "@mui/material";
 import { CustomAccordion } from "./styled";
 import { Link } from "react-router-dom";
-import Modal from "../../component/modal/Modal";
-import Form from "../../component/form/Form";
 
 const MobileDetailPage = () => {
+  const [open, setOpen] = useState(false);
 const handleOpen = () => setOpen(true);
 
-const [isOpen, setIsOpen] = useState(false);
-
-const openModal = () => {
-
-  setIsOpen(true);
-};
-
-const closeModal = () => {
-  setIsOpen(false);
-};
+  
   return (
     <>
-    <Modal isOpen={isOpen} onClose={closeModal}>
-       <Form/>
-      </Modal>
        {/* <BasicModal  Children={<EnquiryForm setOpen={setOpen} id={id} width={"100%"}/>}  setOpen={setOpen} open={open}/> */}
 
       <div className="detail-center-col">
-        <div className="mobile-detail-top-banner" style={{backgroundImage:`url("")`}}>
+        <div className="mobile-detail-top-banner"> 
+          {/* style={{backgroundImage:`url("../")`}}> */}
           <div className="mobile-deatil-banner-head">
             <div className="head-left-col">
               <Link to={"/"}> 
@@ -47,7 +35,7 @@ const closeModal = () => {
               <button>Buggy Tours</button>
             </div>
             <div className="head-right-col">
-              <button onClick={()=>openModal()}>Book Now</button>
+              <button onClick={()=>handleOpen()}>Book Now</button>
               <div className="head-icon">
                 <ReplyOutlinedIcon />
               </div>
@@ -83,7 +71,7 @@ const closeModal = () => {
           </div>
         </div>
         <div className="detail-heading">
-          <h2>adafdf</h2>
+          <h2>ADULT (single)</h2>
         </div>
         <div className="price-rating-section">
           <p>AED 333/-</p>
@@ -107,7 +95,7 @@ const closeModal = () => {
         </div>
         <hr />
         <div className="detail-description">
-         fdgfdghfh
+        Embrace Adventure: Thrilling Buggy Tours Await
           {/* <span>SHOW MORE</span> */}
         </div>
         <div className="experience-section">
@@ -144,7 +132,7 @@ const closeModal = () => {
             </AccordionSummary>
             <AccordionDetails>
               <div
-                dangerouslySetInnerHTML={{ __html: "dsfbjkbjk" }}
+                dangerouslySetInnerHTML={{ __html: "Well-thought itinerary" }}
               />
             </AccordionDetails>
           </CustomAccordion>
@@ -180,7 +168,7 @@ const closeModal = () => {
             </AccordionSummary>
             <AccordionDetails>
               <div
-                dangerouslySetInnerHTML={{ __html: ""}}
+                dangerouslySetInnerHTML={{ __html: "Pick Up From Hotel / Home"}}
               />
             </AccordionDetails>
           </CustomAccordion>
@@ -216,7 +204,7 @@ const closeModal = () => {
             </AccordionSummary>
             <AccordionDetails>
               <div
-                dangerouslySetInnerHTML={{ __html:"" }}
+                dangerouslySetInnerHTML={{ __html:"if 6 persons from 1 family or friends than we will upgrade to private tour private car" }}
               />
             </AccordionDetails>
           </CustomAccordion>
@@ -252,7 +240,7 @@ const closeModal = () => {
             </AccordionSummary>
             <AccordionDetails>
               <div
-                dangerouslySetInnerHTML={{ __html: "" }}
+                dangerouslySetInnerHTML={{ __html: "If you cancel your trip before 48 hours, no cancellation amount charge is applicable" }}
               />
             </AccordionDetails>
           </CustomAccordion>
