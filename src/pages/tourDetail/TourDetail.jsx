@@ -33,14 +33,14 @@ const TourDetail = () => {
           <h1>Dessert Safari: Quad Bike</h1>
           <ul>
             {[1, 2, 3]?.map((item) => {
-              return (
-                <li key={item}>
-                  <p>
-                    <AccessTimeIcon />
-                  </p>
-                  {item}
-                </li>
-              );
+              // return (
+              //   <li key={item}>
+              //     <p>
+              //       <AccessTimeIcon />
+              //     </p>
+              //     {item}
+              //   </li>
+              // );
             })}
           </ul>
         </div>

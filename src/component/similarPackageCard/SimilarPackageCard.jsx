@@ -33,7 +33,7 @@ const SimilarPackageCard = ({fun}) => {
       </div>
       <div className="similar-card-content">
         <h4>Ultimate Adventure Dessert Safari</h4>
-        <p>(4 Persons)</p>
+        {/* <p>(4 Persons)</p> */}
         <hr />
         <div className="price">
           <h4 className="aed">AED 199.00</h4> <p className="per-night">(Per Person)</p>
@@ -42,7 +42,7 @@ const SimilarPackageCard = ({fun}) => {
           Desert Xtreme <StarIcon /> 4.5
         </div>
         <div className="per-person-price">
-          <p>($1099 Per Person) x 4 = </p><h4>AED 1050</h4>
+          {/* <p>($1099 Per Person) x 4 = </p><h4>AED 1050</h4> */}
         </div>
       </div>
         <div className="similar-card-book-btn">

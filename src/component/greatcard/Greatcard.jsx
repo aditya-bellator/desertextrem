@@ -28,8 +28,8 @@ const Greatcard = () => {
           <img src={user} alt="client" />
         </div>
         <div className="user-name">
-          <h4>John William</h4>
-          <p>Software Developer</p>
+          <h4>Alok Mehta</h4>
+          <p>Real Estate Developer</p>
         </div>
       </div>
     </div>
