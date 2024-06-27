@@ -25,8 +25,8 @@ const FooterSection = () => {
           </li>
           <li><PiInstagramLogoLight />
           </li>
-          <li><FaLinkedinIn />
-          </li>
+          {/* <li><FaLinkedinIn />
+          </li> */}
           <li><FaFacebookF />
           </li>
           <li><FaWhatsapp />

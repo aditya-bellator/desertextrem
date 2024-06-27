@@ -1,14 +1,31 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import StarIcon from "@mui/icons-material/Star";
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 ///styles
 import "./styles.scss";
+import Modal from "../modal/Modal";
+import Form from "../form/Form";
 // import {favorite}from "../../assets"
 
 const SimilarPackageCard = ({fun}) => {
 
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openModal = () => {
+    console.log("first")
+    setIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+  };
 
   return (
+    <>
+         
+         <Modal isOpen={isOpen} onClose={closeModal}>
+       <Form/>
+      </Modal>
     <div className="similar-package-card-col">
       <div className="similar-card-img">
       <div className="heart-icon" ><FavoriteBorderOutlinedIcon/></div>
@@ -29,9 +46,10 @@ const SimilarPackageCard = ({fun}) => {
         </div>
       </div>
         <div className="similar-card-book-btn">
-          <button onClick={()=>fun()}>Send Enquiry</button>
+          <button onClick={()=>openModal()}>Send Enquiry</button>
         </div>
     </div>
+    </>
   );
 };
 

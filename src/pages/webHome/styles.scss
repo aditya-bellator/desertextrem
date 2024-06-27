@@ -178,7 +178,8 @@
   display: flex;
   align-items: center;
   justify-content: end;
-  font-size: 24px;
+  font-size: 22px;
+  margin-bottom: 10px;
   text-transform: uppercase;
   font-weight: 700;
   display: flex;
@@ -189,7 +190,7 @@
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
-  color: black;
+  color: #4d545a;
   margin-top: 100px;
 }
 
@@ -378,7 +379,7 @@
   }
   .loc-bottom{
     display: flex;
-    // background: red;
+    // background: red;sl
     width: calc(100% - 0px);
     margin: 0 auto;
     padding-bottom: 20px;

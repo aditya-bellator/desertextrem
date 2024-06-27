@@ -7,6 +7,9 @@ import "./styles.scss"
 import { Rating } from "@mui/material";
 import FavoriteOutlinedIcon from '@mui/icons-material/FavoriteOutlined';
 import {desert,desert1,desert2,desert3,desert4,desert5}from "../../assets"
+import { openModelHandlerRef } from "../../pages/webHome/WebHome";
+import Modal from "../modal/Modal";
+import Form from "../form/Form";
 
 
 const DetailTabs = ({sliderData,fun}) => {
@@ -50,11 +53,13 @@ const DetailTabs = ({sliderData,fun}) => {
   const [activeTabs, setActiveTabs] = useState(0)
   const tabs = [ {
   name:"Highlights",link:"highlights"},
+  // {
+  // name:"Inclusions",link:"highlights"}, 
   {
-  name:"Inclusions",link:"highlights"}, {
-  name:"Need to Know",link:"highlights"},{
-  name:"Cancellation Policy",link:"highlights"},{
-  name:"Reviews",link:"highlights"}]
+  name:"Need to Know",link:"highlights"},
+  {
+  name:"Reviews",link:"highlights"},{
+    name:"ENQUIRY NOW",link:"enquiry"},]
  
  
   const [checkFavourite, setCheckFavourite] = useState(false)
@@ -63,10 +68,23 @@ const DetailTabs = ({sliderData,fun}) => {
   useEffect(() => {
    setValue(4)
   }, [sliderData])
+  
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openModal = () => {
+    console.log("first")
+    setIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+  };
   return (
     <>
      
-
+     <Modal isOpen={isOpen} onClose={closeModal}>
+       <Form/>
+      </Modal>
     <div className="tabs-container">
       <div className="tabs-title">
         <ul>
@@ -75,7 +93,7 @@ const DetailTabs = ({sliderData,fun}) => {
 
             <a href={`#${item.link}`} key={item} >
 
-              <li onClick={()=>setActiveTabs(index)} className={activeTabs == index?"active-tab":""}>{item.name}</li>
+              <li onClick={()=>item.link == "enquiry"?openModal(): setActiveTabs(index)} className={item.link == "enquiry" ?"bg-green":activeTabs == index?"active-tab":""}>{item.name}</li>
             </a> 
             )
           })}

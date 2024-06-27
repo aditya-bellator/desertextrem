@@ -21,7 +21,8 @@ import { Autoplay } from "swiper/modules";
 import Form from "../../component/form/Form";
 import BannerSection from "../../component/bannerSection/BannerSection";
 import FooterSection from "../../component/footerSec/FooterSection";
-
+import FavSliderComponent from "../../component/slider/FavSlider";
+export let openModelHandlerRef;
 
 const WebHome = () => {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -40,9 +41,11 @@ const WebHome = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const openModal = () => {
+    console.log("first")
     setIsOpen(true);
   };
 
+  openModelHandlerRef = openModal
   const closeModal = () => {
     setIsOpen(false);
   };
@@ -117,7 +120,20 @@ const WebHome = () => {
         name={"OTHER OFFROAD BIKES & ATV'S (SINGLE)"}
         para={"EMBRACE ADVENTURE: THRILLING BUGGY TOURS AWAIT"}
       />
-
+    <div className="slider-section">
+        <div className="slider-heading">
+          Travellers' favorite choice
+          <p className="para" style={{color:"black"}}>
+            From Desert Sands to Celestial Canopies: Dubai Safari Expeditions
+          </p>
+        </div>
+        <div className="slider-col2 slider-col" id="fav">
+          <div className="slider-container" style={{width:"92%",margin:"2% auto"}}>
+            <FavSliderComponent />
+          </div>
+          <div className="slider-bg"></div>
+        </div>
+      </div>
       <div className="gallery-section">
         <div className="gallery-heading">Gallery</div>
         <div className="gallery-sub-heading">
@@ -211,6 +227,7 @@ const WebHome = () => {
           </div>
         </div>
       </section>
+  
 </div>
 <FooterSection/>
     </div>

@@ -1,11 +1,12 @@
 import React from 'react'
-import { logo } from "../../assets";
+import { logo, tickIcon } from "../../assets";
 import { IoIosStar } from "react-icons/io";
 import { SiNike } from "react-icons/si";
 import banner from "../../assets/banner.png";
 import whatsApp from "../../assets/whtaup.png";
 
 import "./styles.scss"
+import { Link } from 'react-router-dom';
 const BannerSection = () => {
   return (
     <section className="banenrSecttop">
@@ -25,26 +26,26 @@ const BannerSection = () => {
           <nav className="navbart" id="">
             <ul className="navbar-nav mx-auto centermanu">
               <li className="nav-item active">
-                <a className="nav-link" href="#">
-                  Home{" "}
-                </a>
+                <Link className="nav-link" to="/" >
+                  Home
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="#fav">
                   About Us
                 </a>
               </li>
               <li>
-                <a className="navbar-brand" href="#">
+                <Link className="navbar-brand" to="/">
                   <img src={logo} className="img-fluid" alt="" />
-                </a>
+                </Link>
                 {/* <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
   </button> */}
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#Activities">
+                <a className="nav-link" href="#fav">
                   Our Activities{" "}
                 </a>
               </li>
@@ -67,19 +68,19 @@ const BannerSection = () => {
               </li>
               <li>
                 <span>
-                  <SiNike />
+                  <img src={tickIcon} alt="" />
                 </span>
                 100% Customised trips
               </li>
               <li>
                 <span>
-                  <SiNike />
+                  <img src={tickIcon} alt="" />
                 </span>
                 100% Customised trips
               </li>
               <li>
                 <span>
-                  <SiNike />
+                  <img src={tickIcon} alt="" />
                 </span>
                 24x7 concierge
               </li>
