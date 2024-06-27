@@ -1,4 +1,4 @@
-import { adventureImg, bike, bluebuggy, cannam1000, cannam4, desertImg, headingImg, logo, polaris1000, road1, road2, sharma180, sharma320, sharmaatv250, singleImg, sliderImg, twinRider } from '../../assets'
+import { adventureImg, bike, bluebuggy, cannam1000, cannam4, cardImage, desertImg, headingImg, kymko250, logo, polaris1000, road1, road2, sharma180, sharma320, sharmaATV250, sharmaatv250, singleImg, sliderImg, twinRider } from '../../assets'
 import React, { useState } from 'react'
 import "./styles.scss"
 import Enquiry from '../../component/enquiryform/Enquiry'
@@ -11,6 +11,8 @@ import Gallerycard from '../../component/card/Gallerycard';
 
 import FooterSection from '../../component/footerSec/FooterSection';
 import Navbar from '../../component/navbar/Navbar';
+import Modal from '../../component/modal/Modal';
+import Form from '../../component/form/Form';
 const Explore = () => {
 
   const [activeSlide, setActiveSlide] = useState(0);
@@ -46,8 +48,21 @@ const Explore = () => {
     arrows:false,
     // centerMode:true,
   };
+  const [isOpen, setIsOpen] = useState(false);
+
+const openModal = () => {
+
+  setIsOpen(true);
+};
+
+const closeModal = () => {
+  setIsOpen(false);
+};
   return (
     <>
+    <Modal isOpen={isOpen} onClose={closeModal}>
+       <Form/>
+      </Modal>
     <div className="navbar-layout">
     <Navbar />
   </div>
@@ -70,10 +85,11 @@ const Explore = () => {
         <div className="slider-container">
 
           <Slider {...settings}>
-            {[1, 2, 3, 4].map((item, index) => {
+ 
+            {[cardImage,sharmaATV250, kymko250, cardImage,polaris1000,sharmaATV250, kymko250, cardImage,polaris1000,sharmaatv250, cardImage,polaris1000].map((item, index) => {
               return (
 
-                <SliderCard key={item} animation={activeSlide} index={index} />
+                <SliderCard key={item} item={item} animation={activeSlide} index={index} />
               )
             })}
 
@@ -189,8 +205,8 @@ const Explore = () => {
         <div className="twin-rider-slider">
 
           <Slider {...settings2}>
-          <Card title="yamaha rapto 700 cc" min="30 min : 700 AED " hours="1 Hour : 1200 AED" img={road1}/>
-            <Card title="dirt bike 280/320 cc" min="30 min : 500 AED " hours="1 Hour : 800 AED" img={bike}/>
+          <Card title="yamaha rapto 700 cc" min="30 min : 700 AED " hours="1 Hour : 1200 AED" img={road1} />
+            <Card title="dirt bike 280/320 cc" min="30 min : 500 AED " hours="1 Hour : 800 AED" img={bike} />
             <Card title="polaris sportsman 570 cc" min="30 min : 350 AED " hours="1 Hour : 700 AED" img={road2} />
 
 
@@ -222,7 +238,7 @@ const Explore = () => {
 
       </section>
 
-      <section>
+      <section id='enquiry'>
 
         <Enquiry />
       </section>

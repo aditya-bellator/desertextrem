@@ -28,9 +28,14 @@ const Card = ({title,hours,min,img,openModal}) => {
             <span>{hours}</span>
           </div>
           <div className="booknow">
-            <button className="book-btn" onClick={openModal}>
+          {openModal?   <button className="book-btn" onClick={openModal}>
+              book now
+            </button>: <a href="#enquiry">
+
+            <button className="book-btn" >
               book now
             </button>
+            </a>}
 
           </div>
         </div>

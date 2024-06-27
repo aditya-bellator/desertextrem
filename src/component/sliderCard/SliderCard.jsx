@@ -2,10 +2,10 @@ import './slidercard.scss';
 import cardImage from '../../assets/mobile_slider_top_one.png';
 import { Link } from 'react-router-dom';
 
-const SliderCard = ({animation,index,openModal}) => {
+const SliderCard = ({animation,index,openModal,item}) => {
   return (
     <div className={`sliderCard ${index === animation ? 'active-slide' : ''}`}>
-      <div className="slider-card-top-col">
+      <div className="slider-card-top-col" style={{backgroundImage:`url(${item})`}}>
         
       </div>
       <div className="sliderCardContent">

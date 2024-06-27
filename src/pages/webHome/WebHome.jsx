@@ -14,7 +14,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import SliderCard from "../../component/sliderCard/SliderCard";
-import { great, last } from "../../assets";
+import { bluebuggy, cardImage, great, kymko250, last, polaris1000, sharmaATV250, sharmaatv250 } from "../../assets";
 import Greatcard from "../../component/greatcard/Greatcard";
 import Modal from "../../component/modal/Modal";
 import { Autoplay } from "swiper/modules";
@@ -41,7 +41,7 @@ const WebHome = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const openModal = () => {
-    console.log("first")
+  
     setIsOpen(true);
   };
 
@@ -91,9 +91,9 @@ const WebHome = () => {
           clickable: true,
         }}
       >
-        {[1,2,3,4,5,6,7,8,9,10,11].map((item)=><SwiperSlide key={item}>
+        {[cardImage,sharmaATV250, kymko250, cardImage,polaris1000,sharmaATV250, kymko250, cardImage,polaris1000,sharmaatv250, kymko250, cardImage,sharmaATV250,polaris1000].map((item)=><SwiperSlide key={item} >
     
-    <SliderCard openModal={openModal}/>
+    <SliderCard openModal={openModal} item={item}/>
   </SwiperSlide>)}
         
       
@@ -110,7 +110,7 @@ const WebHome = () => {
         </div>
       <SliderSection
       openModal={openModal}
-        name={"Adult (Singal)"}
+        name={"Adult (Single)"}
         para={"EMBRACE ADVENTURE: THRILLING BUGGY TOURS AWAIT"}
       />
       <SliderSection
@@ -165,7 +165,7 @@ const WebHome = () => {
             </div>
             <div className="btn-sec">
               <div className="btn-explore">
-                <button>explore now</button>
+                <button onClick={()=>openModal()}>explore now</button>
               </div>
               <div className="or">or</div>
               <div className="request">

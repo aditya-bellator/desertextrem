@@ -47,6 +47,8 @@
             text-transform: uppercase;
             a {
               color: black;
+              display: flex;
+              align-items: center;
             }
           }
         }
@@ -79,6 +81,10 @@
         width: 100%;
         justify-content: space-between;
         padding: 0%;
+        .navbar-brand{
+          display: flex;
+          align-items: center;
+        }
         li {
           width: 25%;
           list-style: none;

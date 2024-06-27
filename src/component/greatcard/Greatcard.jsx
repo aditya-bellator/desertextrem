@@ -18,9 +18,9 @@ const Greatcard = () => {
       <div className="content">
         <h1>Well Organized Trip</h1>
         <p>
-          We are back to India and have to admit, our Big Australian Holiday was
-          amazing!! I would like to personally thank Mr.Jalaj for selecting the
-          right places for us and Swati for organizing everything bef
+        The Dubai buggy ride with "Dubai xtreme Adventures" was an exhilarating experience, 
+        offering top-notch service and breathtaking desert views. Highly recommend for adventure 
+        seekers looking for a thrilling and unforgettable ride!
         </p>
       </div>
       <div className="user">
