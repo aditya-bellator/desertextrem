@@ -84,7 +84,7 @@ const Explore = () => {
       </section>
 
 
-      <section className='twin-rider-section'>
+      <section className='twin-rider-section' id="activity">
         <div className="twin-rider-title">
 
           <img src={adventureImg} alt="desert" />

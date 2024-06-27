@@ -45,7 +45,7 @@ const BannerSection = () => {
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#fav">
+                <a className="nav-link" href="#activity">
                   Our Activities{" "}
                 </a>
               </li>
