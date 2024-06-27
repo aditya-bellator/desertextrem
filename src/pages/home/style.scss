@@ -62,3 +62,14 @@
     }
   }
 }
+
+.navbar-layout{
+  position: sticky;
+  top: 0%;
+  width: 100%;
+  top: 0%;
+  background-color: #ffffff;
+  z-index: 99999999;
+  border-bottom: 1px solid #EAEAEA;
+  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.25);
+}

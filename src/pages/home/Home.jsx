@@ -3,6 +3,8 @@ import React from 'react'
 // import unleashImg from "../../assets/unleash.png"
 import logo from "../../assets/logo_images.png"
 import "./style.scss"
+import { Link } from 'react-router-dom'
+import Explore from '../explore/Explore'
 
 const Home = () => {
   return (
@@ -22,9 +24,15 @@ const Home = () => {
             </div>
          */}
          
-            <button className='btn-explore'>explore now</button>
+          <a href={"#explore"}>
+           <button className='btn-explore'>explore now</button>
+          </a> 
           </div>
         </div>
+        <section id='explore'>
+
+        <Explore/>
+        </section>
 
       {/* // </div> */}
 

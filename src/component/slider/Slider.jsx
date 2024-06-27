@@ -1,36 +1,56 @@
+// Import Swiper React components
 
-import ReactSlick from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import './slider.scss';
-import SliderCard from '../sliderCard/SliderCard';
+// Import Swiper styles
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import SliderCard from "../sliderCard/SliderCard";
 
-const Slider = () => {
-  const settings = {
+///styles
+import "./styles.scss";
+const SliderComponent = ({ data }) => {
+  var settings = {
     dots: true,
     infinite: true,
-    speed: 100, 
-    autoplay: true, 
-    // autoplaySpeed: 2000, // Delay between each auto scroll in milliseconds
-    slidesToShow: 1,
-    slidesToScroll: 1
+    speed: 500,
+    slidesToShow:3,
+    slidesToScroll: 3,
+    variableWidth: false,
+    autoPlay:true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
-
   return (
-    <div className="slider-wrapper">
-      <ReactSlick {...settings}>
-        <div>
-          <SliderCard />
-        </div>
-        <div>
-          <SliderCard />
-        </div>
-        <div>
-          <SliderCard />
-        </div>
-      </ReactSlick>
-    </div>
+    <Slider {...settings}>
+      {data?.map((item, index) => {
+        return <SliderCard key={index} data={item} />;
+      })}
+    </Slider>
   );
 };
 
-export default Slider;
+export default SliderComponent;
