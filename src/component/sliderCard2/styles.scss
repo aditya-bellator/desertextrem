@@ -135,8 +135,11 @@
       font-weight: bold;
       text-align: center;
       margin: 0%;
+      white-space: nowrap;
       padding: 0%;
       text-align: left;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     p {
       text-align: left;

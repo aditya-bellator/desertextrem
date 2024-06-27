@@ -8,8 +8,8 @@ import "./styles.scss"
 import SliderCard from '../../component/sliderCard/SliderCard';
 import Card from '../../component/card/Card';
 import Gallerycard from '../../component/card/Gallerycard';
-import { FaFacebookF, FaLinkedinIn, FaWhatsapp, FaYoutube } from 'react-icons/fa';
-import { PiInstagramLogoLight } from 'react-icons/pi';
+
+import FooterSection from '../../component/footerSec/FooterSection';
 const Explore = () => {
 
   const [activeSlide, setActiveSlide] = useState(0);
@@ -224,7 +224,7 @@ const Explore = () => {
       </section>
 
 
-      <section className="enquiry-section">
+      {/* <section className="enquiry-section">
         <div className="desert-img">
           <img src={desertImg} alt="desert" />
 
@@ -240,38 +240,8 @@ const Explore = () => {
           </div>
         </div>
 
-      </section>
-      <section className='footer-sec'>
-      <div className="footer2">
-        <div className="logo">
-          <a href="#top">
-
-          <img src={logo} alt="logo" />
-          </a>
-        </div>
-        <ul className='footer-menu'>
-          <li>About</li>
-          <li>contact us</li>
-          <li>privacy ploicy</li>
-          <li>terms & conditions</li>
-        </ul>
-          <ul className='footer-icon'>
-            <li><FaYoutube />
-            </li>
-            <li><PiInstagramLogoLight />
-            </li>
-            <li><FaLinkedinIn />
-            </li>
-            <li><FaFacebookF />
-            </li>
-            <li><FaWhatsapp />
-            </li>
-          </ul>
-      <div className="copywrite">
-        <p>@ 2024 DESERT XTREME</p>
-      </div>
-      </div>
-      </section>
+      </section> */}
+      <FooterSection/>
 
     </div>
   )

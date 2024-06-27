@@ -1,4 +1,6 @@
 .card-container{
+    
+
     width: 90% !important;
     height: auto;
     border-radius: 10px;
@@ -69,6 +71,10 @@ object-fit: cover;
                 font-size: 13px;
                 display: flex;
                 flex-direction: column;
+                span{
+                    display: flex;
+                    white-space: nowrap;
+                }
             }
         }
         .booknow{

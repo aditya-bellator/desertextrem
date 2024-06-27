@@ -12,7 +12,7 @@ const SliderSection = ({name,para,openModal}) => {
         // centerPadding: "60px",
         slidesToScroll: 1,
         arrows:false,
-        autoplay:true,
+        autoplay:false,
         // centerMode:true,
       };
   return (

@@ -8,6 +8,7 @@ import "./styles.scss";
 import DesertExtremeCard from "../../component/desertExtremeCard/DesertExtremeCard";
 import { Outlet, useParams } from "react-router-dom";
 import BannerSection from "../../component/bannerSection/BannerSection"
+import FooterSection from "../../component/footerSec/FooterSection";
 
 // import BasicModal from "../../component/modal/Modal";
 // import EnquiryForm from "../../component/enquiryForm/EnquiryForm";
@@ -40,6 +41,7 @@ const {id} = useParams()
            }
         </div>
       </div>
+      <FooterSection/>
     </>
   );
 };

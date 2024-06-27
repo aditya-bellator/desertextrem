@@ -20,18 +20,20 @@ import Modal from "../../component/modal/Modal";
 import { Autoplay } from "swiper/modules";
 import Form from "../../component/form/Form";
 import BannerSection from "../../component/bannerSection/BannerSection";
+import FooterSection from "../../component/footerSec/FooterSection";
+
 
 const WebHome = () => {
   const [activeSlide, setActiveSlide] = useState(0);
 
   const settings = {
-    infinite: true,
+    infinite: false,
     slidesToShow: 1,
-    speed: 500,
+    speed: 777500,
     arrows: false,
 
     dots: false,
-    autoplay: true,
+    autoplay: false,
     beforeChange: (current, next) => setActiveSlide(next),
   };
 
@@ -210,6 +212,7 @@ const WebHome = () => {
         </div>
       </section>
 </div>
+<FooterSection/>
     </div>
   );
 };
