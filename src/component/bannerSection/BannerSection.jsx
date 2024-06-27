@@ -15,7 +15,10 @@ const BannerSection = () => {
             <span>
               <a href="https://api.whatsapp.com/send?phone=+971526063261&amp;text=Hi,%20I%20would%20like%20to%20know%20more%20details">
                 <img src={whatsApp} alt="" />
-                +971 56 188 5977{" "}
+                <p>
+
+                +971 56 188 5977
+                </p>
               </a>
             </span>
           </div>

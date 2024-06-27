@@ -18,11 +18,7 @@ const SliderCard2 = ({ image ,name,description,price}) => {
       <div className="bottom-col">
         <h4 className="card-heading">{name}</h4>
         <p>{description}</p>
-<<<<<<< HEAD
         <span>{price}</span>
-=======
-        <span> {price}</span>
->>>>>>> 767923e (remove extra aed)
       </div>
     </div>
     </a>

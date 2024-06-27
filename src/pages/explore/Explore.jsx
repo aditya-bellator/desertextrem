@@ -10,6 +10,7 @@ import Card from '../../component/card/Card';
 import Gallerycard from '../../component/card/Gallerycard';
 
 import FooterSection from '../../component/footerSec/FooterSection';
+import Navbar from '../../component/navbar/Navbar';
 const Explore = () => {
 
   const [activeSlide, setActiveSlide] = useState(0);
@@ -46,7 +47,10 @@ const Explore = () => {
     // centerMode:true,
   };
   return (
-
+    <>
+    <div className="navbar-layout">
+    <Navbar />
+  </div>
     <div style={{ width: "100%" }}>
 
 
@@ -244,6 +248,7 @@ const Explore = () => {
       <FooterSection/>
 
     </div>
+    </>
   )
 }
 

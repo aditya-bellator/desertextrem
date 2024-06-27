@@ -38,7 +38,7 @@
     .img-sec{
         width: 100% !important;
         background: #D7CDC6;
-height: 200px;
+height: 180px;
 object-fit: cover;
 
         img{
@@ -59,6 +59,7 @@ object-fit: cover;
         text-transform: uppercase;
         p{
             width: 100%;
+            margin-top: 0;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;

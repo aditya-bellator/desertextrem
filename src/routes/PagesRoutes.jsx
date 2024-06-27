@@ -27,17 +27,17 @@ export const mobilerouter =(isMobile)=>{
             element:<MobileDetailPage/>
           },
         ,
-          {
-            path: "/",
-            element: <MainLayout/>,
-        children:[
-          {
-            path:"/explore",
-            element:<Explore/>
-          }, 
-      ],
+      //     {
+      //       path: "/",
+      //       element: <MainLayout/>,
+      //   children:[
+      //     {
+      //       path:"/explore",
+      //       element:<Explore/>
+      //     }, 
+      // ],
       
-      },
+      // },
       
          
       
