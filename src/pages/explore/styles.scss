@@ -455,6 +455,9 @@ background-image: url("../../assets/white_bg_02.jpg");
 .experience-sec {
   .slick-dots {
     bottom: -35px;
+    li{
+      width: 15px !important;
+    }
    
   }
   .slick-slider{
