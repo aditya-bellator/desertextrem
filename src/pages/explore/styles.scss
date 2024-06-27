@@ -79,10 +79,11 @@ z-index: 99;
         text-align: center;
         margin: 0;
         padding: 0;
-        width: 100%;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        width: calc(100% - 20px);
+        padding-inline: 10px;
+        // white-space: nowrap;
+        // overflow: hidden;
+        // text-overflow: ellipsis;
 
     }
   }
@@ -167,10 +168,8 @@ z-index: 99;
         text-align: center;
         margin: 0;
         padding: 0;
-        width: 100%;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        width: calc(100% - 20px);
+        padding-inline: 10px;
 
     }
   }
@@ -256,10 +255,8 @@ z-index: 99;
         text-align: center;
         margin: 0;
         padding: 0;
-        width: 100%;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        width: calc(100% - 20px);
+        padding-inline: 10px;
 
     }
   }
@@ -345,9 +342,8 @@ z-index: 99;
         margin: 0;
         padding: 0;
         width: 100%;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        width: calc(100% - 20px);
+        padding-inline: 10px;
 
     }
   }
@@ -416,6 +412,12 @@ background-image: url("../../assets/white_bg_02.jpg");
 }
 
 .experience-sec {
+  .slick-dots {
+    bottom: -35px;
+  }
+  .slick-slider{
+    width: 100%;
+  }
   .experience-heading {
     width: 90%;
     margin: auto;

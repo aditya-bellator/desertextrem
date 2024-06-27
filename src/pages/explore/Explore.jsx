@@ -23,7 +23,7 @@ const Explore = () => {
     speed: 500,
     arrows: false,
 
-    dots: false,
+    dots: true,
     beforeChange: (current, next) => setActiveSlide(next),
 
   };
