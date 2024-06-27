@@ -100,13 +100,17 @@
 .slider-card2{
   width: calc(100% - 0px);
   height: 220px;
+  margin-bottom: 10px;
+  margin-top: 10px;
   border-radius: 10px;
   margin-inline: 0px !important;
   // filter: drop-shadow(0px 6px 24.5px rgba(22,19,22,0.09));
   background-color: white;
   border: 0px solid black;
   overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   cursor: pointer;
+
   .top-col {
 
     background-size: 100% 100%;
