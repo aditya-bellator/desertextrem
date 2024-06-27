@@ -1,14 +1,6 @@
 @import "../styles/variables/mixins";
 .main-layout {
-    .navbar-layout{
-        position: fixed;
-        width: 100%;
-        top: 0%;
-        background-color: #ffffff;
-        z-index: 99999999;
-        border-bottom: 1px solid #EAEAEA;
-        box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.25);
-    }
+   
     width: 60%;
     // display: flex;
     margin: auto;

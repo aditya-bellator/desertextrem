@@ -4,7 +4,7 @@ import "./gallery.scss"
 import { sliderImg } from '../../assets'
 import { CiHeart } from "react-icons/ci";
 
-const Card = ({title,hours,min,img}) => {
+const Card = ({title,hours,min,img,openModal}) => {
   return (
     <div className='card-container'>
       
@@ -28,12 +28,10 @@ const Card = ({title,hours,min,img}) => {
             <span>{hours}</span>
           </div>
           <div className="booknow">
-            <a href="#enquire-now">
-            <button className="book-btn">
+            <button className="book-btn" onClick={openModal}>
               book now
             </button>
 
-            </a>
           </div>
         </div>
       </div>

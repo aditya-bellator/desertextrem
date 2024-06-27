@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./enquiry.scss";
 import { desertEx } from "../../assets";
 

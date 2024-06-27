@@ -1,4 +1,7 @@
 .card-container{
+    
+    // filter: drop-shadow(0 0 29.5px rgba(5, 6, 6, 0.14));
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     width: 90% !important;
     height: auto;
     border-radius: 10px;
@@ -7,6 +10,7 @@
     flex-direction: column;
     position: relative;
     margin: auto;
+    margin-bottom: 10px;
     // height: 600px;
     img{
         width: 100%;
@@ -36,7 +40,7 @@
     .img-sec{
         width: 100% !important;
         background: #D7CDC6;
-height: 200px;
+height: 180px;
 object-fit: cover;
 
         img{
@@ -57,6 +61,7 @@ object-fit: cover;
         text-transform: uppercase;
         p{
             width: 100%;
+            margin-top: 0;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -69,6 +74,10 @@ object-fit: cover;
                 font-size: 13px;
                 display: flex;
                 flex-direction: column;
+                span{
+                    display: flex;
+                    white-space: nowrap;
+                }
             }
         }
         .booknow{

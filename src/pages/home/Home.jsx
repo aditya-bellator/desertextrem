@@ -4,6 +4,7 @@ import React from 'react'
 import logo from "../../assets/logo_images.png"
 import "./style.scss"
 import { Link } from 'react-router-dom'
+import Explore from '../explore/Explore'
 
 const Home = () => {
   return (
@@ -23,11 +24,15 @@ const Home = () => {
             </div>
          */}
          
-          <Link to={"/explore"}>
+          <a href={"#explore"}>
            <button className='btn-explore'>explore now</button>
-          </Link> 
+          </a> 
           </div>
         </div>
+        <section id='explore'>
+
+        <Explore/>
+        </section>
 
       {/* // </div> */}
 
