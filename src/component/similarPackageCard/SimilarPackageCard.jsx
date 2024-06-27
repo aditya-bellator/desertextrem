@@ -12,7 +12,7 @@ const SimilarPackageCard = ({fun}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const openModal = () => {
-    console.log("first")
+
     setIsOpen(true);
   };
 

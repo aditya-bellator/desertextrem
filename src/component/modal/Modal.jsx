@@ -1,7 +1,7 @@
 // Modal.js
 
 import React from 'react';
-import './styles.css'; // Import your CSS file for styling
+import './styles.scss'; // Import your CSS file for styling
 import { IoClose } from 'react-icons/io5';
 
 const Modal = ({ isOpen, onClose, children }) => {

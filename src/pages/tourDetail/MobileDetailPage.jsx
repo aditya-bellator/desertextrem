@@ -12,14 +12,27 @@ import "./mobileDetail.scss";
 import { Rating } from "@mui/material";
 import { CustomAccordion } from "./styled";
 import { Link } from "react-router-dom";
+import Modal from "../../component/modal/Modal";
+import Form from "../../component/form/Form";
 
 const MobileDetailPage = () => {
-  const [open, setOpen] = useState(false);
 const handleOpen = () => setOpen(true);
 
-  
+const [isOpen, setIsOpen] = useState(false);
+
+const openModal = () => {
+
+  setIsOpen(true);
+};
+
+const closeModal = () => {
+  setIsOpen(false);
+};
   return (
     <>
+    <Modal isOpen={isOpen} onClose={closeModal}>
+       <Form/>
+      </Modal>
        {/* <BasicModal  Children={<EnquiryForm setOpen={setOpen} id={id} width={"100%"}/>}  setOpen={setOpen} open={open}/> */}
 
       <div className="detail-center-col">
@@ -34,7 +47,7 @@ const handleOpen = () => setOpen(true);
               <button>Buggy Tours</button>
             </div>
             <div className="head-right-col">
-              <button onClick={()=>handleOpen()}>Book Now</button>
+              <button onClick={()=>openModal()}>Book Now</button>
               <div className="head-icon">
                 <ReplyOutlinedIcon />
               </div>
