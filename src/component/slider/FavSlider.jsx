@@ -11,7 +11,7 @@ import "./styles.scss";
 import SliderCard2 from "../sliderCard2/SliderCard2";
 const FavSliderComponent = ({ data }) => {
   var settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
