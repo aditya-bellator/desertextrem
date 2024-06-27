@@ -15,11 +15,11 @@ const SimilarPackageCard = ({fun}) => {
       {/* <img src={favorite} alt="new" /> */}
       </div>
       <div className="similar-card-content">
-        <h4>Luxury Heritage Evening Desert Safari</h4>
+        <h4>Ultimate Adventure Dessert Safari</h4>
         <p>(4 Persons)</p>
         <hr />
         <div className="price">
-          <h4 className="aed">AED 250.00</h4> <p className="per-night">(Per Person)</p>
+          <h4 className="aed">AED 199.00</h4> <p className="per-night">(Per Person)</p>
         </div>
         <div className="xtreme">
           Desert Xtreme <StarIcon /> 4.5
