@@ -36,7 +36,8 @@ const closeModal = () => {
        {/* <BasicModal  Children={<EnquiryForm setOpen={setOpen} id={id} width={"100%"}/>}  setOpen={setOpen} open={open}/> */}
 
       <div className="detail-center-col">
-        <div className="mobile-detail-top-banner" style={{backgroundImage:`url("")`}}>
+        <div className="mobile-detail-top-banner">
+           {/* style={{backgroundImage:`url("")`}}> */}
           <div className="mobile-deatil-banner-head">
             <div className="head-left-col">
               <Link to={"/"}> 
@@ -83,7 +84,7 @@ const closeModal = () => {
           </div>
         </div>
         <div className="detail-heading">
-          <h2>adafdf</h2>
+          <h2>ADULT (DOUBLE)</h2>
         </div>
         <div className="price-rating-section">
           <p>AED 333/-</p>
@@ -107,7 +108,7 @@ const closeModal = () => {
         </div>
         <hr />
         <div className="detail-description">
-         fdgfdghfh
+        Embrace Adventure: Thrilling Buggy Tours Await
           {/* <span>SHOW MORE</span> */}
         </div>
         <div className="experience-section">
@@ -144,7 +145,7 @@ const closeModal = () => {
             </AccordionSummary>
             <AccordionDetails>
               <div
-                dangerouslySetInnerHTML={{ __html: "dsfbjkbjk" }}
+                dangerouslySetInnerHTML={{ __html: "Ride a 1000 CC Polaris rzr" }}
               />
             </AccordionDetails>
           </CustomAccordion>
@@ -180,7 +181,7 @@ const closeModal = () => {
             </AccordionSummary>
             <AccordionDetails>
               <div
-                dangerouslySetInnerHTML={{ __html: ""}}
+                dangerouslySetInnerHTML={{ __html: "Tea & Coffee"}}
               />
             </AccordionDetails>
           </CustomAccordion>
@@ -216,7 +217,7 @@ const closeModal = () => {
             </AccordionSummary>
             <AccordionDetails>
               <div
-                dangerouslySetInnerHTML={{ __html:"" }}
+                dangerouslySetInnerHTML={{ __html:"Pick Up From Hotel / Home" }}
               />
             </AccordionDetails>
           </CustomAccordion>
@@ -252,7 +253,7 @@ const closeModal = () => {
             </AccordionSummary>
             <AccordionDetails>
               <div
-                dangerouslySetInnerHTML={{ __html: "" }}
+                dangerouslySetInnerHTML={{ __html: "If you cancel your trip before 48 hours, no cancellation amount charge is applicable" }}
               />
             </AccordionDetails>
           </CustomAccordion>
