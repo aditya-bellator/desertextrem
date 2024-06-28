@@ -9,14 +9,14 @@ export const ExperienceSlides = [{
     img: sharma180,
 
     title: "<p> SHARMAX ATV CROSS 180 CC<br>2 seater<br>30 min : 150 AED<br>1 Hour : 300 AED</p>",
-    id: "002"
+    id: "SHARMAX-ATV-CROSS-180-CC"
 
 },
 {
     img: sharma320,
 
     title: "<p> SHARMAX hummer 320 CC<br>2 seater<br>30 min : 250 AED<br>1 Hour : 350 AED</p>",
-    id: "003"
+    id: "SHARMAX-hummer-320-CC"
 },
 {
     img: kymko250,
@@ -92,7 +92,7 @@ export const Adultdouble = [{
     img: "",
 
     title: "kymko mxu 250 cc",
-    id: "kymko mxu 250 cc",
+    id: "kymko-mxu-250-cc",
     min:"30 min : 250 AED",
     hour:"1 Hour : 400 AED",
 },
@@ -100,7 +100,7 @@ export const Adultdouble = [{
     img: "",
 
     title: "SHARMAX hummer 320 CC",
-    id: "SHARMAX hummer 320 CC",
+    id: "SHARMAX-hummer-320-CC",
     min:"30 min : 300 AED",
     hour:"1 Hour : 500 AED",
 },
@@ -108,7 +108,7 @@ export const Adultdouble = [{
     img: "",
 
     title: "Yamaha grizzly 450 CC",
-    id: "Yamaha grizzly 450 CC",
+    id: "Yamaha-grizzly-450-CC",
     min:"30 min : 350 AED",
     hour:"1 Hour : 550 AED",
 },
@@ -116,7 +116,7 @@ export const Adultdouble = [{
     img: "",
 
     title: "kymko mxu 250 cc",
-    id: "kymko mxu 250 cc",
+    id: "kymko-mxu-250-cc",
     min:"30 min : 150 AED",
     hour:"1 Hour : 300 AED",
 },
@@ -124,7 +124,7 @@ export const Adultdouble = [{
     img: "",
 
     title: "SHARMAX hummer 320 CC",
-    id: "SHARMAX hummer 320 CC",
+    id: "SHARMAX-hummer-320-CC",
     min:"30 min : 200 AED",
     hour:"1 Hour : 350 AED",
 },
@@ -132,7 +132,7 @@ export const Adultdouble = [{
     img: "",
 
     title: "SHARMAX ATV 250 CC",
-    id: "SHARMAX ATV 250 CC",
+    id: "SHARMAX-ATV-250-CC",
     min:"30 min : 150 AED",
     hour:"1 Hour : 300 AED",
 },
@@ -140,7 +140,7 @@ export const Adultdouble = [{
     img: "",
 
     title: "polaris rzr 1000 cc (2 seater)",
-    id: "polaris rzr 1000 cc (2 seater)",
+    id: "polaris-rzr-1000-cc-2-seater",
     min:"30 min : 1000 AED",
     hour:"1 Hour : 1500 AED",
 },
@@ -148,7 +148,7 @@ export const Adultdouble = [{
     img: "",
 
     title: "polaris rzr 1000 cc (4 seater)",
-    id: "polaris rzr 1000 cc (4 seater)",
+    id: "polaris-rzr-1000-cc-4-seater",
     min:"30 min : 1500 AED",
     hour:"1 Hour : 2000 AED",
 },
@@ -156,7 +156,7 @@ export const Adultdouble = [{
     img: "",
 
     title: "CANNAM rzr 1000 cc (2 seater)",
-    id: "CANNAM rzr 1000 cc (2 seater)",
+    id: "CANNAM-rzr-1000-cc-2-seater",
     min:"30 min : 150 AED",
     hour:"1 Hour : 300 AED",
 },
@@ -164,7 +164,7 @@ export const Adultdouble = [{
     img: "",
 
     title: "yamaha rapto 700 cc",
-    id: "yamaha rapto 700 cc",
+    id: "yamaha-rapto-700-cc",
     min:"30 min : 700 AED",
     hour:"1 Hour : 1200 AED",
 },
@@ -172,7 +172,7 @@ export const Adultdouble = [{
     img: "",
 
     title: "dirt bike 280/320 cc",
-    id: "dirt bike 280/320 cc",
+    id: "dirt-bike-280/320-cc",
     min:"30 min : 500 AED",
     hour:"1 Hour : 800 AED",
 },
@@ -180,7 +180,7 @@ export const Adultdouble = [{
     img: "",
 
     title: "polaris sportsman 570 cc",
-    id: "polaris sportsman 570 cc",
+    id: "polaris-sportsman-570-cc",
     min:"30 min : 350 AED",
     hour:"1 Hour : 700 AED",
 },
@@ -188,7 +188,7 @@ export const Adultdouble = [{
     img: "",
 
     title: "kymko mxu 250 cc",
-    id: "kymko mxu 250 cc",
+    id: "kymko-mxu-250-cc",
     min:"30 min : 250 AED",
     hour:"1 Hour : 400 AED",
 },
