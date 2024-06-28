@@ -85,8 +85,8 @@ const TourDetail = () => {
       {getData?.description}
       </div>
       <div id="highlights">
-        <div className="highlights-section">
-          <DetailCard name={"Highlights"} list={getData?.inclusion}/>
+        <div className="highlights-section m-collapse">
+          <DetailCard name={"Inclusion"} list={getData?.inclusion}/>
           <DetailCard name={"Inclusions"} list={<ul> 
   <li>BBQ & Buffet Dinner (Veg & non-veg Both Available)</li>
   <li>Tea & Coffee</li>
