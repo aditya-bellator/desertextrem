@@ -38,4 +38,4 @@ import cardImage from "./POLARIS-RZR-1000-CC.png"
 
 
 
-export {cardImage,favorite,favorite1,favorite2, desert,desert1,desert2,desert3,desert4,desert5,tickIcon,headingImg,last,sharma320,user, road1,half ,great ,bike, road2, cannam1000, cannam4,sharma180,kymko250 , bluebuggy ,polaris1000,sharmaATV250,sharmaatv250 ,twinRider, sliderImg, desertImg, singleImg, adventureImg, desertEx,logo, galleryImg,whiteBg, }
+export {kymko250,cardImage,favorite,favorite1,favorite2, desert,desert1,desert2,desert3,desert4,desert5,tickIcon,headingImg,last,sharma320,user, road1,half ,great ,bike, road2, cannam1000, cannam4,sharma180, bluebuggy ,polaris1000,sharmaATV250,sharmaatv250 ,twinRider, sliderImg, desertImg, singleImg, adventureImg, desertEx,logo, galleryImg,whiteBg, }
