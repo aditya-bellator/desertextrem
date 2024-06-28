@@ -8,8 +8,10 @@ import DetailCard from "../../component/detailsPageCard/DetailCard";
 import {favorite}from "../../assets"
 import { detailPageJson } from "../../component/json/Json";
 import { useParams } from "react-router-dom";
+import { useMediaQuery } from "../../useMediaQuery";
 
 const TourDetail = () => {
+  const isMobile = useMediaQuery("(max-width:480px)")
   const names = [
     "Oliver Hansen",
     "Van Henry",

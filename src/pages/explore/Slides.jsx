@@ -8,7 +8,7 @@ import "./styles.scss"
 import SliderCard from '../../component/sliderCard/SliderCard';
 import Card from '../../component/card/Card';
 import Gallerycard from '../../component/card/Gallerycard';
-const Slides = () => {
+const Slides = ({gallery}) => {
 
   var settings2 = {
     dots: true,
@@ -152,7 +152,7 @@ const Slides = () => {
           <div className="overlay"></div>
         </div>
       </section>
-
+{!gallery && 
 
       <section className="gallery-sec">
         <div className="title">
@@ -175,6 +175,7 @@ const Slides = () => {
 </div> 
 
       </section>
+    }
 
       <section id='enquiry'>
 

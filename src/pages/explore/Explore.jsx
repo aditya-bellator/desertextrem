@@ -75,7 +75,7 @@ const settings = {
         </div>
         {/* <Slider /> */}
       </section>
-   <Slides/>
+   <Slides />
   <FooterSection/>
     </>
   )

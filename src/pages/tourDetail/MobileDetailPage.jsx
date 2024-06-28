@@ -1,4 +1,4 @@
-import  {  useState } from "react";
+import  {  useEffect, useState } from "react";
 import AccessAlarmsIcon from "@mui/icons-material/AccessAlarms";
 import AirportShuttleOutlinedIcon from "@mui/icons-material/AirportShuttleOutlined";
 import LocalHotelOutlinedIcon from "@mui/icons-material/LocalHotelOutlined";
@@ -34,7 +34,15 @@ const closeModal = () => {
 };
 const {id} = useParams()
 
-  const getData = detailPageJson.find((item)=>item.id == id)
+  const getData = detailPageJson?.find((item)=>item?.id == id)
+  const [showFull, setShowFull] = useState(false);
+
+  const toggleShowFull = () => {
+    setShowFull(!showFull);
+  };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
     <Modal isOpen={isOpen} onClose={closeModal}>
@@ -134,14 +142,14 @@ const {id} = useParams()
         </div>
         <div className="experience-section">
           <h2>Experience</h2>
-          <CustomAccordion defaultExpanded>
+          <CustomAccordion >
             <AccordionSummary
               // expandIcon={null}
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1-content"
               id="panel1-header"
               sx={{
-                // filter: "drop-shadow(0px 1px 8px rgba(0,0,0,0.09))",
+                filter: "drop-shadow(0px 1px 8px rgba(0,0,0,0.09))",
                 backgroundColor: "#ffffff",
                 borderRadius: "4px",
               }}
@@ -154,24 +162,24 @@ const {id} = useParams()
                   fontSize: "14px",
                 }}
               >
-                <span
+                {/* <span
                   style={{
                     width: "8px",
                     height: "8px",
                     background: "green",
                     borderRadius: "100px",
                   }}
-                ></span>
-                Highlights
+                ></span> */}
+                Description
               </div>
             </AccordionSummary>
             <AccordionDetails>
-              <div
-                dangerouslySetInnerHTML={{ __html: "Ride a 1000 CC Polaris rzr" }}
-              />
+            <p>{showFull ? getData?.description : `${getData?.description.slice(0, 100)}...`} <span onClick={toggleShowFull} style={{color:"#df723c"}}>  {showFull ? 'Show less' : 'Show more'}</span> </p>
+     
+            
             </AccordionDetails>
           </CustomAccordion>
-          <CustomAccordion>
+          <CustomAccordion defaultExpanded>
             <AccordionSummary
              expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1-content"
@@ -203,7 +211,7 @@ const {id} = useParams()
             </AccordionSummary>
             <AccordionDetails>
               <div
-                dangerouslySetInnerHTML={{ __html: "Tea & Coffee"}}
+                dangerouslySetInnerHTML={{ __html: getData?.inclusion}}
               />
             </AccordionDetails>
           </CustomAccordion>
@@ -239,7 +247,7 @@ const {id} = useParams()
             </AccordionSummary>
             <AccordionDetails>
               <div
-                dangerouslySetInnerHTML={{ __html:"Pick Up From Hotel / Home" }}
+                dangerouslySetInnerHTML={{ __html:getData?.Needtoknow }}
               />
             </AccordionDetails>
           </CustomAccordion>
@@ -275,13 +283,13 @@ const {id} = useParams()
             </AccordionSummary>
             <AccordionDetails>
               <div
-                dangerouslySetInnerHTML={{ __html: "If you cancel your trip before 48 hours, no cancellation amount charge is applicable" }}
+                dangerouslySetInnerHTML={{ __html: getData?.cancellationPollicy }}
               />
             </AccordionDetails>
           </CustomAccordion>
         </div>
       </div>
-      <Slides/>
+      <Slides gallery={true}/>
    <FooterSection/>
     </>
 

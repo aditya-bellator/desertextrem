@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 // import dubaiLogo from "../../assets/welcome-dubai.png"
 // import unleashImg from "../../assets/unleash.png"
 import logo from "../../assets/logo_images.png"
@@ -6,6 +6,11 @@ import "./style.scss"
 import Explore from '../explore/Explore'
 
 const Home = () => {
+  useEffect(() => {
+   
+      window.scrollTo(0, 0);
+ 
+  }, []);
   return (
     <>
       <div className="container">

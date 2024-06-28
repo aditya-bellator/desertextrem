@@ -13,6 +13,7 @@ import Form from "../form/Form";
 
 
 const DetailTabs = ({sliderData,fun}) => {
+  const [changeImage, setChangeImage] = useState(desert1)
   const [value, setValue] =useState(4);
   var settings = {
     dots: false,
@@ -103,7 +104,7 @@ const DetailTabs = ({sliderData,fun}) => {
       <div className="tabs-content">
         <div className="slides">
           <div className="preview-slide">
-            <img src={desert1} alt="" />
+            <img src={changeImage} alt="" />
             <div className={` ${checkFavourite ?"heart-icon2":"heart-icon"}`}>{!checkFavourite ?<FavoriteBorderOutlinedIcon/>:<FavoriteOutlinedIcon /> }</div>
           </div>
           <div className="slides-list">
@@ -111,7 +112,7 @@ const DetailTabs = ({sliderData,fun}) => {
               
          
             {[desert2,desert3,desert4,desert,desert5].map((item) => (
-              <img src={item} alt={item} key={item} />
+              <img src={item} alt={item} key={item} onClick={()=>setChangeImage(item)}/>
             ))}
     </Slider>
          
