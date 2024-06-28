@@ -144,7 +144,7 @@ export const Adultdouble = [{
 
     title: "kymko mxu 250 cc",
     id: "kymko-mxu-250-cc",
-    min:"30 min : 250 AED",
+    min:"30 min : 250 AED", 
     hour:"1 Hour : 400 AED",
 },
 {
@@ -159,7 +159,7 @@ export const Adultdouble = [{
     img: bluebuggy,
 
     title: "Yamaha grizzly 450 CC",
-    id: "Yamaha-grizzly-450-CC",
+    id: "Yamaha-Grizzly-450-CC",
     min:"30 min : 350 AED",
     hour:"1 Hour : 550 AED",
 },
