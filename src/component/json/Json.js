@@ -28,7 +28,7 @@ export const ExperienceSlides = [{
     img: sharmaatv250,
 
     title: "<p> SHARMAX ATV 250 CC<br>2 seater<br>30 min : 150 AED<br>1 Hour : 300 AED</p>",
-    id: "005"
+    id: "SHARMAX-ATV-250-CC"
 },
 {
     img: cardImage,
@@ -58,22 +58,22 @@ export const ExperienceSlides = [{
     img: "",
 
     title: "<p> SHARMAX ATV 250 CC<br>2 seater<br>30 min : 150 AED<br>1 Hour : 300 AED</p>",
-    id: "005"
+    id: "SHARMAX-ATV-250-CC"
 }, {
     img: sharmaatv250,
 
     title: "<p> SHARMAX ATV 250 CC<br>2 seater<br>30 min : 150 AED<br>1 Hour : 300 AED</p>",
-    id: "005"
+    id: "SHARMAX-ATV-250-CC"
 }, {
     img: sharmaatv250,
 
     title: "<p> SHARMAX ATV 250<br>2 seater<br>30 min : 150 AED<br>1 Hour : 300 AED</p>",
-    id: "005"
+    id: "SHARMAX-ATV-250-CC"
 }, {
     img: kymko250,
 
     title: "<p> kymko mxu 250 cc<br>2 seater<br>30 min : 150 AED<br>1 Hour : 300 AED</p>",
-    id: "004"
+    id: "kymko-mxu-250-cc"
 },
 ]
 
@@ -82,7 +82,7 @@ export const ExperienceSlides = [{
 
 export const detailPageJson = [{
     id: "polaris-rzr-1000-cc",
-    name: "polaris rzr 1000 cc",
+    name: "Polaris rzr 1000 cc",
     description: "For all the racing enthusiast who like to show off their racing skills and drive like there is no tomorrow, come and join the fun of driving the powerful beast POLARIS RZR 1000 cc in Dubai as the ride takes you for an adventure of speed, thrill and power as you cruise your way through the dessert, away from the hustle and bustle of the city for an unforgettable experience. With its ease of use and simple guidelines, be ready to feel that adrenaline rush kick in as you speed through the wild landscape. ",
     inclusion: "<ul> <li>Pick & Drop service provided from the hotel </li><li> Driving Polaris RZR under expert supervision. </li> <li>Taking a moment to capture those amazing moments and memories in a photo. </li><li>Having a fun time with sandboarding and displaying those dessert skills. </li><li>Enjoy a refreshing and relaxing camel ride</li><li>Soft drinks served upon arrival and throughout the tour to keep that thirst quenched. </li><li>Helmets and sunglasses are provided. </li></ul> ",
     Needtoknow: "<p>To be eligible for refund/changes certain criteria on our tour need to be followed.</p><ul><li>	In case of unforeseen circumstances, and a refund is required, it must be documented to the booking manager through a booking channel like WhatsApp, email, or direct messaging.</li><li>	At least 24 hours before tour departure, in which case there will be a 100% refund being offered. But 24-12 hours, before departure, there will be a 50% refund and there will be no refund if the cancellation happens in less than 12 hours. </li><li>Tour departure is indicated in the booking confirmation. </li><li>It is important to consider that weather conditions do not influence term number</li><p></p></ul>",
@@ -196,7 +196,7 @@ export const DuneBuggy = [
     img: polaris1000,
 
     title: "polaris rzr 1000 cc (2 seater)",
-    id: "polaris-rzr-1000-cc-2-seater",
+    id: "polaris-rzr-1000-cc",
     min:"30 min : 1000 AED",
     hour:"1 Hour : 1500 AED",
 },
@@ -212,7 +212,7 @@ export const DuneBuggy = [
     img: road1,
 
     title: "CANNAM rzr 1000 cc (2 seater)",
-    id: "CANNAM-rzr-1000-cc-2-seater",
+    id: "CANAM-RZR-1000CC-2-Seater",
     min:"30 min : 150 AED",
     hour:"1 Hour : 300 AED",
 },
@@ -224,7 +224,7 @@ export const Offroad = [
     img: road1,
 
     title: "yamaha rapto 700 cc",
-    id: "yamaha-rapto-700-cc",
+    id: "YAMAHA-RAPTO-700-CC",
     min:"30 min : 700 AED",
     hour:"1 Hour : 1200 AED",
 },
