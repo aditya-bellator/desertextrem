@@ -140,7 +140,7 @@ const {id} = useParams()
         Embrace Adventure: Thrilling Buggy <br /> Tours Await
           {/* <span>SHOW MORE</span> */}
         </div>
-        <div className="experience-section">
+        <div className="experience-section m-collapse">
           <h2>Experience</h2>
           <CustomAccordion >
             <AccordionSummary
@@ -159,17 +159,17 @@ const {id} = useParams()
                   display: "flex",
                   alignItems: "center",
                   gap: "10px",
-                  fontSize: "14px",
+                  fontSize: "16px",
                 }}
               >
-                {/* <span
+                <span
                   style={{
                     width: "8px",
                     height: "8px",
                     background: "green",
                     borderRadius: "100px",
                   }}
-                ></span> */}
+                ></span>
                 Description
               </div>
             </AccordionSummary>
@@ -195,7 +195,7 @@ const {id} = useParams()
                   display: "flex",
                   alignItems: "center",
                   gap: "10px",
-                  fontSize: "14px",
+                  fontSize: "16px",
                 }}
               >
                 <span
@@ -231,7 +231,7 @@ const {id} = useParams()
                   display: "flex",
                   alignItems: "center",
                   gap: "10px",
-                  fontSize: "14px",
+                  fontSize: "16px",
                 }}
               >
                 <span
@@ -267,7 +267,7 @@ const {id} = useParams()
                   display: "flex",
                   alignItems: "center",
                   gap: "10px",
-                  fontSize: "14px",
+                  fontSize: "16px",
                 }}
               >
                 <span
