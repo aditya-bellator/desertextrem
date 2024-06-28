@@ -22,7 +22,7 @@ import Form from "../../component/form/Form";
 import BannerSection from "../../component/bannerSection/BannerSection";
 import FooterSection from "../../component/footerSec/FooterSection";
 import FavSliderComponent from "../../component/slider/FavSlider";
-import { ExperienceSlides } from "../../component/json/Json";
+import { Adultdouble, Adultsingle, DuneBuggy, ExperienceSlides, Offroad } from "../../component/json/Json";
 export let openModelHandlerRef;
 
 const WebHome = () => {
@@ -46,11 +46,11 @@ const WebHome = () => {
     setIsOpen(true);
   };
 
-  openModelHandlerRef = openModal
   const closeModal = () => {
     setIsOpen(false);
   };
   
+  const AdultdoubleData = Adultdouble
   return (
     <div>
        <Modal isOpen={isOpen} onClose={closeModal}>
@@ -105,22 +105,25 @@ const WebHome = () => {
 
       <SliderSection
         name={"Adult (double)"}
-        openModal={openModal}
+        data={AdultdoubleData}
         para={"EMBRACE ADVENTURE: THRILLING BUGGY TOURS AWAIT"}
         />
         </div>
       <SliderSection
       openModal={openModal}
         name={"Adult (Single)"}
+        data={Adultsingle}
         para={"EMBRACE ADVENTURE: THRILLING BUGGY TOURS AWAIT"}
       />
       <SliderSection
       openModal={openModal}
         name={"DUNE BUGGY"}
+        data={DuneBuggy}
         para={"EMBRACE ADVENTURE: THRILLING BUGGY TOURS AWAIT"}
       />
       <SliderSection
       openModal={openModal}
+      data={Offroad}
         name={"OTHER OFFROAD BIKES & ATV'S (SINGLE)"}
         para={"EMBRACE ADVENTURE: THRILLING BUGGY TOURS AWAIT"}
       />
@@ -166,7 +169,7 @@ const WebHome = () => {
             </div>
             <div className="btn-sec">
               <div className="btn-explore">
-                <button onClick={()=>openModal()}>explore now</button>
+                <button onClick={()=>openModal()} >explore now</button>
               </div>
               <div className="or">or</div>
               <div className="request">

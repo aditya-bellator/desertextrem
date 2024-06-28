@@ -175,7 +175,7 @@ export const DuneBuggy = [
     hour:"1 Hour : 2000 AED",
 },
 {
-    img: cannam1000,
+    img: road1,
 
     title: "CANNAM rzr 1000 cc (2 seater)",
     id: "CANNAM-rzr-1000-cc-2-seater",
