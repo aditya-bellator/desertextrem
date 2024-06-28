@@ -52,7 +52,7 @@ export const ExperienceSlides = [{
     img: kymko250,
 
     title: "<p> kymko mxu 250 cc<br>2 seater<br>30 min : 150 AED<br>1 Hour : 300 AED</p>",
-    id: "004"
+    id: "kymko-mxu-250-cc"
 },
 {
     img: "",
@@ -98,7 +98,7 @@ export const detailPageJson = [{
 },
 {
     name: "KYMKO MXU 250 CC ",
-    id: "KYMKO-MXU-250-CC",
+    id: "kymko-mxu-250-cc",
     description: "When it comes to the prowess of Kymku MXU 250 CC, then even Dubais dessert sandbanks fall short compared to the raw and vigorous power of the automatic ATV which takes you on an escalated thrill, as you take this machine for a spin. Dessert Safari provides you with an opportunity to let you drive this beautiful machine on the sand, all by yourself for 1 hour which will be monitored under the supervision of experts, just to ensure your safety. .",
     inclusion: "<ul> <li>Pick & Drop service provided from the hotel </li><li>	Bike riding session under the supervision of our experts </li> <li>Relaxing time for a fun photo session, to capture all the memories. </li><li>Enjoy skiing on the sand for a fun ride of sandboarding.  </li><li>Explore the sand on the back of a camel as it takes a stroll for a camel ride. </li><li>Assisted riding </li><li>Refreshments and soft drinks are provided to customers. </li><li>Helmets and sunglasses are provided.  </li></ul> ",
     Needtoknow: "<p>To be eligible for refund/changes certain criteria on our tour need to be followed.  </p><ul><li>●	In case of unforeseen circumstances, and a refund is required, it must be documented to the booking manager through a booking channel like WhatsApp, email, or direct messaging. </li><li>●	At least 24 hours before tour departure, in which case there will be a 100% refund being offered. But 24-12 hours, before departure, there will be a 50% refund and there will be no refund if the cancellation happens in less than 12 hours. </li><li>Tour departure is indicated in the booking confirmation. </li></ul><p>It is important to consider that weather conditions do not influence term number 2. </p>",
