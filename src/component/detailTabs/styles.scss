@@ -9,6 +9,7 @@
       padding: 0%;
       width: 100%;
       display: flex;
+      align-items: center;
       gap: 10px;
       a{
         width: 16%;
@@ -36,7 +37,7 @@
   .tabs-content {
     width: calc(100% - 40px);
     padding: 20px;
-    height: 433px;
+    height: 550px;
     border-radius: 5px;
     filter: drop-shadow(0px 6px 24.5px rgba(22, 19, 22, 0.09));
     background-color: #ffffff;
@@ -56,7 +57,7 @@ gap: 20px;
       gap: 5px;
       .preview-slide {
         width: 100%;
-        height: 75%;
+        height: 80%;
         position: relative;
         img {
           width: 100%;
@@ -101,7 +102,7 @@ gap: 20px;
         }
       }
       .slides-list {
-        height: 25%;
+        height: 20%;
         width: 100%;
         // display: grid;
         // grid-template-columns: repeat(4, 1fr);
@@ -152,4 +153,7 @@ color: white !important;
 .bg-green{
   background-color: #29a482 !important;
   color: white !important;
+  height: 48px !important;
+  margin: auto;
+  border-radius: 5px;
 }

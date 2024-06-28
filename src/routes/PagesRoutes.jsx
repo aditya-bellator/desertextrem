@@ -19,11 +19,11 @@ export const mobilerouter =(isMobile)=>{
             path: "/",
             element: <TourDetailLayout />,
             children:[{
-              path:"/tour-detail/",
+              path:"/tour-detail/:id",
               element:<TourDetail/>
             }]
           }: {
-            path:"/tour-detail/",
+            path:"/tour-detail/:id",
             element:<MobileDetailPage/>
           },
         ,

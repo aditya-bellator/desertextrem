@@ -152,18 +152,10 @@ color: #38343a;
         width: 100%;
         justify-content: space-between;
         display: flex;
-        align-items: end;
+        align-items: center;
         // background-color: rebeccapurple;
-        p{
-            color:red;
-            margin: 0%;
-        }
-        .star-rating{
-            text-align: end;
-            width: 100%;
-        }
         .number-rating {
-            display: flex;
+            width: 100%;
             align-items: center;
             font-size: 10px;
             color: black;
@@ -185,9 +177,49 @@ color: #38343a;
               margin: 0%;
               padding: 0%;
               color: #3566bc;
+              &:nth-child(1){
+                font-size: 18px;
+              }
+              &:nth-child(2){
+                color: black;
+              }
               //   font-size: 10px;
             }
           }
+       
+        .star-rating{
+            text-align: end;
+            width: 100%;
+        }
+       
+    }
+    .price-btn{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p{
+            color:red;
+            padding: 0%;
+            margin: 0%;
+            font-size: 22px;
+        }
+        .book-btn{
+
+            width: 40%;
+            display: flex;
+            justify-content: end;
+button{
+    padding-inline: 10px;
+    width: 100%;
+    height: 50px;
+    padding-block: 5px;
+    border-radius: 10px;
+background-color: #00b932;
+border: 3px solid rgba(255,255,255,0.89);
+color: white;
+
+}
+        }
     }
     hr{
         opacity: 0.702;

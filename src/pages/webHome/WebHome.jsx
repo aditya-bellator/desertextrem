@@ -22,6 +22,7 @@ import Form from "../../component/form/Form";
 import BannerSection from "../../component/bannerSection/BannerSection";
 import FooterSection from "../../component/footerSec/FooterSection";
 import FavSliderComponent from "../../component/slider/FavSlider";
+import { ExperienceSlides } from "../../component/json/Json";
 export let openModelHandlerRef;
 
 const WebHome = () => {
@@ -81,17 +82,17 @@ const WebHome = () => {
         centeredSlides={true}
         roundLengths={true}
         loop={true}
-        modules={[Autoplay]}
-          autoplay={{
-                    delay: 555500,
-                    disableOnInteraction: false
-                }}
+        // modules={[Autoplay]}
+        //   autoplay={{
+        //             delay: 5500,
+        //             disableOnInteraction: false
+        //         }}
         // loopAdditionalSlides={30}
         pagination={{
           clickable: true,
         }}
       >
-        {[cardImage,sharmaATV250, kymko250, cardImage,polaris1000,sharmaATV250, kymko250, cardImage,polaris1000,sharmaatv250, kymko250, cardImage,sharmaATV250,polaris1000].map((item)=><SwiperSlide key={item} >
+        {ExperienceSlides.map((item)=><SwiperSlide key={item} >
     
     <SliderCard openModal={openModal} item={item}/>
   </SwiperSlide>)}
@@ -137,7 +138,7 @@ const WebHome = () => {
           <div className="slider-bg"></div>
         </div>
       </div>
-      <div className="gallery-section">
+      <div className="gallery-section" id="Gallery">
         <div className="gallery-heading">Gallery</div>
         <div className="gallery-sub-heading">
           Dubai Safari's stunning wildlife gallery

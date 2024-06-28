@@ -6,6 +6,8 @@ import FavSliderComponent from "../../component/slider/FavSlider";
 import DetailTabs from "../../component/detailTabs/DetailTabs";
 import DetailCard from "../../component/detailsPageCard/DetailCard";
 import {favorite}from "../../assets"
+import { detailPageJson } from "../../component/json/Json";
+import { useParams } from "react-router-dom";
 
 const TourDetail = () => {
   const names = [
@@ -24,13 +26,17 @@ const TourDetail = () => {
   // const houseRuleData = houseRule && houseRule?.data[0]
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo(0, 500);
   }, []);
+  const {id} = useParams()
+
+  const getData = detailPageJson.find((item)=>item.id == id)
+  console.log(getData)
   return (
     <>
       <div className="heading">
         <div className="heading-left-col">
-          <h1>Dessert Safari: Quad Bike</h1>
+          <h1>{getData?.name}</h1>
           <ul>
             {[1, 2, 3]?.map((item) => {
               // return (
@@ -75,21 +81,11 @@ const TourDetail = () => {
       </div>
       <DetailTabs />
       <div className="short-description">
-        Get set to explore the Dubai desert in its finest hour and warm weather.
-        It's the perfect time of the day when the dessert comes to life, and
-        gaze under the stars for an unforgettable evening that aims at making
-        your evening filled with serene lights and away from the hustle and
-        bustle of the city. So sit back and relax as we take you on a long
-        journey to the stars.
+      {getData?.description}
       </div>
       <div id="highlights">
         <div className="highlights-section">
-          <DetailCard name={"Highlights"} list={<ul> <li> You’ll get to have a thrilling experience</li>
-          <li>Ride a 1000 CC Polaris rzr .</li>
-          <li>Feel the desert winds when you go up and down the red dunes</li>
-          <li>Well- maintained SUV’s</li>
-          <li>Well-thought itinerary</li>
-          <li>Cordial staff attitude</li></ul>}/>
+          <DetailCard name={"Highlights"} list={getData?.inclusion}/>
           <DetailCard name={"Inclusions"} list={<ul> 
   <li>BBQ & Buffet Dinner (Veg & non-veg Both Available)</li>
   <li>Tea & Coffee</li>
@@ -101,16 +97,8 @@ const TourDetail = () => {
    <li>Safari Guide (Speaking Guide)</li> 
   <li>Drop Off Time: 21:30 To 22:00
 </li></ul>}/>
-          <DetailCard name={"Need To Know"} list={<ul>
-            <li>if 6 persons from 1 family or friends than we will upgrade to private tour private car</li>
-          </ul>}/>
-          <DetailCard name={"Cancellation Policy"}list={<ul>
-  <li>If you cancel your trip before 48 hours, no cancellation amount charge is applicable</li>
-  <li>In case you cancel within 24-48 hours of your travel date then 50 % of the cancellation charge is applicable</li>
-  <li>If you cancel the trip 24 hours before the tour date, you’ll have to pay 100% cancellation charges as mentioned on the website.</li>
-  <li>Please note the refund will be made within 7 working days after your cancellation date and the amount will depend on the previously mentioned cancellation policy</li> 
-
-</ul>}/>
+          <DetailCard name={"Need To Know"} list={getData?.Needtoknow}/>
+          <DetailCard name={"Cancellation Policy"}list={getData?.cancellationPollicy}/>
         </div>
       </div>
       <div className="guest-review">

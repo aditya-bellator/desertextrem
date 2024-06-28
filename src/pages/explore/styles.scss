@@ -422,7 +422,7 @@ background-image: url("../../assets/white_bg_02.jpg");
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-block: 10%;
+    margin-block: 5%;
     p{
       width: 100%;
       white-space: nowrap;
@@ -443,8 +443,8 @@ background-image: url("../../assets/white_bg_02.jpg");
       color: #454a4f;
       font-weight: 900;
       margin: 0;
-      font-style: italic;
-      font-family: "Akira Expanded";
+      // font-style: italic;
+      // font-family: "Akira Expanded";
       text-align: center;
   
     }
@@ -470,7 +470,7 @@ background-image: url("../../assets/white_bg_02.jpg");
   .experience-heading {
     width: 90%;
     margin: auto;
-    margin-top: 10%;
+    margin-top: 4%;
     img {
       width: 100%;
     }
@@ -498,17 +498,18 @@ background-image: url("../../assets/white_bg_02.jpg");
       }
     }
   }
-}
-.slider-container {
-  margin-top: 2%;
-  margin-bottom: 10%;
-  // margin: 5% 10%;
- 
-  .slick-dots li.slick-active button:before {
-    opacity: 0.75;
-    color: #f9aa5a;
+  .slider-container {
+    margin-top: 8%;
+    margin-bottom: 10%;
+    // margin: 5% 10%;
+   
+    .slick-dots li.slick-active button:before {
+      opacity: 0.75;
+      color: #f9aa5a;
+    }
   }
 }
+
 
 .enquiry-section {
   width: 100%;

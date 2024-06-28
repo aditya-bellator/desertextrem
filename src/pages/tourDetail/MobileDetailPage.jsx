@@ -7,6 +7,7 @@ import KeyboardBackspaceOutlinedIcon from "@mui/icons-material/KeyboardBackspace
 import ReplyOutlinedIcon from "@mui/icons-material/ReplyOutlined";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 ////styles
 import "./mobileDetail.scss";
 import { Rating } from "@mui/material";
@@ -14,6 +15,8 @@ import { CustomAccordion } from "./styled";
 import { Link } from "react-router-dom";
 import Modal from "../../component/modal/Modal";
 import Form from "../../component/form/Form";
+import FooterSection from "../../component/footerSec/FooterSection";
+import Slides from "../explore/Slides";
 
 const MobileDetailPage = () => {
 const handleOpen = () => setOpen(true);
@@ -48,7 +51,7 @@ const closeModal = () => {
               <button>Buggy Tours</button>
             </div>
             <div className="head-right-col">
-              <button onClick={()=>openModal()}>Book Now</button>
+             
               <div className="head-icon">
                 <ReplyOutlinedIcon />
               </div>
@@ -84,38 +87,53 @@ const closeModal = () => {
           </div>
         </div>
         <div className="detail-heading">
-          <h2>ADULT (DOUBLE)</h2>
+          <h2>Ultimate Adventure Dessert Safari: Quad Bike Thrills Included.</h2>
         </div>
         <div className="price-rating-section">
-          <p>AED 333/-</p>
-          <div>
-            <div className="star-rating">
-              <Rating
-                size="small"
-                name="simple-controlled"
-                color="green"
-                value={5}
-                // onChange={(event, newValue) => {
-                //   setValue(newValue);
-                // }}
-              />
-            </div>
-            <div className="number-rating">
-              <span>{5}</span> <p>Very Good</p>
+        <div className="number-rating">
+      
+
+              <p>Very Good</p>
+              <p>
+
               (44 VERIFIED RATINGS)
-            </div>
-          </div>
+              </p>
+       
+            </div>  
+          <div className="star-rating">
+
+<Rating
+  size="small"
+  name="simple-controlled"
+  color="green"
+  value={5}
+  // onChange={(event, newValue) => {
+  //   setValue(newValue);
+  // }}
+/>
+</div>
+        
+      
         </div>
+        <div className="price-btn">
+
+        <p>AED 333/-</p>
+<div className="book-btn">
+
+<button onClick={()=>openModal()} >Book Now</button>
+</div>
+</div>
         <hr />
         <div className="detail-description">
-        Embrace Adventure: Thrilling Buggy Tours Await
+        Embrace Adventure: Thrilling Buggy <br /> Tours Await
           {/* <span>SHOW MORE</span> */}
         </div>
         <div className="experience-section">
           <h2>Experience</h2>
-          <CustomAccordion>
+          <CustomAccordion defaultExpanded>
             <AccordionSummary
-              expandIcon={null}
+              // expandIcon={null}
+              expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1-content"
               id="panel1-header"
               sx={{
@@ -151,7 +169,7 @@ const closeModal = () => {
           </CustomAccordion>
           <CustomAccordion>
             <AccordionSummary
-              expandIcon={null}
+             expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1-content"
               id="panel1-header"
               sx={{
@@ -187,7 +205,7 @@ const closeModal = () => {
           </CustomAccordion>
           <CustomAccordion>
             <AccordionSummary
-              expandIcon={null}
+           expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1-content"
               id="panel1-header"
               sx={{
@@ -223,7 +241,7 @@ const closeModal = () => {
           </CustomAccordion>
           <CustomAccordion>
             <AccordionSummary
-              expandIcon={null}
+              expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1-content"
               id="panel1-header"
               sx={{
@@ -259,7 +277,8 @@ const closeModal = () => {
           </CustomAccordion>
         </div>
       </div>
-   
+      <Slides/>
+   <FooterSection/>
     </>
 
   );

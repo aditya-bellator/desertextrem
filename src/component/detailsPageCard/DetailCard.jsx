@@ -9,12 +9,12 @@ const DetailCard = ({ name, list }) => {
       <Chart />:
     <div className="detail-card">
       <h2>{name}</h2>
-      <ul>
+      {/* <ul> */}
     
-               {/* <div dangerouslySetInnerHTML={{ __html: list }} /> */}
-         {list}
+               <div dangerouslySetInnerHTML={{ __html: list }} />
+      
          
-      </ul>
+      {/* </ul> */}
 
     </div>
     }

@@ -3,7 +3,6 @@ import React from 'react'
 // import unleashImg from "../../assets/unleash.png"
 import logo from "../../assets/logo_images.png"
 import "./style.scss"
-import { Link } from 'react-router-dom'
 import Explore from '../explore/Explore'
 
 const Home = () => {

@@ -4,6 +4,7 @@ import { PiInstagramLogoLight } from 'react-icons/pi';
 import { logo } from '../../assets';
 
 import "./styles.scss"
+import { MdCopyright } from 'react-icons/md';
 const FooterSection = () => {
   return (
     <section className='footer-sec'>
@@ -33,7 +34,8 @@ const FooterSection = () => {
           </li>
         </ul>
     <div className="copywrite">
-      <p>@ 2024 DESERT XTREME</p>
+      <p><MdCopyright />
+      2024 DESERT XTREME ADVENTURE</p>
     </div>
     </div>
     </section>
