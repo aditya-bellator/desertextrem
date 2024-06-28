@@ -453,6 +453,10 @@ background-image: url("../../assets/white_bg_02.jpg");
 }
 
 .experience-sec {
+  .slick-slide div{
+    margin-inline: 0px !important;
+
+  }
   .slick-dots {
     bottom: -35px;
     li{
@@ -496,7 +500,7 @@ background-image: url("../../assets/white_bg_02.jpg");
   }
 }
 .slider-container {
-  margin-top: 10%;
+  margin-top: 2%;
   margin-bottom: 10%;
   // margin: 5% 10%;
  
