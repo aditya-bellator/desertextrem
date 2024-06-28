@@ -1,4 +1,4 @@
-import { cardImage,sharmaatv250,kymko250,sharma320 ,sharma180} from "../../assets";
+import { kymko250,cardImage,favorite,favorite1,favorite2, desert,desert1,desert2,desert3,desert4,desert5,tickIcon,headingImg,last,sharma320,user, road1,half ,great ,bike, road2, cannam1000, cannam4,sharma180, bluebuggy ,polaris1000,sharmaATV250,sharmaatv250 ,twinRider, sliderImg, desertImg, singleImg, adventureImg, desertEx,logo, galleryImg,whiteBg, } from "../../assets";
 const cancellationPollicy = "<ul><li>If you cancel your trip before 48 hours, no cancellation amount charge is applicable</li> <li>In case you cancel within 24-48 hours of your travel date then 50 % of the cancellation charge is applicable</li> <li>If you cancel the trip 24 hours before the tour date, you’ll have to pay 100% cancellation charges as mentioned on the website.</li> <li>Please note the refund will be made within 7 working days after your cancellation date and the amount will depend on the previously mentioned cancellation policy</li></ul>"
 export const ExperienceSlides = [{
     img: cardImage,
@@ -49,7 +49,7 @@ export const ExperienceSlides = [{
 
 },
 {
-    img: "",
+    img: kymko250,
 
     title: "<p> kymko mxu 250 cc<br>2 seater<br>30 min : 150 AED<br>1 Hour : 300 AED</p>",
     id: "004"
@@ -60,17 +60,17 @@ export const ExperienceSlides = [{
     title: "<p> SHARMAX ATV 250 CC<br>2 seater<br>30 min : 150 AED<br>1 Hour : 300 AED</p>",
     id: "005"
 }, {
-    img: "",
+    img: sharmaatv250,
 
     title: "<p> SHARMAX ATV 250 CC<br>2 seater<br>30 min : 150 AED<br>1 Hour : 300 AED</p>",
     id: "005"
 }, {
-    img: "",
+    img: sharmaatv250,
 
     title: "<p> SHARMAX ATV 250 CROSS<br>2 seater<br>30 min : 150 AED<br>1 Hour : 300 AED</p>",
     id: "005"
 }, {
-    img: "",
+    img: kymko250,
 
     title: "<p> kymko mxu 250 cc<br>2 seater<br>30 min : 150 AED<br>1 Hour : 300 AED</p>",
     id: "004"
@@ -89,7 +89,7 @@ export const detailPageJson = [{
     cancellationPollicy:cancellationPollicy,
 }]
 export const Adultdouble = [{
-    img: "",
+    img: kymko250,
 
     title: "kymko mxu 250 cc",
     id: "kymko-mxu-250-cc",
@@ -97,7 +97,7 @@ export const Adultdouble = [{
     hour:"1 Hour : 400 AED",
 },
 {
-    img: "",
+    img: sharma320,
 
     title: "SHARMAX hummer 320 CC",
     id: "SHARMAX-hummer-320-CC",
@@ -105,15 +105,19 @@ export const Adultdouble = [{
     hour:"1 Hour : 500 AED",
 },
 {
-    img: "",
+    img: bluebuggy,
 
     title: "Yamaha grizzly 450 CC",
     id: "Yamaha-grizzly-450-CC",
     min:"30 min : 350 AED",
     hour:"1 Hour : 550 AED",
 },
+]
+
+export const Adultsingle = [
+
 {
-    img: "",
+    img: kymko250,
 
     title: "kymko mxu 250 cc",
     id: "kymko-mxu-250-cc",
@@ -121,7 +125,7 @@ export const Adultdouble = [{
     hour:"1 Hour : 300 AED",
 },
 {
-    img: "",
+    img: sharma320,
 
     title: "SHARMAX hummer 320 CC",
     id: "SHARMAX-hummer-320-CC",
@@ -129,15 +133,17 @@ export const Adultdouble = [{
     hour:"1 Hour : 350 AED",
 },
 {
-    img: "",
+    img: sharmaATV250,
 
     title: "SHARMAX ATV 250 CC",
     id: "SHARMAX-ATV-250-CC",
     min:"30 min : 150 AED",
     hour:"1 Hour : 300 AED",
 },
+]
+export const DuneBuggy = [
 {
-    img: "",
+    img: polaris1000,
 
     title: "polaris rzr 1000 cc (2 seater)",
     id: "polaris-rzr-1000-cc-2-seater",
@@ -145,7 +151,7 @@ export const Adultdouble = [{
     hour:"1 Hour : 1500 AED",
 },
 {
-    img: "",
+    img: cannam4,
 
     title: "polaris rzr 1000 cc (4 seater)",
     id: "polaris-rzr-1000-cc-4-seater",
@@ -153,15 +159,19 @@ export const Adultdouble = [{
     hour:"1 Hour : 2000 AED",
 },
 {
-    img: "",
+    img: cannam1000,
 
     title: "CANNAM rzr 1000 cc (2 seater)",
     id: "CANNAM-rzr-1000-cc-2-seater",
     min:"30 min : 150 AED",
     hour:"1 Hour : 300 AED",
 },
+]
+
+export const Offroad = [
+
 {
-    img: "",
+    img: road1,
 
     title: "yamaha rapto 700 cc",
     id: "yamaha-rapto-700-cc",
@@ -169,7 +179,7 @@ export const Adultdouble = [{
     hour:"1 Hour : 1200 AED",
 },
 {
-    img: "",
+    img: bike,
 
     title: "dirt bike 280/320 cc",
     id: "dirt-bike-280/320-cc",
@@ -177,20 +187,13 @@ export const Adultdouble = [{
     hour:"1 Hour : 800 AED",
 },
 {
-    img: "",
+    img: road2,
 
     title: "polaris sportsman 570 cc",
     id: "polaris-sportsman-570-cc",
     min:"30 min : 350 AED",
     hour:"1 Hour : 700 AED",
 },
-{
-    img: "",
 
-    title: "kymko mxu 250 cc",
-    id: "kymko-mxu-250-cc",
-    min:"30 min : 250 AED",
-    hour:"1 Hour : 400 AED",
-},
 
 ]
