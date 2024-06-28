@@ -11,6 +11,7 @@
       display: flex;
       align-items: center;
       gap: 10px;
+      position: relative;
       a{
         width: 16%;
         text-decoration: none;
@@ -151,9 +152,13 @@ background-color: #ada29d !important;
 color: white !important;
 }
 .bg-green{
-  background-color: #29a482 !important;
+  background-color: #df723c !important;
   color: white !important;
   height: 48px !important;
   margin: auto;
   border-radius: 5px;
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  width: 16%;
 }

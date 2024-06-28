@@ -12,11 +12,12 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import "./mobileDetail.scss";
 import { Rating } from "@mui/material";
 import { CustomAccordion } from "./styled";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Modal from "../../component/modal/Modal";
 import Form from "../../component/form/Form";
 import FooterSection from "../../component/footerSec/FooterSection";
 import Slides from "../explore/Slides";
+import { detailPageJson } from "../../component/json/Json";
 
 const MobileDetailPage = () => {
 const handleOpen = () => setOpen(true);
@@ -31,6 +32,9 @@ const openModal = () => {
 const closeModal = () => {
   setIsOpen(false);
 };
+const {id} = useParams()
+
+  const getData = detailPageJson.find((item)=>item.id == id)
   return (
     <>
     <Modal isOpen={isOpen} onClose={closeModal}>
@@ -87,7 +91,7 @@ const closeModal = () => {
           </div>
         </div>
         <div className="detail-heading">
-          <h2>Ultimate Adventure Dessert Safari: Quad Bike Thrills Included.</h2>
+          <h2>{getData.name}</h2>
         </div>
         <div className="price-rating-section">
         <div className="number-rating">
@@ -117,7 +121,7 @@ const closeModal = () => {
         </div>
         <div className="price-btn">
 
-        <p>AED 333/-</p>
+        <p>AED {getData?.price}/-</p>
 <div className="book-btn">
 
 <button onClick={()=>openModal()} >Book Now</button>
