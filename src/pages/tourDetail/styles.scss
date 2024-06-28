@@ -19,6 +19,7 @@
       .heading-left-col {
         width: auto;
         h1 {
+          margin-bottom: 0px;
           font-size: 31px;
           line-height: 40px;
           color: #464646;
@@ -287,15 +288,16 @@ font-weight: bold;
     }
   }
 }
-.m-collapse{
+.m-collapse2{
   color: black;
  
   ul{
     padding-left: 20px;
-  }
-  li{
-    line-height: 25px;
-    font-weight: 300;
-    font-family: sans-serif;
+    li{
+      font-size: 12px;
+      line-height: 25px;
+      font-weight: 300;
+      font-family: sans-serif;
+    }
   }
 }
