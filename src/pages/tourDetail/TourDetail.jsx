@@ -31,7 +31,6 @@ const TourDetail = () => {
   const {id} = useParams()
 
   const getData = detailPageJson.find((item)=>item.id == id)
-  console.log(getData)
   return (
     <>
       <div className="heading">
