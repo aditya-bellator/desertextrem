@@ -3,7 +3,7 @@ import './style.scss'
 
 const Chart = () => {
   return (
-    <div className="col-xs-12 col-md-5" style={{borderRadius:"5px",overflow:"hidden",padding:"5px",background:"white"}}>
+    <div className="col-xs-12 col-md-5" style={{borderRadius:"5px",overflow:"hidden",padding:"5px",background:"white",    filter: "drop-shadow(0px 6px 24.5px rgba(22, 19, 22, 0.09))"}}>
       <div className="maintainancecpm">
         <div className="safari-section">
           <div className="safari-header">Quad Bike Safari (100 CC Bike)</div>

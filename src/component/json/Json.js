@@ -105,8 +105,9 @@ export const detailPageJson = [{
     cancellationPollicy:cancellationPollicy,
 },
 {
-    id:"dirt bike 280/320 cc",
-    name:"dirt bike 280/320 cc",
+    id:"dirt-bike-280-320-cc",
+    name:"Dirt bike 280/320 cc",
+    price:550,
     description:"Grab our amazing Dirt Bike 280/320 CC and get a chance to explore the pristine desert landscapes of Dubai for an adrenaline fuelled journey, only with Desert Xtreme. Get ready to challenge the amazing desert terrains and become the master of the desert. Not only this but get a chance to ride the old school camel and snap some insta worthy pictures with falcons. Our expert guides will be assisting you throughout your ride, while also giving you many insights into the Bedouin culture. It is the perfect opportunity to not just ride the desert winds but to understand the rich heritage and culture of Dubai’s deserts. Pack your bags and get on those dirt bikes!",
     inclusion:"<ul><li>	The age limit for driving the Bike is 18+ </li><li>	The trip duration is 4 hours</li><li>	The capacity of the one Dirk bike is one person only</li><li>	You will get to ride the bike for 60 minutes</li><li>	Pick up and drop off can be made available from your place of stay</li><li>	You will be riding a Dirt Bike 280/320 CC<li/><li>	You will also be assisted while riding the bike to ensure safety</li><li>	Stop and get clicked</li><li>	You will get to ride a camel</li><li>	You will get to sandboard</li><li>	Get clicked with a Falcon</li><li>	Helmet and sunglasses specially for riding </li><li>	Non-Alcoholic Beverages for refreshment</li></ul>",
     Needtoknow:"<p>Read below the details carefully and know if you’re eligible for a refund. These steps give you an insight into our cancellation and refund process:</p><ul><li>Request for refund or any changes must be made in writing to the operation manager via Whatsapp or Instagram Direct Messages.</li><li> If the trip is canceled before 24 hours then the complete amount will be refunded</li><li>In case you cancel within 24-12 hours of your travel date then 50 % of the amount will be refunded</li><li>If you cancel the trip less than 12 hours before the tour date, no refund will be made to you </li><h3>Meta Description</h3><p>Get the much-awaited adrenaline rush in the deserts of Dubai on the exhilarating Dirt Bikes 280/320 CC and quench your thirst for thrill and adventure. </p></ul>",
@@ -240,7 +241,7 @@ export const Offroad = [
     img: bike,
 
     title: "dirt bike 280/320 cc",
-    id: "dirt-bike-280/320-cc",
+    id: "dirt-bike-280-320-cc",
     min:"30 min : 500 AED",
     hour:"1 Hour : 800 AED",
 },
