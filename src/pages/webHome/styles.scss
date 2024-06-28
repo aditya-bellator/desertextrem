@@ -259,6 +259,13 @@
             outline: none;
             border: none;
             text-transform: uppercase;
+            border: 1px solid #29a482;
+            &:hover{
+background-color: white;
+border: 1px solid #29a482;
+color: #29a482;
+transition: 0.3s;
+            }
           }
         }
         .or {

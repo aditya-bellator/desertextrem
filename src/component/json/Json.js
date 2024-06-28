@@ -8,7 +8,7 @@ export const ExperienceSlides = [{
 }, {
     img: sharma180,
 
-    title: "<p> SHARMAX ATV CROSS 180 CC<br>2 seater<br>30 min : 150 AED<br>1 Hour : 300 AED</p>",
+    title: "<p> SHARMAX ATV 180 CC<br>2 seater<br>30 min : 150 AED<br>1 Hour : 300 AED</p>",
     id: "SHARMAX-ATV-CROSS-180-CC"
 
 },
@@ -67,7 +67,7 @@ export const ExperienceSlides = [{
 }, {
     img: sharmaatv250,
 
-    title: "<p> SHARMAX ATV 250 CROSS<br>2 seater<br>30 min : 150 AED<br>1 Hour : 300 AED</p>",
+    title: "<p> SHARMAX ATV 250<br>2 seater<br>30 min : 150 AED<br>1 Hour : 300 AED</p>",
     id: "005"
 }, {
     img: kymko250,
@@ -159,7 +159,7 @@ export const DuneBuggy = [
     hour:"1 Hour : 2000 AED",
 },
 {
-    img: cannam1000,
+    img: road1,
 
     title: "CANNAM rzr 1000 cc (2 seater)",
     id: "CANNAM-rzr-1000-cc-2-seater",

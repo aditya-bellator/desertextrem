@@ -1,10 +1,10 @@
-import React from 'react'
 // import "./styles.scss"
 import "./gallery.scss"
-import { sliderImg } from '../../assets'
-import { CiHeart } from "react-icons/ci";
 
-const Card = ({title,hours,min,img,openModal}) => {
+import { useNavigate } from 'react-router-dom';
+
+const Card = ({title,hours,min,img,id}) => {
+  const nav =useNavigate()
   return (
     <div className='card-container'>
       
@@ -15,8 +15,7 @@ const Card = ({title,hours,min,img,openModal}) => {
         </span>
 
       </div> */}
-      <div className="img-sec">
-        <img src={img} alt="cardImg" />
+      <div className="img-sec" style={{backgroundImage:`url(${img})`}}>
       </div>
       <div className="detail-sec">
         <div className="title">
@@ -28,14 +27,9 @@ const Card = ({title,hours,min,img,openModal}) => {
             <span>{hours}</span>
           </div>
           <div className="booknow">
-          {openModal?   <button className="book-btn" onClick={openModal}>
-              book now
-            </button>: <a href="#enquiry">
-
-            <button className="book-btn" >
+          <button className="book-btn" onClick={()=>nav(`/tour-detail/${id}`)}>
               book now
             </button>
-            </a>}
 
           </div>
         </div>
