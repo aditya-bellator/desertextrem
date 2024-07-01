@@ -8,6 +8,7 @@ import "./styles.scss"
 import SliderCard from '../../component/sliderCard/SliderCard';
 import Card from '../../component/card/Card';
 import Gallerycard from '../../component/card/Gallerycard';
+import {Adultdouble, Adultsingle, DuneBuggy, Offroad} from "../../component/json/Json"
 const Slides = ({gallery}) => {
 
   var settings2 = {
@@ -56,9 +57,13 @@ const Slides = ({gallery}) => {
         <div className="twin-rider-slider">
 
           <Slider {...settings2}>
-            <Card title="kymko mxu 250 cc" min="30 min : 250 AED" hours="1 Hour : 400 AED" img={sliderImg}/>
-            <Card title="SHARMAX hummer 320 CC" min="30 min : 300 AED" hours="1 Hour : 500 AED" img={sharma320}/>
-            <Card title="kymko mxu 250 cc" min="30 min : 350 AED" hours="1 Hour : 550 AED" img={bluebuggy} />
+            {Adultdouble?.map((item,index)=>{
+              return(
+
+                <Card  id={item?.id} title={item?.title} min={item?.min} hours={item?.hour} img={item?.img} key={index}/>
+              )
+            })}
+
 
           </Slider>
           <div className="overlay"></div>
@@ -84,9 +89,13 @@ const Slides = ({gallery}) => {
         <div className="twin-rider-slider">
 
           <Slider {...settings2}>
-          <Card title="kymko mxu 250 cc" min="30 min : 150 AED" hours="1 Hour : 300 AED" img={sliderImg}/>
-            <Card title="SHARMAX hummer 320 CC" min="30 min : 200 AED" hours="1 Hour : 350 AED" img={sharma320}/>
-            <Card title="kymko mxu 250 cc" min="30 min : 150 AED" hours="1 Hour : 300 AED" img={sharmaatv250} />
+            {Adultsingle?.map((item,index)=>{
+              return(
+
+                <Card  id={item?.id} title={item?.title} min={item?.min} hours={item?.hour} img={item?.img} key={index}/>
+              )
+            })}
+          
 
 
           </Slider>
@@ -112,10 +121,14 @@ const Slides = ({gallery}) => {
 
         <div className="twin-rider-slider">
 
-          <Slider {...settings2}>
-          <Card title="polaris rzr 1000 cc (4 seater)" min="30 min : 1500 AED " hours="1 Hour : 2000 AED" img={cannam4}/>
-            <Card title="CANNAM rzr 1000 cc (2 seater)" min="30 min : 150 AED " hours="1 Hour : 300 AED" img={cannam1000}/>
-            <Card title="polaris rzr 1000 cc (2 seater)" min="30 min : 1000 AED " hours="1 Hour : 1500 AED" img={polaris1000} />
+        <Slider {...settings2}>
+            {DuneBuggy?.map((item,index)=>{
+              return(
+
+                <Card  id={item?.id} title={item?.title} min={item?.min} hours={item?.hour} img={item?.img} key={index}/>
+              )
+            })}
+          
 
 
           </Slider>
@@ -142,10 +155,14 @@ const Slides = ({gallery}) => {
 
         <div className="twin-rider-slider">
 
-          <Slider {...settings2}>
-          <Card title="yamaha rapto 700 cc" min="30 min : 700 AED " hours="1 Hour : 1200 AED" img={road1} />
-            <Card title="dirt bike 280/320 cc" min="30 min : 500 AED " hours="1 Hour : 800 AED" img={bike} />
-            <Card title="polaris sportsman 570 cc" min="30 min : 350 AED " hours="1 Hour : 700 AED" img={road2} />
+        <Slider {...settings2}>
+            {Offroad?.map((item,index)=>{
+              return(
+
+                <Card  id={item?.id} title={item?.title} min={item?.min} hours={item?.hour} img={item?.img} key={index}/>
+              )
+            })}
+          
 
 
           </Slider>

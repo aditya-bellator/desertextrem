@@ -27,10 +27,10 @@ const TourDetail = () => {
   // const {data:houseRule} = useHouseRuleQuery(id)
   // const houseRuleData = houseRule && houseRule?.data[0]
 
+  const {id} = useParams()
   useEffect(() => {
     window.scrollTo(0, 500);
-  }, []);
-  const {id} = useParams()
+  }, [id]);
 
   const getData = detailPageJson.find((item)=>item.id == id)
   return (
@@ -38,18 +38,7 @@ const TourDetail = () => {
       <div className="heading">
         <div className="heading-left-col">
           <h1>{getData?.name}</h1>
-          <ul>
-            {[1, 2, 3]?.map((item) => {
-              // return (
-              //   <li key={item}>
-              //     <p>
-              //       <AccessTimeIcon />
-              //     </p>
-              //     {item}
-              //   </li>
-              // );
-            })}
-          </ul>
+          
         </div>
         <div className="heading-right-col">
           {/* <FormControl sx={{ width: "100%" }}>
@@ -87,22 +76,12 @@ const TourDetail = () => {
       <div id="highlights">
         <div className="highlights-section m-collapse2">
           <DetailCard name={"Inclusion"} list={getData?.inclusion}/>
-          <DetailCard name={"Inclusions"} list={<ul> 
-  <li>BBQ & Buffet Dinner (Veg & non-veg Both Available)</li>
-  <li>Tea & Coffee</li>
-  <li>Unlimited Soft drinks & Water</li>
-  <li>Live Arabic Tanoura Dance Show</li> 
-  <li>Pick Up From Hotel / Home</li>
-  <li>Pickup and Drop off by 4×4 Vehicle</li>
-   <li>Pickup Time: 03:00 To 3:30</li>
-   <li>Safari Guide (Speaking Guide)</li> 
-  <li>Drop Off Time: 21:30 To 22:00
-</li></ul>}/>
+          <DetailCard name={"Inclusions"} price={getData?.price}/>
           <DetailCard name={"Need To Know"} list={getData?.Needtoknow}/>
           <DetailCard name={"Cancellation Policy"}list={getData?.cancellationPollicy}/>
         </div>
       </div>
-      <div className="guest-review">
+      <div className="guest-review" id="review">
         <div className="guest-review-left-col">Guest Reviews</div>
         <div className="guest-review-right-col">
           <ul>

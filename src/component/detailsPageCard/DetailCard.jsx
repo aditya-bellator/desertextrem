@@ -2,11 +2,11 @@ import React from "react";
 ////styles
 import "./styles.scss";
 import Chart from "../tablechart/Chart";
-const DetailCard = ({ name, list }) => {
+const DetailCard = ({ name, list,price }) => {
   return (
     <>
     {name == "Inclusions"?
-      <Chart />:
+      <Chart price={price}/>:
     <div className="detail-card">
       <h2>{name}</h2>
       {/* <ul> */}

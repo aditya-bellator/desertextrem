@@ -1,14 +1,13 @@
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 // import { cardImage } from "../../assets/images";
 ////styles
 import "./styles.scss";
-const SliderCard2 = ({ image ,name,description,price}) => {
-  const nav = useNavigate()
-  const navHandler = (url)=>{
-    nav("/tour-detail/"+url)
-  }
+const SliderCard2 = ({ image ,name,description,price,id}) => {
+  // const navHandler = (url)=>{
+  //   nav("/tour-detail/"+)
+  // }
   return (
-    <a href="#">
+    <Link to={`/tour-detail/${id}`}>
 
     <div className="slider-card2" >
       <div className="top-col" style={{ backgroundImage: `url(${image})` }}>
@@ -18,10 +17,10 @@ const SliderCard2 = ({ image ,name,description,price}) => {
       <div className="bottom-col">
         <h4 className="card-heading">{name}</h4>
         <p>{description}</p>
-        <span>{price}</span>
+        <span>{price} AED</span>
       </div>
     </div>
-    </a>
+    </Link>
   );
 };
 
