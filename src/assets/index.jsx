@@ -1,3 +1,4 @@
+import  WhatsApp  from "./whtaup.png"
 import headingImg from "./EEA.png"
 import twinRider from "./Twin-Riders.png"
 import sliderImg from "./ADULT-DOUBLE-01.png"
@@ -38,7 +39,9 @@ import cardImage from "./POLARIS-RZR-1000-CC.png"
 
 
 // --------------------------------------------------------------
+
 import Canam1 from "./slid/canam1000/cana1.webp"
+import canam from "./slid/canam1000/cana.jpg"
 import Canam2 from "./slid/canam1000/cana2.webp"
 import Canam3 from "./slid/canam1000/cana3.jpg"
 import Canam4 from "./slid/canam1000/cana4.webp"
@@ -53,12 +56,14 @@ import kymko2 from "./slid/KYMKO_MXU/kymko2.jpg"
 import kymko3 from "./slid/KYMKO_MXU/kymko3.png"
 import kymko4 from "./slid/KYMKO_MXU/kymko4.webp"
 import kymko5 from "./slid/KYMKO_MXU/kymko5.png"
+import pol from "./slid/POLARIS-4/pol.jpg"
 import pol1 from "./slid/POLARIS-4/pol1.webp"
 import pol2 from "./slid/POLARIS-4/pol2.jpeg"
 import pol3 from "./slid/POLARIS-4/pol3.jpg"
 import pol4 from "./slid/POLARIS-4/pol4.jpg"
 import pol5 from "./slid/POLARIS-4/pol5.jpg"
 import pol6 from "./slid/POLARIS-4/pol6.jpg"
+import pole from "./slid/Polaris-2/pole.jpg"
 import pole1 from "./slid/Polaris-2/pole1.jpg"
 import pole2 from "./slid/Polaris-2/pole2.jpg"
 import pole3 from "./slid/Polaris-2/pole3.jpg"
@@ -94,4 +99,4 @@ import polar4 from "./slid/POLARIS-570-CC/57pol4.webp"
 export {polar1,
     polar2,
     polar3,
-    polar4,shar1,shar2,shar3,shar4,yrapto1,yrapto2,yrapto3,yrapto4,yrapto5,yam1,yam2,yam3,yam4,pole1, pole2,pole3,pole4,pole5,pol1, pol2,pol3,pol4,pol5,pol6,kymko1,kymko2,kymko3,kymko4,kymko5,dart1,dart2,dart3,dart4, dart5,Canam1,Canam2,Canam3,Canam4,Canam5,kymko250,cardImage,favorite,favorite1,favorite2, desert,desert1,desert2,desert3,desert4,desert5,tickIcon,headingImg,last,sharma320,user, road1,half ,great ,bike, road2, cannam1000, cannam4,sharma180, bluebuggy ,polaris1000,sharmaATV250,sharmaatv250 ,twinRider, sliderImg, desertImg, singleImg, adventureImg, desertEx,logo, galleryImg,whiteBg, }
+    polar4,shar1,shar2,shar3,shar4,yrapto1,yrapto2,yrapto3,yrapto4,yrapto5,yam1,yam2,yam3,yam4,pole,pole1, pole2,pole3,pole4,pole5,pol,pol1, pol2,pol3,pol4,pol5,pol6,kymko1,kymko2,kymko3,kymko4,kymko5,dart1,dart2,dart3,dart4, dart5,canam,Canam1,Canam2,Canam3,Canam4,Canam5,kymko250,cardImage,favorite,favorite1,favorite2, desert,desert1,desert2,desert3,desert4,desert5,tickIcon,headingImg,last,sharma320,user, road1,half ,great ,bike, road2, cannam1000,WhatsApp, cannam4,sharma180, bluebuggy ,polaris1000,sharmaATV250,sharmaatv250 ,twinRider, sliderImg, desertImg, singleImg, adventureImg, desertEx,logo, galleryImg,whiteBg, }

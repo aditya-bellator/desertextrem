@@ -1,4 +1,4 @@
-import { polar1, polar2, polar3, polar4, shar1, shar2, shar3, shar4, yrapto1, yrapto2, yrapto3, yrapto4, yrapto5, yam1, yam2, yam3, yam4, pole1, pole2, pole3, pole4, pole5, pol1, pol2, pol3, pol4, pol5, pol6, kymko1, kymko2, kymko3, kymko4, kymko5, dart1, dart2, dart3, dart4, dart5, Canam1, Canam2, Canam3, Canam4, Canam5, kymko250, cardImage, sharma320, road1, bike, road2, cannam4, sharma180, bluebuggy, polaris1000, sharmaATV250, sharmaatv250 } from "../../assets";
+import { polar1, polar2, polar3, polar4, shar1, shar2, shar3, shar4, yrapto1, yrapto2, yrapto3, yrapto4, yrapto5, yam1, yam2, yam3, yam4,pole, pole1, pole2, pole3, pole4, pole5,pol, pol1, pol2, pol3, pol4, pol5, pol6, kymko1, kymko2, kymko3, kymko4, kymko5, dart1, dart2, dart3, dart4, dart5,canam, Canam1, Canam2, Canam3, Canam4, Canam5, kymko250, cardImage, sharma320, road1, bike, road2, cannam4, sharma180, bluebuggy, polaris1000, sharmaATV250, sharmaatv250 } from "../../assets";
 const cancellationPollicy = "<ul><li>If you cancel your trip before 48 hours, no cancellation amount charge is applicable</li> <li>In case you cancel within 24-48 hours of your travel date then 50 % of the cancellation charge is applicable</li> <li>If you cancel the trip 24 hours before the tour date, you’ll have to pay 100% cancellation charges as mentioned on the website.</li> <li>Please note the refund will be made within 7 working days after your cancellation date and the amount will depend on the previously mentioned cancellation policy</li></ul>"
 export const ExperienceSlides = [{
     img: cardImage,
@@ -86,7 +86,7 @@ export const detailPageJson = [{
     description: "For all the racing enthusiast who like to show off their racing skills and drive like there is no tomorrow, come and join the fun of driving the powerful beast POLARIS RZR 1000 cc in Dubai as the ride takes you for an adventure of speed, thrill and power as you cruise your way through the dessert, away from the hustle and bustle of the city for an unforgettable experience. With its ease of use and simple guidelines, be ready to feel that adrenaline rush kick in as you speed through the wild landscape. ",
     // inclusion: "<ul> <li>Pick & Drop service provided from the hotel </li><li> Driving Polaris RZR under expert supervision. </li> <li>Taking a moment to capture those amazing moments and memories in a photo. </li><li>Having a fun time with sandboarding and displaying those dessert skills. </li><li>Enjoy a refreshing and relaxing camel ride</li><li>Soft drinks served upon arrival and throughout the tour to keep that thirst quenched. </li><li>Helmets and sunglasses are provided. </li></ul> ",
     Needtoknow: "<ul><li>	In case of unforeseen circumstances, and a refund is required, it must be documented to the booking manager through a booking channel like WhatsApp, email, or direct messaging.</li><li>	At least 24 hours before tour departure, in which case there will be a 100% refund being offered. But 24-12 hours, before departure, there will be a 50% refund and there will be no refund if the cancellation happens in less than 12 hours. </li><li>Tour departure is indicated in the booking confirmation. </li><li>It is important to consider that weather conditions do not influence term number</li><p></p></ul>",
-    slide: [pole1, pole2, pole3, pole4, pole5],
+    slide: [pole,pole1, pole2, pole3, pole4, pole5],
     cancellationPollicy: cancellationPollicy,
     minPrice: 1000,
     maxPrice: 1500,
@@ -97,12 +97,12 @@ export const detailPageJson = [{
     name: "CANAM RZR 1000 CC (2 Seater)",
    
     description: "Let the adventure enthusiast in you satiate his/her quest for adventure with the thrill of speed and a chance to ride a CANAM RZR 1000CC and let the rush of speed, give you that necessary dopamine kick as you step away from the hustle of the city to step into the winds of the desert and take a moment to rejoice with the excitement of driving a really fast 1000CC Canam RZR in the desert for that once-in-a-lifetime moment.",
-    inclusion:highlights,
-    // inclusion: "<ul> <li>The trip duration is 4 hours</li><li>You will get to ride the buggy for 120 minutes</li> <li>Pickup time is 12 pm</li><li>Having a fun time with sandboarding and displaying those dessert skills. </li><li>Drop off time is 4pm</li><li>Assisted riding </li><li>Stop and get clicked </li><li>You will get to ride a camel </li><li>	You will get to sandboard </li><li>Get clicked with a falcon</li><li>	Helmet and sunglasses for the ride</li><li>Non-Alcoholic Beverages for refreshment</li></ul> ",
-    slide: [Canam1, Canam2, Canam3, Canam4, Canam5],
+    inclusion: "<ul> <li>The trip duration is 4 hours</li><li>You will get to ride the buggy for 120 minutes</li> <li>Pickup time is 12 pm</li><li>Having a fun time with sandboarding and displaying those dessert skills. </li><li>Drop off time is 4pm</li><li>Assisted riding </li><li>Stop and get clicked </li><li>You will get to ride a camel </li><li>	You will get to sandboard </li><li>Get clicked with a falcon</li><li>	Helmet and sunglasses for the ride</li><li>Non-Alcoholic Beverages for refreshment</li></ul> ",
+    slide: [canam,Canam1, Canam2, Canam3, Canam4, Canam5],
     Needtoknow: "<ul><li>Request for refund or any changes must be done in writing to the operation manager via Whatsapp or Instagram Direct Messages. </li><li>If you cancel your trip before 24 hours, the complete amount will be refunded</li><li>In case you cancel within 24-12 hours of your travel date then 50 % of the amount will be refunded</li><li>	If you cancel the trip less than 12 hours before the tour date, no refund will be made to you. </li></ul>",
     cancellationPollicy: cancellationPollicy,
     minPrice: 150,
+    highlights:highlights,
     maxPrice: 300,
     similar:"kymko-mxu-250-cc"
 },
@@ -212,7 +212,7 @@ export const detailPageJson = [{
     // inclusion: "<ul><li>	The age limit of the driver should be 16+</li><li>	The trip duration is 4 hours</li><li>	The capacity of the buggy is 2-4</li><li>	The age limit for the driver is above 16</li><li>The trip duration is 4 hours</li><li>YThe capacity of the buggy is 2-4</li><li>AYou will get to ride the bike for 60 minutes</li><li>SPick up and drop off can be made available from your place of stay</li><li>You will be riding a Polaris RZR 1000 CC</li><li>Assisted riding</li><li>Stop and get clicked</li><li>You will get to ride a camel</li><li>You will get to sandboard</li><li>Get clicked with a Falcon</li><li>Helmet and sunglasses specially for riding</li><li>Non-Alcoholic Beverages for refreshment</li></ul>",
     Needtoknow: "<ul> <li>Request for refund or any changes must be done in writing to the operation manager via Whatsapp or Instagram Direct Messages.</li><li>If you cancel your trip before 24 hours, the complete amount will be refunded</li><li>In case you cancel within 24-12 hours of your travel date then 50 % of the amount will be refunded</li><li>If you cancel the trip less than 12 hours before the tour date, no refund will be made to you</li></ul>",
     cancellationPollicy: cancellationPollicy,
-    slide: [pol1, pol2, pol3, pol4, pol5, pol6],
+    slide: [pol,pol1, pol2, pol3, pol4, pol5, pol6],
     minPrice: 1500,
     maxPrice: 2000,
     similar:"polaris-sportsman-570-cc",

@@ -73,7 +73,7 @@ const TourDetail = () => {
       </div>
       <DetailTabs slides={getData?.slide}/>
       <div className="short-description">
-      {getData?.description}
+     <span style={{fontSize:"14px"}}>Description:</span>  {getData?.description}
       </div>
       <div id="highlights">
         <div className="highlights-section m-collapse2">
