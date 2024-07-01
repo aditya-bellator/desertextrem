@@ -24,17 +24,20 @@
     top: 10px;
     span{
         
-        width: 30px;
-        height: 30px;
+        // width: 30px;
+        // height: 30px;
+        padding: 3px 5px;
         display: flex;
         justify-content: center;
-        background: white;
+        background-color: #df723c;
+        font-size: 8px;
+        color: white;
         align-items: center;
-        border-radius: 50%;
-        svg{
-            font-size: 20px;
-            color:#313131
-        }
+        border-radius: 24px;
+        // svg{
+        //     font-size: 20px;
+        //     color:#313131
+        // }
     }
 }
     .img-sec{

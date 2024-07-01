@@ -101,20 +101,24 @@ const WebHome = () => {
        
        
       </Swiper>
-      <div id="ADULT">
+      {/* <div id="ADULT">
 
       <SliderSection
         name={"Adult (double)"}
         data={AdultdoubleData}
         para={"EMBRACE ADVENTURE: THRILLING BUGGY TOURS AWAIT"}
         />
-        </div>
+        </div> */}
+        <div id="quad">
+
       <SliderSection
       openModal={openModal}
-        name={"Adult (Single)"}
-        data={Adultsingle}
-        para={"EMBRACE ADVENTURE: THRILLING BUGGY TOURS AWAIT"}
+      name={"QUAD (BIKE)"}
+      data={Adultsingle}
+      tag={true}
+      para={"EMBRACE ADVENTURE: THRILLING BUGGY TOURS AWAIT"}
       />
+      </div>
       <div id="dune">
 
       <SliderSection

@@ -37,8 +37,8 @@ const BannerSection = () => {
                 ""
               ) : (
                 <li className="nav-item">
-                  <a className="nav-link" href="#ADULT">
-                    ADULT Double
+                  <a className="nav-link" href="#quad">
+                    QUAD BIKE
                   </a>
                 </li>
               )}

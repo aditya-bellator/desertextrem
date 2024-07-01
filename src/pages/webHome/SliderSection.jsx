@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import Card from '../../component/card/Card';
 import { adventureImg, bike, bluebuggy, cannam1000, cannam4, desertImg, headingImg, polaris1000, road1, road2, sharma180, sharma320, sharmaatv250, singleImg, sliderImg, twinRider } from '../../assets'
 
-const SliderSection = ({name,para,data}) => {
+const SliderSection = ({name,para,data,tag}) => {
     var settings2 = {
         dots: false,
         infinite: true,
@@ -34,7 +34,7 @@ const SliderSection = ({name,para,data}) => {
         {data?.map((item,index)=>{
           return(
 
-            <Card  id={item?.id} title={item?.title} min={item?.min} hours={item?.hour} img={item?.img} key={index}/>
+            <Card double={item?.double} tag={tag} id={item?.id} title={item?.title} min={item?.min} hours={item?.hour} img={item?.img} key={index}/>
           )
         })}
 

@@ -271,7 +271,34 @@ export const Adultdouble = [{
 ]
 
 export const Adultsingle = [
-
+    {
+        img: kymko250,
+    
+        title: "Kymko mxu 250 cc",
+        id: "kymko-mxu-250-cc",
+        min: "30 min : 250 AED",
+        hour: "1 Hour : 400 AED",
+        double:true,
+    },
+    {
+        img: sharma320,
+    
+        title: "SHARMAX hummer 320 CC",
+        id: "SHARMAX-hummer-320-CC",
+        min: "30 min : 300 AED",
+        hour: "1 Hour : 500 AED",
+        double:true,
+    },
+    {
+        img: bluebuggy,
+    
+        title: "Yamaha grizzly 450 CC",
+        id: "Yamaha-Grizzly-450-CC",
+        min: "30 min : 350 AED",
+        hour: "1 Hour : 550 AED",
+        double:true,
+    },
+    ////singal
     {
         img: kymko250,
 
@@ -279,6 +306,7 @@ export const Adultsingle = [
         id: "kymko-mxu-250-cc",
         min: "30 min : 150 AED",
         hour: "1 Hour : 300 AED",
+        double:false
     },
     {
         img: sharma320,
@@ -287,6 +315,7 @@ export const Adultsingle = [
         id: "SHARMAX-hummer-320-CC",
         min: "30 min : 200 AED",
         hour: "1 Hour : 350 AED",
+        double:false
     },
     {
         img: sharmaATV250,
@@ -295,6 +324,7 @@ export const Adultsingle = [
         id: "SHARMAX-ATV-250-CC",
         min: "30 min : 150 AED",
         hour: "1 Hour : 300 AED",
+        double:false
     },
 ]
 export const DuneBuggy = [

@@ -3,18 +3,20 @@ import "./gallery.scss"
 
 import { useNavigate } from 'react-router-dom';
 
-const Card = ({title,hours,min,img,id}) => {
+const Card = ({title,hours,min,img,id,tag,double}) => {
   const nav =useNavigate()
   return (
     <div className='card-container'>
       
-      {/* <div className="rating">
+      {tag && 
+      <div className="rating">
         <span>
-
-      <CiHeart />
+{double ? "DOUBLE":"SINGLE"}
+      
         </span>
 
-      </div> */}
+      </div>
+      }
       <div className="img-sec" style={{backgroundImage:`url(${img})`}}>
       </div>
       <div className="detail-sec">
