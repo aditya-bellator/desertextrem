@@ -19,7 +19,6 @@ const SimilarPackageCard = ({fun,data}) => {
   const closeModal = () => {
     setIsOpen(false);
   };
-console.log(data)
   return (
     <>
          

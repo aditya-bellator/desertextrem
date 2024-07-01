@@ -11,7 +11,7 @@ const SliderSection = ({name,para,data,tag}) => {
         slidesToShow: 3,
         // centerPadding: "60px",
         slidesToScroll: 1,
-        arrows:false,
+        arrows: tag ? true:false,
         autoplay:false,
         // centerMode:true,
       };

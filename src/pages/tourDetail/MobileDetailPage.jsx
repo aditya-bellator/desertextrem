@@ -1,8 +1,5 @@
 import  {  useEffect, useState } from "react";
-import AccessAlarmsIcon from "@mui/icons-material/AccessAlarms";
-import AirportShuttleOutlinedIcon from "@mui/icons-material/AirportShuttleOutlined";
-import LocalHotelOutlinedIcon from "@mui/icons-material/LocalHotelOutlined";
-import RamenDiningOutlinedIcon from "@mui/icons-material/RamenDiningOutlined";
+
 import KeyboardBackspaceOutlinedIcon from "@mui/icons-material/KeyboardBackspaceOutlined";
 import ReplyOutlinedIcon from "@mui/icons-material/ReplyOutlined";
 import AccordionSummary from "@mui/material/AccordionSummary";
@@ -19,9 +16,9 @@ import FooterSection from "../../component/footerSec/FooterSection";
 import Slides from "../explore/Slides";
 import { detailPageJson } from "../../component/json/Json";
 import Navbar from "../../component/navbar/Navbar";
+import { deal } from "../../assets";
 
 const MobileDetailPage = () => {
-const handleOpen = () => setOpen(true);
 
 const [isOpen, setIsOpen] = useState(false);
 
@@ -74,7 +71,8 @@ const {id} = useParams()
             </div>
           </div>
           <div className="mobile-detail-banner-bottom-col">
-            <ul>
+            <img src={deal} alt="item" />
+            {/* <ul>
               <li>
                 <div className="icon">
                   <AccessAlarmsIcon />
@@ -99,7 +97,7 @@ const {id} = useParams()
                 </div>
                 <div className="text-b">Meals Included</div>
               </li>
-            </ul>
+            </ul> */}
           </div>
         </div>
         <div className="detail-heading">

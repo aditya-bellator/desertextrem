@@ -53,11 +53,11 @@ const DetailTabs = ({sliderData,fun,slides}) => {
   };
   const [activeTabs, setActiveTabs] = useState(0)
   const tabs = [ {
-  name:"Inclusion",link:"highlights"},
+  name:"Highlights",link:"highlights"},
   // {
   // name:"Inclusions",link:"highlights"}, 
-  {
-  name:"Need to Know",link:"highlights"},
+  // {
+  // name:"Need to Know",link:"highlights"},
   {
   name:"Reviews",link:"review"},{
     name:"ENQUIRY NOW",link:"enquiry"},]
