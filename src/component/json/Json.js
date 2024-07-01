@@ -1,4 +1,4 @@
-import { polar1, polar2, polar3, polar4, shar1, shar2, shar3, shar4, yrapto1, yrapto2, yrapto3, yrapto4, yrapto5, yam1, yam2, yam3, yam4,pole, pole1, pole2, pole3, pole4, pole5,pol, pol1, pol2, pol3, pol4, pol5, pol6, kymko1, kymko2, kymko3, kymko4, kymko5, dart1, dart2, dart3, dart4, dart5,canam, Canam1, Canam2, Canam3, Canam4, Canam5, kymko250, cardImage, sharma320, road1, bike, road2, cannam4, sharma180, bluebuggy, polaris1000, sharmaATV250, sharmaatv250 } from "../../assets";
+import { sharmax1,sharmax2,sharmax3,sharmax4,shramax5,polar1, polar2, polar3, polar4, shar1, shar2, shar3, shar4, yrapto1, yrapto2, yrapto3, yrapto4, yrapto5, yam1, yam2, yam3, yam4,pole, pole1, pole2, pole3, pole4, pole5,pol, pol1, pol2, pol3, pol4, pol5, pol6, kymko1, kymko2, kymko3, kymko4, kymko5, dart1, dart2, dart3, dart4, dart5,canam, Canam1, Canam2, Canam3, Canam4, Canam5, kymko250, cardImage, sharma320, road1, bike, road2, cannam4, sharma180, bluebuggy, polaris1000, sharmaATV250, sharmaatv250 } from "../../assets";
 const cancellationPollicy = "<ul><li>If you cancel your trip before 48 hours, no cancellation amount charge is applicable</li> <li>In case you cancel within 24-48 hours of your travel date then 50 % of the cancellation charge is applicable</li> <li>If you cancel the trip 24 hours before the tour date, you’ll have to pay 100% cancellation charges as mentioned on the website.</li> <li>Please note the refund will be made within 7 working days after your cancellation date and the amount will depend on the previously mentioned cancellation policy</li></ul>"
 export const ExperienceSlides = [{
     img: cardImage,
@@ -241,6 +241,7 @@ export const detailPageJson = [{
     minPrice: 120,
     maxPrice: 170,
     cancellationPollicy: cancellationPollicy,
+    slide:[sharmax1,sharmax2,sharmax3,sharmax4,shramax5],
     similar:"polaris-sportsman-570-cc",
 
 }

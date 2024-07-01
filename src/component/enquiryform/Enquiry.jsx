@@ -1,6 +1,9 @@
 
 import "./enquiry.scss";
 import { desertEx } from "../../assets";
+import axios from "axios";
+import { useState } from "react";
+import { toast } from "react-toastify";
 
 const Enquiry = () => {
   const sendToEmail = (event) => {
@@ -26,7 +29,26 @@ Message: ${message}`;
 
     window.location.href = mailtoLink;
   };
+  const [formData, setFormData] = useState({})
 
+  const formHandler = (e)=>{
+    const {name,value} = e.target
+    setFormData({...formData, [name]: value})
+  }
+  const submitHandler = async(e)=>{
+    e.stopPropagation()
+    await axios.post("https://tripatours.com/api/enquiry/desertExtremeEnquiry/formData").then((response)=>{
+       if(response?.status){
+      toast.success(response?.message)
+         setFormData({})
+       }else{
+         toast.error(response?.message)
+       }
+     }).catch((error)=>{
+      toast.error(error?.message)
+     })
+   }
+   console.log(formData)
   return (
     <div className="enquiry-main" id="enquire-now">
       <img src={desertEx} alt="" />
@@ -38,34 +60,32 @@ Message: ${message}`;
             <br />
             get in touch with you in the next 24 hours
           </p>
-          <form onSubmit={sendToEmail}>
+          <form >
             <div className="form-col">
               <div className="input-col">
-                <label htmlFor="firstName">First Name</label>
-                <input type="text" name="firstName" required />
+                <label htmlFor="firstName">Name</label>
+                <input type="text" name="name" value={formData?.name} required onChange={formHandler}/>
               </div>
-              <div className="input-col">
-                <label htmlFor="lastName">Last Name</label>
-                <input type="text" name="lastName" required />
-              </div>
-            </div>
-            <div className="form-col">
               <div className="input-col">
                 <label htmlFor="email">Email Address</label>
-                <input type="email" name="email" required />
+                <input type="email" name="email" required value={formData?.email}  onChange={formHandler}/>
               </div>
+             
+            </div>
+            <div className="form-col">
+             
               <div className="input-col">
                 <label htmlFor="phone_number">Phone Number</label>
-                <input type="tel" name="phone_number" placeholder="+91" required />
+                <input type="tel" name="phone"  required  value={formData?.phone}  onChange={formHandler}/>
               </div>
             </div>
             <div className="form-col">
               <div className="input-col">
                 <label htmlFor="message">Message</label>
-                <textarea name="message" required />
+                <textarea name="message" required value={formData?.message}  onChange={formHandler}/>
               </div>
             </div>
-            <button type="submit">Submit Query</button>
+            <button type="submit" onClick={submitHandler}>Submit Query</button>
           </form>
         </div>
       </div>

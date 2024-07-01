@@ -18,7 +18,7 @@ const FooterSection = () => {
       <ul className='footer-menu'>
         <li>About</li>
         <li>contact us</li>
-        <li>privacy ploicy</li>
+        <li>privacy policy</li>
         <li>terms & conditions</li>
       </ul>
         <ul className='footer-icon'>

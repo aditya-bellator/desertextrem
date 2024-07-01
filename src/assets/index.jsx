@@ -87,6 +87,11 @@ import polar2 from "./slid/POLARIS-570-CC/57pol2.webp"
 import polar3 from "./slid/POLARIS-570-CC/57pol3.jpg"
 import polar4 from "./slid/POLARIS-570-CC/57pol4.webp"
 import deal from "./deals.png"
+import sharmax1 from "./slid/sharmax-180/sharm1.jpeg"
+import sharmax2 from "./slid/sharmax-180/sharm2.jpg"
+import sharmax3 from "./slid/sharmax-180/sharm3.jpeg"
+import sharmax4 from "./slid/sharmax-180/sharm4.jpeg"
+import shramax5 from "./slid/sharmax-180/sharm5.jpg"
 
 
 
@@ -97,4 +102,4 @@ import deal from "./deals.png"
 
 
 
-export {polar1,polar2,polar3,deal,polar4,shar1,shar2,shar3,shar4,yrapto1,yrapto2,yrapto3,yrapto4,yrapto5,yam1,yam2,yam3,yam4,pole,pole1, pole2,pole3,pole4,pole5,pol,pol1, pol2,pol3,pol4,pol5,pol6,kymko1,kymko2,kymko3,kymko4,kymko5,dart1,dart2,dart3,dart4, dart5,canam,Canam1,Canam2,Canam3,Canam4,Canam5,kymko250,cardImage,favorite,favorite1,favorite2, desert,desert1,desert2,desert3,desert4,desert5,tickIcon,headingImg,last,sharma320,user, road1,half ,great ,bike, road2, cannam1000,WhatsApp, cannam4,sharma180, bluebuggy ,polaris1000,sharmaATV250,sharmaatv250 ,twinRider, sliderImg, desertImg, singleImg, adventureImg, desertEx,logo, galleryImg,whiteBg, }
+export {sharmax1,sharmax2,sharmax3,sharmax4,shramax5,polar1,polar2,polar3,deal,polar4,shar1,shar2,shar3,shar4,yrapto1,yrapto2,yrapto3,yrapto4,yrapto5,yam1,yam2,yam3,yam4,pole,pole1, pole2,pole3,pole4,pole5,pol,pol1, pol2,pol3,pol4,pol5,pol6,kymko1,kymko2,kymko3,kymko4,kymko5,dart1,dart2,dart3,dart4, dart5,canam,Canam1,Canam2,Canam3,Canam4,Canam5,kymko250,cardImage,favorite,favorite1,favorite2, desert,desert1,desert2,desert3,desert4,desert5,tickIcon,headingImg,last,sharma320,user, road1,half ,great ,bike, road2, cannam1000,WhatsApp, cannam4,sharma180, bluebuggy ,polaris1000,sharmaATV250,sharmaatv250 ,twinRider, sliderImg, desertImg, singleImg, adventureImg, desertEx,logo, galleryImg,whiteBg, }
