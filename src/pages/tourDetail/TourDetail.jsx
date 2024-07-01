@@ -69,14 +69,14 @@ const TourDetail = () => {
               </FormControl> */}
         </div>
       </div>
-      <DetailTabs slides={getData?.slides}/>
+      <DetailTabs slides={getData?.slide}/>
       <div className="short-description">
       {getData?.description}
       </div>
       <div id="highlights">
         <div className="highlights-section m-collapse2">
           <DetailCard name={"Inclusion"} list={getData?.inclusion}/>
-          <DetailCard name={"Inclusions"} price={getData?.price}/>
+          <DetailCard name={"Inclusions"} data={getData}/>
           <DetailCard name={"Need To Know"} list={getData?.Needtoknow}/>
           <DetailCard name={"Cancellation Policy"}list={getData?.cancellationPollicy}/>
         </div>

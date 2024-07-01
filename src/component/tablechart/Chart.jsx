@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.scss'
 
-const Chart = ({price}) => {
+const Chart = ({data}) => {
   return (
     <div className="col-xs-12 col-md-5" style={{borderRadius:"5px",overflow:"hidden",padding:"5px",background:"white",    filter: "drop-shadow(0px 6px 24.5px rgba(22, 19, 22, 0.09))"}}>
       <div className="maintainancecpm">
@@ -23,13 +23,13 @@ const Chart = ({price}) => {
             <div className="safari-label"><strong>Drop off Time :</strong></div>
             <div className="safari-value">06:00 PM</div>
           </div> */}
-          {/* <div className="safari-row">
-            <div className="safari-label"><strong>Per Child :</strong> (4 to 10)</div>
-            <div className="safari-value"><strong>100 AED</strong></div>
-          </div> */}
           <div className="safari-row">
-            <div className="safari-label"><strong>Price :</strong></div>
-            <div className="safari-value"><strong>{price} AED</strong></div>
+            <div className="safari-label"><strong>Price 30 MINUTES :</strong></div>
+            <div className="safari-value"><strong>{data?.minPrice} AED</strong></div>
+          </div>
+          <div className="safari-row">
+            <div className="safari-label"><strong>Price 1 HOUR:</strong></div>
+            <div className="safari-value"><strong>{data?.maxPrice} AED</strong></div>
           </div>
         </div>
       </div>

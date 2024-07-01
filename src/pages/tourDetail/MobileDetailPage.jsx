@@ -42,7 +42,7 @@ const {id} = useParams()
   };
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
+  }, [id]);
   return (
     <>
     <Modal isOpen={isOpen} onClose={closeModal}>
@@ -51,7 +51,7 @@ const {id} = useParams()
        {/* <BasicModal  Children={<EnquiryForm setOpen={setOpen} id={id} width={"100%"}/>}  setOpen={setOpen} open={open}/> */}
 
       <div className="detail-center-col">
-        <div className="mobile-detail-top-banner" style={{backgroundImage:`url(${getData?.img})`}}>
+        <div className="mobile-detail-top-banner" style={{backgroundImage:`url(${ getData?.slide?.length && getData?.slide[0]})`}}>
            {/* style={{backgroundImage:`url("")`}}> */}
           <div className="mobile-deatil-banner-head">
             <div className="head-left-col">
@@ -129,7 +129,7 @@ const {id} = useParams()
         </div>
         <div className="price-btn">
 
-        <p>AED {getData?.price}/-</p>
+        <p>AED {getData?.maxPrice}/-</p>
 <div className="book-btn">
 
 <button onClick={()=>openModal()} >Book Now</button>
