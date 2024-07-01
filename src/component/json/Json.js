@@ -7,26 +7,26 @@ export const ExperienceSlides = [{
 
 }, {
     img: sharma180,
-    title: "<p> SHARMAX ATV 180 CROSS CC<br>2 seater<br>30 min : 150 AED<br>1 Hour : 300 AED</p>",
+    title: "<p> SHARMAX ATV 180 CC<br>2 seater<br>30 min : 120 AED<br>1 Hour : 170 AED</p>",
     id: "SHARMAX-ATV-CROSS-180-CC"
 
 },
 {
     img: sharma320,
 
-    title: "<p> SHARMAX hummer 320 CC<br>2 seater<br>30 min : 250 AED<br>1 Hour : 350 AED</p>",
+    title: "<p> SHARMAX hummer 320 CC<br>2 seater<br>30 min : 200 AED<br>1 Hour : 350 AED</p>",
     id: "SHARMAX-hummer-320-CC"
 },
 {
     img: kymko250,
 
-    title: "<p> Kymko mxu 250 cc<br>2 seater<br>30 min : 150 AED<br>1 Hour : 300 AED</p>",
+    title: "<p> Kymko mxu 250 cc<br>2 seater<br>30 min : 175 AED<br>1 Hour : 300 AED</p>",
     id: "kymko-mxu-250-cc"
 },
 {
     img: sharmaatv250,
 
-    title: "<p> SHARMAX ATV 250 CC<br>2 seater<br>30 min : 150 AED<br>1 Hour : 300 AED</p>",
+    title: "<p> SHARMAX ATV 250 CC<br>2 seater<br>30 min : 175 AED<br>1 Hour : 300 AED</p>",
     id: "SHARMAX-ATV-250-CC"
 },
 {
@@ -50,28 +50,28 @@ export const ExperienceSlides = [{
 {
     img: kymko250,
 
-    title: "<p> Kymko mxu 250 cc<br>2 seater<br>30 min : 150 AED<br>1 Hour : 300 AED</p>",
+    title: "<p> Kymko mxu 250 cc<br>2 seater<br>30 min : 175 AED<br>1 Hour : 300 AED</p>",
     id: "kymko-mxu-250-cc"
 },
 {
     img: sharmaatv250,
 
-    title: "<p> SHARMAX ATV 250 CC<br>2 seater<br>30 min : 150 AED<br>1 Hour : 300 AED</p>",
+    title: "<p> SHARMAX ATV 250 CC<br>2 seater<br>30 min : 175 AED<br>1 Hour : 300 AED</p>",
     id: "SHARMAX-ATV-250-CC"
 }, {
     img: sharmaatv250,
 
-    title: "<p> SHARMAX ATV 250 CC<br>2 seater<br>30 min : 150 AED<br>1 Hour : 300 AED</p>",
+    title: "<p> SHARMAX ATV 250 CC<br>2 seater<br>30 min : 175 AED<br>1 Hour : 300 AED</p>",
     id: "SHARMAX-ATV-250-CC"
 }, {
     img: sharmaatv250,
 
-    title: "<p> SHARMAX ATV 250<br>2 seater<br>30 min : 150 AED<br>1 Hour : 300 AED</p>",
+    title: "<p> SHARMAX ATV 250<br>2 seater<br>30 min : 175 AED<br>1 Hour : 300 AED</p>",
     id: "SHARMAX-ATV-250-CC"
 }, {
     img: kymko250,
 
-    title: "<p> Kymko mxu 250 cc<br>2 seater<br>30 min : 150 AED<br>1 Hour : 300 AED</p>",
+    title: "<p> Kymko mxu 250 cc<br>2 seater<br>30 min : 175 AED<br>1 Hour : 300 AED</p>",
     id: "kymko-mxu-250-cc"
 },
 ]
@@ -81,7 +81,7 @@ const highlights= " <ul> <li>Discover stunning landscapes in a robust 4x4 buggy<
 
 export const detailPageJson = [{
     id: "polaris-rzr-1000-cc",
-    name: "POLARIS RZR 1000 cc",
+    name: "POLARIS RZR 1000 cc (2-Seater)",
     inclusion:highlights,
     description: "For all the racing enthusiast who like to show off their racing skills and drive like there is no tomorrow, come and join the fun of driving the powerful beast POLARIS RZR 1000 cc in Dubai as the ride takes you for an adventure of speed, thrill and power as you cruise your way through the dessert, away from the hustle and bustle of the city for an unforgettable experience. With its ease of use and simple guidelines, be ready to feel that adrenaline rush kick in as you speed through the wild landscape. ",
     // inclusion: "<ul> <li>Pick & Drop service provided from the hotel </li><li> Driving Polaris RZR under expert supervision. </li> <li>Taking a moment to capture those amazing moments and memories in a photo. </li><li>Having a fun time with sandboarding and displaying those dessert skills. </li><li>Enjoy a refreshing and relaxing camel ride</li><li>Soft drinks served upon arrival and throughout the tour to keep that thirst quenched. </li><li>Helmets and sunglasses are provided. </li></ul> ",
@@ -90,20 +90,21 @@ export const detailPageJson = [{
     cancellationPollicy: cancellationPollicy,
     minPrice: 1000,
     maxPrice: 1500,
+
     similar:"CANAM-RZR-1000CC-2-Seater"
 },
 {
     id: "CANAM-RZR-1000CC-2-Seater",
-    name: "CANAM RZR 1000 CC (2 Seater)",
+    name: "CANAM X3 1300 CC (2 Seater)",
    
     description: "Let the adventure enthusiast in you satiate his/her quest for adventure with the thrill of speed and a chance to ride a CANAM RZR 1000CC and let the rush of speed, give you that necessary dopamine kick as you step away from the hustle of the city to step into the winds of the desert and take a moment to rejoice with the excitement of driving a really fast 1000CC Canam RZR in the desert for that once-in-a-lifetime moment.",
     inclusion: "<ul> <li>The trip duration is 4 hours</li><li>You will get to ride the buggy for 120 minutes</li> <li>Pickup time is 12 pm</li><li>Having a fun time with sandboarding and displaying those dessert skills. </li><li>Drop off time is 4pm</li><li>Assisted riding </li><li>Stop and get clicked </li><li>You will get to ride a camel </li><li>	You will get to sandboard </li><li>Get clicked with a falcon</li><li>	Helmet and sunglasses for the ride</li><li>Non-Alcoholic Beverages for refreshment</li></ul> ",
     slide: [canam,Canam1, Canam2, Canam3, Canam4, Canam5],
     Needtoknow: "<ul><li>Request for refund or any changes must be done in writing to the operation manager via Whatsapp or Instagram Direct Messages. </li><li>If you cancel your trip before 24 hours, the complete amount will be refunded</li><li>In case you cancel within 24-12 hours of your travel date then 50 % of the amount will be refunded</li><li>	If you cancel the trip less than 12 hours before the tour date, no refund will be made to you. </li></ul>",
     cancellationPollicy: cancellationPollicy,
-    minPrice: 150,
     highlights:highlights,
-    maxPrice: 300,
+    minPrice: 1500,
+    maxPrice: 2500,
     similar:"kymko-mxu-250-cc"
 },
 {
@@ -115,7 +116,7 @@ export const detailPageJson = [{
     Needtoknow: "<ul><li>In case of unforeseen circumstances, and a refund is required, it must be documented to the booking manager through a booking channel like WhatsApp, email, or direct messaging. </li><li>At least 24 hours before tour departure, in which case there will be a 100% refund being offered. But 24-12 hours, before departure, there will be a 50% refund and there will be no refund if the cancellation happens in less than 12 hours. </li><li>Tour departure is indicated in the booking confirmation. </li></ul>",
     cancellationPollicy: cancellationPollicy,
     slide: [kymko1, kymko2, kymko3, kymko4, kymko5],
-    minPrice: 150,
+    minPrice: 175,
     maxPrice: 300,
     similar:"dirt-bike-280-320-cc"
 },
@@ -141,7 +142,7 @@ export const detailPageJson = [{
     Needtoknow: "<ul><li>In case of unforeseen circumstances, and a refund is required, it must be documented to the booking manager through a booking channel like WhatsApp, email, or direct messaging</li><li>	At least 24 hours before tour departure, in which case there will be a 100% refund being offered. But 24-12 hours, before departure, there will be a 50% refund and there will be no refund if the cancellation happens in less than 12 hours. </li><li>	Tour departure is indicated in the booking confirmation. It is important to consider that weather conditions do not influence term number 2. </li></ul>",
     cancellationPollicy: cancellationPollicy,
     slide: [shar1, shar2, shar3, shar4],
-    minPrice: 150,
+    minPrice: 175,
     maxPrice: 300,
     similar:"YAMAHA-RAPTO-700-CC",
 
@@ -195,7 +196,7 @@ export const detailPageJson = [{
     // inclusion: "<ul><li>	Pick-up and drop service provided by the hotel </li><li>	Supervisors monitor your journey as you drive the ATV for your safety at all times. </li><li>	Pause, and take a moment to capture all the excitement and thrill in a fun photo session. </li><li>	If skiing on snow is too mainstream, then how about doing it on sand for some out-of-the-box approach? </li><li>	Enjoying a calming camel ride</li><li>	Soft drinks and refreshments to keep you hydrated at all times. </li><li>	Gloves and sunglasses were provided. </li></ul>",
     Needtoknow: "<ul><li>In case of unforeseen circumstances, and a refund is required, it must be documented to the booking manager through a booking channel like WhatsApp, email, or direct messaging</li><li>	At least 24 hours before tour departure, in which case there will be a 100% refund being offered. But 24-12 hours, before departure, there will be a 50% refund and there will be no refund if the cancellation happens in less than 12 hours. </li><li>	Tour departure is indicated in the booking confirmation. It is important to consider that weather conditions do not influence term number 2. </li></ul>",
     cancellationPollicy: cancellationPollicy,
-    minPrice: 150,
+    minPrice: 175,
     maxPrice: 300,
     similar:"POLARIS-RZR-1000-CC-4-SEATER",
 },
@@ -232,13 +233,13 @@ export const detailPageJson = [{
 },
 {
     id: "SHARMAX-ATV-CROSS-180-CC",
-    name: "SHARMAX ATV 180 CROSS CC (2 Seater) ",
+    name: "SHARMAX ATV 180 CC (2 Seater) ",
     description: "Let the adrenaline junkie satiate his/her quest for adventure with the thrill of speed and a chance to ride a quad bike and let the rush of speed, kick in as you step away from the hustle of the city to step into the winds of the desert and take a moment to rejoice with the excitement of driving a really fast 180 CC quad bike in the desert for that once-in-a-lifetime moment.",
     inclusion:highlights,
     // inclusion: "<ul><li>Pick up in a luxury 4WD land cruiser on a chargeable basis.</li><li>Enjoy the view from up top while you take a stroll on a camel and experience the Arabic way of living.</li><li>If skiing on snow is too mainstream, then time to take it to the desert with sandboarding for that new escapade, you have been looking for.</li></ul>",
     Needtoknow: "<ul><li>This will be a 30 min tour.</li><li>Guests will be given 180 CC open desert bikes to drive.</li><li>Pickup will be chargeable but there is no drop service.</li><li> Adults will be charged with 150 AED to 300 AED based on the duration. </li></ul>",
-    minPrice: 150,
-    maxPrice: 300,
+    minPrice: 120,
+    maxPrice: 170,
     cancellationPollicy: cancellationPollicy,
     similar:"polaris-sportsman-570-cc",
 
@@ -304,7 +305,7 @@ export const Adultsingle = [
 
         title: "Kymko mxu 250 cc",
         id: "kymko-mxu-250-cc",
-        min: "30 min : 150 AED",
+        min: "30 min : 175 AED",
         hour: "1 Hour : 300 AED",
         double:false
     },
@@ -322,7 +323,7 @@ export const Adultsingle = [
 
         title: "SHARMAX ATV 250 CC",
         id: "SHARMAX-ATV-250-CC",
-        min: "30 min : 150 AED",
+        min: "30 min : 175 AED",
         hour: "1 Hour : 300 AED",
         double:false
     },
@@ -347,10 +348,10 @@ export const DuneBuggy = [
     {
         img: road1,
 
-        title: "CANNAM rzr 1000 cc (2 seater)",
+        title: "CANNAM x3 1300 cc (2 seater)",
         id: "CANAM-RZR-1000CC-2-Seater",
-        min: "30 min : 150 AED",
-        hour: "1 Hour : 300 AED",
+        min: "30 min : 1500 AED",
+        hour: "1 Hour : 2500 AED",
     },
 ]
 
@@ -359,7 +360,7 @@ export const Offroad = [
     {
         img: road1,
 
-        title: "yamaha rapto 700 cc",
+        title: "Yamaha rapto 700 cc",
         id: "YAMAHA-RAPTO-700-CC",
         min: "30 min : 700 AED",
         hour: "1 Hour : 1200 AED",
@@ -367,7 +368,7 @@ export const Offroad = [
     {
         img: bike,
 
-        title: "dirt bike 280/320 cc",
+        title: "Dirt bike 280/320 cc",
         id: "dirt-bike-280-320-cc",
         min: "30 min : 500 AED",
         hour: "1 Hour : 800 AED",
@@ -375,7 +376,7 @@ export const Offroad = [
     {
         img: road2,
 
-        title: "polaris sportsman 570 cc",
+        title: "Polaris sportsman 570 cc",
         id: "polaris-sportsman-570-cc",
         min: "30 min : 350 AED",
         hour: "1 Hour : 700 AED",

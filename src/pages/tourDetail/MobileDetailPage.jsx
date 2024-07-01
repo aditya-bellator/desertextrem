@@ -18,6 +18,7 @@ import Form from "../../component/form/Form";
 import FooterSection from "../../component/footerSec/FooterSection";
 import Slides from "../explore/Slides";
 import { detailPageJson } from "../../component/json/Json";
+import Navbar from "../../component/navbar/Navbar";
 
 const MobileDetailPage = () => {
 const handleOpen = () => setOpen(true);
@@ -48,6 +49,9 @@ const {id} = useParams()
     <Modal isOpen={isOpen} onClose={closeModal}>
        <Form/>
       </Modal>
+      <div className="navbar-layout">
+    <Navbar />
+  </div>
        {/* <BasicModal  Children={<EnquiryForm setOpen={setOpen} id={id} width={"100%"}/>}  setOpen={setOpen} open={open}/> */}
 
       <div className="detail-center-col">
@@ -99,7 +103,7 @@ const {id} = useParams()
           </div>
         </div>
         <div className="detail-heading">
-          <h2>{getData.name}</h2>
+          <h2>{getData?.name}</h2>
         </div>
         <div className="price-rating-section">
         <div className="number-rating">

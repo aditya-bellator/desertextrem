@@ -10,6 +10,7 @@ import { Outlet, useParams } from "react-router-dom";
 import BannerSection from "../../component/bannerSection/BannerSection"
 import FooterSection from "../../component/footerSec/FooterSection";
 import { detailPageJson } from "../../component/json/Json";
+import Navbar from "../../component/navbar/Navbar";
 
 
 
@@ -24,6 +25,7 @@ const {id} = useParams()
  const getSimilarData = getSimilar ==undefined ?detailPageJson?.find((item)=>item?.similar == "kymko-mxu-250-cc"):getSimilar
   return (
     <>
+ 
   <BannerSection/>
      {/* <BasicModal Children={<EnquiryForm setOpen={setOpen} id={id} width={""}/>}  setOpen={setOpen} open={open}/> */}
       <div className="tour-detail-container content-center-col">
