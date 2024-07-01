@@ -18,6 +18,7 @@ import Form from "../../component/form/Form";
 import FooterSection from "../../component/footerSec/FooterSection";
 import Slides from "../explore/Slides";
 import { detailPageJson } from "../../component/json/Json";
+import { deal } from "../../assets";
 
 const MobileDetailPage = () => {
 const handleOpen = () => setOpen(true);
@@ -70,7 +71,8 @@ const {id} = useParams()
             </div>
           </div>
           <div className="mobile-detail-banner-bottom-col">
-            <ul>
+            <img src={deal} alt="item" />
+            {/* <ul>
               <li>
                 <div className="icon">
                   <AccessAlarmsIcon />
@@ -95,7 +97,7 @@ const {id} = useParams()
                 </div>
                 <div className="text-b">Meals Included</div>
               </li>
-            </ul>
+            </ul> */}
           </div>
         </div>
         <div className="detail-heading">

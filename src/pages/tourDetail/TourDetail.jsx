@@ -38,7 +38,7 @@ const TourDetail = () => {
       <div className="heading">
         <div className="heading-left-col">
           <h1>{getData?.name} 
-            <span>{getData?.minPrice +"AED /-"}</span>
+            <span>- {getData?.minPrice + " AED /-"}</span>
           </h1>
           
         </div>
