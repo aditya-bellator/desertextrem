@@ -27,10 +27,10 @@ const TourDetail = () => {
   // const {data:houseRule} = useHouseRuleQuery(id)
   // const houseRuleData = houseRule && houseRule?.data[0]
 
+  const {id} = useParams()
   useEffect(() => {
     window.scrollTo(0, 500);
-  }, []);
-  const {id} = useParams()
+  }, [id]);
 
   const getData = detailPageJson.find((item)=>item.id == id)
   return (
@@ -38,18 +38,7 @@ const TourDetail = () => {
       <div className="heading">
         <div className="heading-left-col">
           <h1>{getData?.name}</h1>
-          <ul>
-            {[1, 2, 3]?.map((item) => {
-              // return (
-              //   <li key={item}>
-              //     <p>
-              //       <AccessTimeIcon />
-              //     </p>
-              //     {item}
-              //   </li>
-              // );
-            })}
-          </ul>
+          
         </div>
         <div className="heading-right-col">
           {/* <FormControl sx={{ width: "100%" }}>
