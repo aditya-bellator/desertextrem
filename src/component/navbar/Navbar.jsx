@@ -2,7 +2,7 @@ import React from 'react'
 import "./navbar.scss";
 // import logo from "../../assets/logo_images.png"
 import { FiAlignLeft } from "react-icons/fi";
-import { logo } from '../../assets';
+import { logo,WhatsApp } from '../../assets';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
@@ -12,7 +12,10 @@ const Navbar = () => {
         <Link to={"/"}>
         <img src={logo} alt="logo" />
         </Link>
-        <FiAlignLeft />
+        <a href="https://api.whatsapp.com/send?phone=+971526063261&amp;text=Hi,%20I%20would%20like%20to%20know%20more%20details">
+        <img src={WhatsApp} alt="logo" />
+        </a>
+        {/* <FiAlignLeft /> */}
 
       </div>
    
