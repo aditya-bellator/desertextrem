@@ -8,7 +8,7 @@ export const ExperienceSlides = [{
 }, {
     img: sharma180,
 
-    title: "<p> SHARMAX ATV 180 CC<br>2 seater<br>30 min : 150 AED<br>1 Hour : 300 AED</p>",
+    title: "<p> SHARMAX ATV 180 CROSS CC<br>2 seater<br>30 min : 150 AED<br>1 Hour : 300 AED</p>",
     id: "SHARMAX-ATV-CROSS-180-CC"
 
 },
@@ -22,7 +22,7 @@ export const ExperienceSlides = [{
     img: kymko250,
 
     title: "<p> Kymko mxu 250 cc<br>2 seater<br>30 min : 150 AED<br>1 Hour : 300 AED</p>",
-    id: "004"
+    id: "kymko-mxu-250-cc"
 },
 {
     img: sharmaatv250,
@@ -55,7 +55,7 @@ export const ExperienceSlides = [{
     id: "kymko-mxu-250-cc"
 },
 {
-    img: "",
+    img: sharmaatv250,
 
     title: "<p> SHARMAX ATV 250 CC<br>2 seater<br>30 min : 150 AED<br>1 Hour : 300 AED</p>",
     id: "SHARMAX-ATV-250-CC"
@@ -87,6 +87,7 @@ export const detailPageJson = [{
     inclusion: "<ul> <li>Pick & Drop service provided from the hotel </li><li> Driving Polaris RZR under expert supervision. </li> <li>Taking a moment to capture those amazing moments and memories in a photo. </li><li>Having a fun time with sandboarding and displaying those dessert skills. </li><li>Enjoy a refreshing and relaxing camel ride</li><li>Soft drinks served upon arrival and throughout the tour to keep that thirst quenched. </li><li>Helmets and sunglasses are provided. </li></ul> ",
     Needtoknow: "<p>To be eligible for refund/changes certain criteria on our tour need to be followed.</p><ul><li>	In case of unforeseen circumstances, and a refund is required, it must be documented to the booking manager through a booking channel like WhatsApp, email, or direct messaging.</li><li>	At least 24 hours before tour departure, in which case there will be a 100% refund being offered. But 24-12 hours, before departure, there will be a 50% refund and there will be no refund if the cancellation happens in less than 12 hours. </li><li>Tour departure is indicated in the booking confirmation. </li><li>It is important to consider that weather conditions do not influence term number</li><p></p></ul>",
     cancellationPollicy: cancellationPollicy,
+    price:999,
 },
 {
     id: "CANAM-RZR-1000CC-2-Seater",
@@ -94,7 +95,7 @@ export const detailPageJson = [{
     description: "Let the adventure enthusiast in you satiate his/her quest for adventure with the thrill of speed and a chance to ride a CANAM RZR 1000CC and let the rush of speed, give you that necessary dopamine kick as you step away from the hustle of the city to step into the winds of the desert and take a moment to rejoice with the excitement of driving a really fast 1000CC Canam RZR in the desert for that once-in-a-lifetime moment.",
     inclusion: "<p>Desert Xtreme is all set to give you an adrenaline rush, as you start on a fast and furious journey on a 1000 CC buggy through the desert and catch a glimpse of what speed, thrill and adventure feel like for a day.</p><ul> <li>The trip duration is 4 hours</li><li>You will get to ride the buggy for 120 minutes</li> <li>Pickup time is 12 pm</li><li>Having a fun time with sandboarding and displaying those dessert skills. </li><li>Drop off time is 4pm</li><li>Assisted riding </li><li>Stop and get clicked </li><li>You will get to ride a camel </li><li>	You will get to sandboard </li><li>Get clicked with a falcon</li><li>	Helmet and sunglasses for the ride</li><li>Non-Alcoholic Beverages for refreshment</li></ul> ",
     Needtoknow: "<p>The following steps make you eligible for a refund. Please read below for details about cancellation and refund process: </p><ul><li>Request for refund or any changes must be done in writing to the operation manager via Whatsapp or Instagram Direct Messages. </li><li>If you cancel your trip before 24 hours, the complete amount will be refunded</li><li>In case you cancel within 24-12 hours of your travel date then 50 % of the amount will be refunded</li><li>	If you cancel the trip less than 12 hours before the tour date, no refund will be made to you. </li></ul><h3>Meta-description: </h3><p>Rejoice with the excitement of driving a really fast CANAM RZR 1000CC in the desert for that once-in-a-lifetime moment. Book to get best deals. </p>",
-    cancellationPollicy: cancellationPollicy,
+    cancellationPollicy: cancellationPollicy,price:1800
 },
 {
     name: "KYMKO MXU 250 CC ",
@@ -103,6 +104,7 @@ export const detailPageJson = [{
     inclusion: "<ul> <li>Pick & Drop service provided from the hotel </li><li>	Bike riding session under the supervision of our experts </li> <li>Relaxing time for a fun photo session, to capture all the memories. </li><li>Enjoy skiing on the sand for a fun ride of sandboarding.  </li><li>Explore the sand on the back of a camel as it takes a stroll for a camel ride. </li><li>Assisted riding </li><li>Refreshments and soft drinks are provided to customers. </li><li>Helmets and sunglasses are provided.  </li></ul> ",
     Needtoknow: "<p>To be eligible for refund/changes certain criteria on our tour need to be followed.  </p><ul><li>In case of unforeseen circumstances, and a refund is required, it must be documented to the booking manager through a booking channel like WhatsApp, email, or direct messaging. </li><li>At least 24 hours before tour departure, in which case there will be a 100% refund being offered. But 24-12 hours, before departure, there will be a 50% refund and there will be no refund if the cancellation happens in less than 12 hours. </li><li>Tour departure is indicated in the booking confirmation. </li></ul><p>It is important to consider that weather conditions do not influence term number 2. </p>",
     cancellationPollicy: cancellationPollicy,
+    price:630
 },
 {
     id: "dirt-bike-280-320-cc",
@@ -120,6 +122,7 @@ export const detailPageJson = [{
     inclusion: "<h3>What's included </h3><ul><li>	Pick-up and drop service provided by the hotel </li><li>	Supervisors monitor your journey as you drive the ATV for your safety at all times. </li><li>	Pause, and take a moment to capture all the excitement and thrill in a fun photo session. </li><li>	If skiing on snow is too mainstream, then how about doing it on sand for some out-of-the-box approach? </li><li>	Enjoying a calming camel ride</li><li>	Soft drinks and refreshments to keep you hydrated at all times. </li><li>	Gloves and sunglasses were provided. </li></ul>",
     Needtoknow: "<p>To be eligible for refund/changes certain criteria on our tour need to be followed. </p><ul><li>In case of unforeseen circumstances, and a refund is required, it must be documented to the booking manager through a booking channel like WhatsApp, email, or direct messaging</li><li>	At least 24 hours before tour departure, in which case there will be a 100% refund being offered. But 24-12 hours, before departure, there will be a 50% refund and there will be no refund if the cancellation happens in less than 12 hours. </li><li>	Tour departure is indicated in the booking confirmation. It is important to consider that weather conditions do not influence term number 2. </li></ul><h3>Meta Description </h3><p>Desert Extreme offers an unparalleled adventure of thrill, adrenaline rush, and other fun activities for true desert fun away from the hustle of the city</p>",
     cancellationPollicy: cancellationPollicy,
+    price:999
 },
 {
     id: "YAMAHA-RAPTO-700-CC",
@@ -128,6 +131,7 @@ export const detailPageJson = [{
     inclusion: "<p>Desert Xtreme is all set to give you an adrenaline rush, as you start on a fast and furious journey on a 700 CC QUAD through the desert and catch a glimpse of what speed, thrill and adventure feel like for a day.</p><ul><li>	The trip duration is 4 hours</li><li>	You will get to ride the quad for a duration of 120 minutes</li><li>	You will be provided a minimum 2 quads</li><li>	The drivers age should be above 16</li><li>	Pickup time is 12 pm </li><li>	Drop off time is 4pm</li><li>	Drop off time is 4pm</li><li>	Pickup and drop will be provided from hotels and locations in Dubai, Sharjah, Ajman</li><li>	You will be riding a YAMAHA RAPTO 700CC</li><li>	Assisted riding</li><li>	Stop and get clicked</li><li>	You will get to ride a camel</li><li>	You will get to sandboard</li><li>	Get clicked with a falcon</li><li>	Helmet and sunglasses for the ride</li><li>	Non-Alcoholic Beverages for refreshment</li></ul>",
     Needtoknow: "<p>The following steps make you eligible for a refund. Please read below for details about cancellation and refund process: </p><ul><li>	Request for refund or any changes must be done in writing to the operation manager via Whatsapp or Instagram Direct Messages. </li><li>	If you cancel your trip before 24 hours, the complete amount will be refunded</li><li>	In case you cancel within 24-12 hours of your travel date then 50 % of the amount will be refunded</li><li>	If you cancel the trip less than 12 hours before the tour date, no refund will be made to you.</li><h3>Meta Description</h3><p>Have the time of your life with Desert Xtreme when you drive a powerful Yamaha Rapto 700 CC and feel the adrenaline rush, when you ride in the dunes. </p></ul>",
     cancellationPollicy: cancellationPollicy,
+    price:680,
 },
 {
     id: "Yamaha-Grizzly-450-CC",
@@ -145,6 +149,7 @@ export const detailPageJson = [{
     inclusion: "<p>Get ready to get an adrenaline rush only with Desert Xtreme! Start your exhilarating journey on the Sharmax Hummer 320 CC bike. Feel the winds of the desert and understand the real meaning of thrill, adventure, and lightning speed! </p><ul><li>	The age limit of the driver should be 16+</li><li>	The trip duration is 4 hours</li><li>	The capacity of the buggy is 2-4</li><li>	You will get to ride the bike for 60 minutes</li><li>	Pick up and drop off can be made available from your place of stay</li><li>You will be riding a Sharmax Hummer 320 CC</li><li>Assisted riding</li><li>Stop and get clicked</li><li>You will get to ride a camel</li><li>You will get to sandboard</li><li>	Get clicked with a Falcon</li><li>	Helmet and sunglasses specially for riding </li><li>Non-Alcoholic Beverages for refreshment</li></ul>",
     Needtoknow: "<p>The following are the instructions to know if you’re eligible for a refund. Please read the details below carefully  and understand our cancellation and refund process:</p><ul><li>Request for refund or any changes must be made in writing to the operation manager viaWhatsapp or Instagram Direct Messages.<li/><li>If the trip is canceled before 24 hours then the complete amount will be refunded</li><li>In case you cancel within 24-12 hours of your travel date then 50 % of the amount will be refunded</li><li>If you cancel the trip less than 12 hours before the tour date, no refund will be made to you </li></ul><h3>Meta Description</h3><p>Get this amazing opportunity to ride the Sharmax Hummer 320 CC, and become the master of the desert to feel the adrenaline rush only with Desert Xtreme. </p>",
     price: "830",
+    cancellationPollicy:cancellationPollicy
 },
 {
     id: "POLARIS-RZR-1000-CC-4-SEATER",
@@ -153,7 +158,7 @@ export const detailPageJson = [{
     description: "Satiate your thirst for thrill and adventure and get a chance to ride the Polaris RZR 1000 CC and feel the exhilaration of speed! This will surely give you the much needed adrenaline rush and will fill you up with dopamine.Become the master of the desert and ride the winds and make memories for a lifetime.Step away from the hustle and bustle of the city and grab your Polaris RZR 1000 CC for a day with Desert Xtreme",
     inclusion: "<p>Get ready to get an adrenaline rush only with Desert Xtreme! Start your exhilarating journey on the Polaris RZR 1000 CC buggy. Feel the winds of the desert and understand the real meaning of thrill, adventure, and lightning speed!</p><ul><li>	The age limit of the driver should be 16+</li><li>	The trip duration is 4 hours</li><li>	The capacity of the buggy is 2-4</li><li>	The age limit for the driver is above 16</li><li>The trip duration is 4 hours</li><li>YThe capacity of the buggy is 2-4</li><li>AYou will get to ride the bike for 60 minutes</li><li>SPick up and drop off can be made available from your place of stay</li><li>You will be riding a Polaris RZR 1000 CC</li><li>Assisted riding</li><li>Stop and get clicked</li><li>You will get to ride a camel</li><li>You will get to sandboard</li><li>Get clicked with a Falcon</li><li>Helmet and sunglasses specially for riding</li><li>Non-Alcoholic Beverages for refreshment</li></ul>",
     Needtoknow: "<p>The following are the steps that make you eligible for a refund. Please read the details below carefully and understand our cancellation and refund process</p> <ul> <li>Request for refund or any changes must be done in writing to the operation manager via Whatsapp or Instagram Direct Messages.<li/><li>If you cancel your trip before 24 hours, the complete amount will be refunded</li><li>In case you cancel within 24-12 hours of your travel date then 50 % of the amount will be refunded</li><li>If you cancel the trip less than 12 hours before the tour date, no refund will be made to you</li></ul><h3>Meta Description</h3> <p>Step away from the hustle and bustle of the city and grab your Polaris RZR 1000 CC for a day with Desert Xtreme. Book now to grab best deals. </p>",
-
+cancellationPollicy:cancellationPollicy
 },
 {
     id:"polaris-sportsman-570-cc",
@@ -162,6 +167,7 @@ export const detailPageJson = [{
     inclusion:"<ul><li>The age limit for driving the Quad is 16+ </li><li>The trip duration is 4 hours</li><li>The capacity of the Quad is 2-4 people max </li><li>You will get to ride the bike for 60 minutes</li><li>Pick up and drop off can be made available from your place of stay</li><li>Pick-up time from your place of stay will be 12:00 PM</li><li>The drop-off time at your place of stay will be 4:00 PM </li><li>	You will be riding a Polaris Sportsman 570 CC</li><li>Assisted riding</li><li>	Stop and get clicked</li><li>You will get to ride a camel</li><li>You will get to sandboard</li>Get clicked with a Falcon<li><li>	Helmet and sunglasses specially for riding </li><li>	Non-Alcoholic Beverages for refreshment</li></ul>",
     Needtoknow:"<p>Read below the details carefully and know if you’re eligible for a refund. These steps give you an insight into our cancellation and refund process:</p>><ul><li>Request for refund or any changes must be made in writing to the operation manager viaWhatsapp or Instagram Direct Messages.</li><li>If the trip is canceled before 24 hours then the complete amount will be refunded</li><li>In case you cancel within 24-12 hours of your travel date then 50 % of the amount will be refunded</li><li>If you cancel the trip less than 12 hours before the tour date, no refund will be made to you </li></ul><h3>Meta Description</h3><p>Get on the exhilarating Polaris Sportsman 570 CC and feel the adrenaline rush while you surf through the pristine deserts of Dubai! Only with Desert Xtreme. </p>",
     price:"975",
+    cancellationPollicy:cancellationPollicy
 }
 ]
 export const Adultdouble = [{
