@@ -51,7 +51,7 @@ const {id} = useParams()
        {/* <BasicModal  Children={<EnquiryForm setOpen={setOpen} id={id} width={"100%"}/>}  setOpen={setOpen} open={open}/> */}
 
       <div className="detail-center-col">
-        <div className="mobile-detail-top-banner">
+        <div className="mobile-detail-top-banner" style={{backgroundImage:`url(${getData?.img})`}}>
            {/* style={{backgroundImage:`url("")`}}> */}
           <div className="mobile-deatil-banner-head">
             <div className="head-left-col">
