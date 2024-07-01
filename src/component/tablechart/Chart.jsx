@@ -9,7 +9,7 @@ const Chart = ({price}) => {
           <div className="safari-header">Quad Bike Safari (100 CC Bike)</div>
           <div className="safari-row">
             <div className="safari-label"><strong>Tour Duration :</strong></div>
-            <div className="safari-value">30 MINUTES</div>
+            <div className="safari-value">30 MINUTES / 1 HOUR</div>
           </div>
           <div className="safari-row">
             <div className="safari-label"><strong>Tour Service :</strong></div>

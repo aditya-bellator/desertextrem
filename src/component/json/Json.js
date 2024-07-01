@@ -168,6 +168,15 @@ cancellationPollicy:cancellationPollicy
     Needtoknow:"<p>Read below the details carefully and know if you’re eligible for a refund. These steps give you an insight into our cancellation and refund process:</p>><ul><li>Request for refund or any changes must be made in writing to the operation manager viaWhatsapp or Instagram Direct Messages.</li><li>If the trip is canceled before 24 hours then the complete amount will be refunded</li><li>In case you cancel within 24-12 hours of your travel date then 50 % of the amount will be refunded</li><li>If you cancel the trip less than 12 hours before the tour date, no refund will be made to you </li></ul><h3>Meta Description</h3><p>Get on the exhilarating Polaris Sportsman 570 CC and feel the adrenaline rush while you surf through the pristine deserts of Dubai! Only with Desert Xtreme. </p>",
     price:"975",
     cancellationPollicy:cancellationPollicy
+},
+{
+    id:"SHARMAX-ATV-CROSS-180-CC",
+    name:"SHARMAX ATV 180 CROSS CC (2 Seater) ",
+    description:"Let the adrenaline junkie satiate his/her quest for adventure with the thrill of speed and a chance to ride a quad bike and let the rush of speed, kick in as you step away from the hustle of the city to step into the winds of the desert and take a moment to rejoice with the excitement of driving a really fast 180 CC quad bike in the desert for that once-in-a-lifetime moment.",
+    inclusion:"<ul><li>Pick up in a luxury 4WD land cruiser on a chargeable basis.</li><li>Enjoy the view from up top while you take a stroll on a camel and experience the Arabic way of living.</li><li>If skiing on snow is too mainstream, then time to take it to the desert with sandboarding for that new escapade, you have been looking for.</li></ul>",
+    Needtoknow:"<ul><li>This will be a 30 min tour.</li><li>Guests will be given 180 CC open desert bikes to drive.</li><li>Pickup will be chargeable but there is no drop service.</li><li> Adults will be charged with 150 AED to 300 AED based on the duration. </li></ul>",
+    price:"300",
+    cancellationPollicy:cancellationPollicy
 }
 ]
 export const Adultdouble = [{
