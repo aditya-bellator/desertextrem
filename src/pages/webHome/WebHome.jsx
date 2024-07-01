@@ -101,7 +101,7 @@ const WebHome = () => {
        
        
       </Swiper>
-      <div id="activity">
+      <div id="ADULT">
 
       <SliderSection
         name={"Adult (double)"}
@@ -115,12 +115,15 @@ const WebHome = () => {
         data={Adultsingle}
         para={"EMBRACE ADVENTURE: THRILLING BUGGY TOURS AWAIT"}
       />
+      <div id="dune">
+
       <SliderSection
       openModal={openModal}
-        name={"DUNE BUGGY"}
-        data={DuneBuggy}
-        para={"EMBRACE ADVENTURE: THRILLING BUGGY TOURS AWAIT"}
+      name={"DUNE BUGGY"}
+      data={DuneBuggy}
+      para={"EMBRACE ADVENTURE: THRILLING BUGGY TOURS AWAIT"}
       />
+      </div>
       <SliderSection
       openModal={openModal}
       data={Offroad}

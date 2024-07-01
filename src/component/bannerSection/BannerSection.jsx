@@ -31,8 +31,8 @@ const BannerSection = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#fav">
-                  About Us
+                <a className="nav-link" href="#ADULT">
+                ADULT Double
                 </a>
               </li>
               <li>
@@ -45,8 +45,8 @@ const BannerSection = () => {
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#activity">
-                  Our Activities{" "}
+                <a className="nav-link" href="#dune">
+                  Dune Buggy{" "}
                 </a>
               </li>
               <li className="nav-item">

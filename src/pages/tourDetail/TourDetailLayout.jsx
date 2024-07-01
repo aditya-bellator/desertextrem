@@ -39,6 +39,27 @@ const {id} = useParams()
            &&
           <DesertExtremeCard fun={handleOpen}/>
            } */}
+           <div className="section-map">
+           <div className="map">
+            {/* <div className="innerWrap1"> */}
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14469.581523690338!2d55.7187776!3d24.9526592!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef577160f93faad%3A0xd593a598b2c7b63d!2sDESERT%20XTREME%20ADVENTURES!5e0!3m2!1sen!2sin!4v1719220932118!5m2!1sen!2sin"
+                width="100%"
+                height="300"
+                style={{ border: 0 }}
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            {/* </div> */}
+            <div className="address">
+
+            <p><b>Address :</b> Retreat by Sharjah Collection - Madam Rd
+Near Al Badayer - Al Badayer
+Sharjah - United Arab Emirates</p>
+            </div>
+          </div>
+           </div>
+           
         </div>
       </div>
       <FooterSection/>

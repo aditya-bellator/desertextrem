@@ -27,6 +27,10 @@
           // @include media(largeHug){
           //   font-size: 28px;
           // }
+          span{
+            color:#df723c;
+            margin-left:10px;
+          }
         }
         ul {
           margin: 0%;
@@ -165,6 +169,26 @@ font-size: 22px;
       font-size: 22px;
 color: #464646;
 font-weight: bold;
+    }
+    .section-map{
+      border-radius: 10px;
+      padding: 5px;
+      margin-top: 10px;
+      // background: red;
+      overflow: hidden;
+      filter: drop-shadow(0px 6px 24.5px rgba(22, 19, 22, 0.09));
+      background-color: #ffffff;
+      padding-bottom: 20px;
+      .address{
+        color: black;
+        padding: 10px;
+        p{
+          margin: 0;
+          padding: 0;
+          font-size: 14px;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+      }
     }
   }
 }
