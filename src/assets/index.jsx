@@ -91,4 +91,7 @@ import polar4 from "./slid/POLARIS-570-CC/57pol4.webp"
 
 
 
-export {shar1,shar2,shar3,shar4,yrapto1,yrapto2,yrapto3,yrapto4,yrapto5,yam1,yam2,yam3,yam4,pole1, pole2,pole3,pole4,pole5,pol1, pol2,pol3,pol4,pol5,pol6,kymko1,kymko2,kymko3,kymko4,kymko5,dart1,dart2,dart3,dart4, dart5,Canam1,Canam2,Canam3,Canam4,Canam5,kymko250,cardImage,favorite,favorite1,favorite2, desert,desert1,desert2,desert3,desert4,desert5,tickIcon,headingImg,last,sharma320,user, road1,half ,great ,bike, road2, cannam1000, cannam4,sharma180, bluebuggy ,polaris1000,sharmaATV250,sharmaatv250 ,twinRider, sliderImg, desertImg, singleImg, adventureImg, desertEx,logo, galleryImg,whiteBg, }
+export {polar1,
+    polar2,
+    polar3,
+    polar4,shar1,shar2,shar3,shar4,yrapto1,yrapto2,yrapto3,yrapto4,yrapto5,yam1,yam2,yam3,yam4,pole1, pole2,pole3,pole4,pole5,pol1, pol2,pol3,pol4,pol5,pol6,kymko1,kymko2,kymko3,kymko4,kymko5,dart1,dart2,dart3,dart4, dart5,Canam1,Canam2,Canam3,Canam4,Canam5,kymko250,cardImage,favorite,favorite1,favorite2, desert,desert1,desert2,desert3,desert4,desert5,tickIcon,headingImg,last,sharma320,user, road1,half ,great ,bike, road2, cannam1000, cannam4,sharma180, bluebuggy ,polaris1000,sharmaATV250,sharmaatv250 ,twinRider, sliderImg, desertImg, singleImg, adventureImg, desertEx,logo, galleryImg,whiteBg, }

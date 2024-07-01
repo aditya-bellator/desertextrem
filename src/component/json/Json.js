@@ -7,7 +7,6 @@ export const ExperienceSlides = [{
 
 }, {
     img: sharma180,
-
     title: "<p> SHARMAX ATV 180 CROSS CC<br>2 seater<br>30 min : 150 AED<br>1 Hour : 300 AED</p>",
     id: "SHARMAX-ATV-CROSS-180-CC"
 

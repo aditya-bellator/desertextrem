@@ -29,13 +29,13 @@ const WebHome = () => {
   const [activeSlide, setActiveSlide] = useState(0);
 
   const settings = {
-    infinite: false,
+    infinite: true,
     slidesToShow: 1,
-    speed: 777500,
+    speed: 1500,
     arrows: false,
 
     dots: false,
-    autoplay: false,
+    autoplay: true,
     beforeChange: (current, next) => setActiveSlide(next),
   };
 
@@ -77,7 +77,7 @@ const WebHome = () => {
       </div>
       <Swiper
         className="mySwiper"
-        spaceBetween={1}
+        spaceBetween={0}
         slidesPerView={5}
         centeredSlides={true}
         roundLengths={true}
