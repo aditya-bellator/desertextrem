@@ -38,7 +38,7 @@ const TourDetail = () => {
       <div className="heading">
         <div className="heading-left-col">
           <h1>{getData?.name} 
-            <span>{getData?.minPrice +"AED"}</span>
+            <span>{getData?.minPrice +"AED /-"}</span>
           </h1>
           
         </div>
@@ -77,10 +77,10 @@ const TourDetail = () => {
       </div>
       <div id="highlights">
         <div className="highlights-section m-collapse2">
-          <DetailCard name={"Inclusion"} list={getData?.inclusion}/>
+          <DetailCard name={"Hightlight"} list={getData?.inclusion}/>
           <DetailCard name={"Inclusions"} data={getData}/>
-          <DetailCard name={"Need To Know"} list={getData?.Needtoknow}/>
-          <DetailCard name={"Cancellation Policy"}list={getData?.cancellationPollicy}/>
+          {/* <DetailCard name={"Need To Know"} list={getData?.Needtoknow}/>
+          <DetailCard name={"Cancellation Policy"}list={getData?.cancellationPollicy}/> */}
         </div>
       </div>
       <div className="guest-review" id="review">

@@ -10,7 +10,7 @@ const FooterSection = () => {
     <section className='footer-sec'>
     <div className="footer2">
       <div className="logo">
-        <a href="#top">
+        <a href="/">
 
         <img src={logo} alt="logo" />
         </a>

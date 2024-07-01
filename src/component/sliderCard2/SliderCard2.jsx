@@ -17,7 +17,7 @@ const SliderCard2 = ({ image ,name,description,price,id}) => {
       <div className="bottom-col">
         <h4 className="card-heading">{name}</h4>
         <p>{description}</p>
-        <span>{price} AED</span>
+        <span>{price} AED /-</span>
       </div>
     </div>
     </Link>

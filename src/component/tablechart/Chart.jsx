@@ -6,11 +6,11 @@ const Chart = ({data}) => {
     <div className="col-xs-12 col-md-5" style={{borderRadius:"5px",overflow:"hidden",padding:"5px",background:"white",    filter: "drop-shadow(0px 6px 24.5px rgba(22, 19, 22, 0.09))"}}>
       <div className="maintainancecpm">
         <div className="safari-section">
-          <div className="safari-header">Quad Bike Safari (100 CC Bike)</div>
+          <div className="safari-header">{data?.name}</div>
          
           <div className="safari-row">
             <div className="safari-label"><strong>Tour Service :</strong></div>
-            <div className="safari-value">Quad bike Safari (100 CC Bike) - *Inclusive of VAT</div>
+            <div className="safari-value">{data?.name} - *Inclusive of VAT</div>
           </div>
           <div className="safari-row">
             <div className="safari-label"><strong>Pick Time / Drop Time</strong></div>
@@ -26,11 +26,11 @@ const Chart = ({data}) => {
           </div> */}
           <div className="safari-row">
             <div className="safari-label"><strong>Price 30 MINUTES :</strong></div>
-            <div className="safari-value"><strong>{data?.minPrice} AED</strong></div>
+            <div className="safari-value"><strong>{data?.minPrice} AED /-</strong></div>
           </div>
           <div className="safari-row">
             <div className="safari-label"><strong>Price 1 HOUR:</strong></div>
-            <div className="safari-value"><strong>{data?.maxPrice} AED</strong></div>
+            <div className="safari-value"><strong>{data?.maxPrice} AED /-</strong></div>
           </div>
         </div>
       </div>

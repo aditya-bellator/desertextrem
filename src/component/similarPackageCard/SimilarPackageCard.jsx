@@ -7,7 +7,7 @@ import Modal from "../modal/Modal";
 import Form from "../form/Form";
 // import {favorite}from "../../assets"
 
-const SimilarPackageCard = ({fun}) => {
+const SimilarPackageCard = ({fun,data}) => {
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -19,24 +19,24 @@ const SimilarPackageCard = ({fun}) => {
   const closeModal = () => {
     setIsOpen(false);
   };
-
+console.log(data)
   return (
     <>
          
          <Modal isOpen={isOpen} onClose={closeModal}>
        <Form/>
       </Modal>
-    <div className="similar-package-card-col">
-      <div className="similar-card-img">
+    <div className="similar-package-card-col" >
+      <div className="similar-card-img" style={{backgroundImage:`url(${data?.slide[0]})`}}>
       <div className="heart-icon" ><FavoriteBorderOutlinedIcon/></div>
       {/* <img src={favorite} alt="new" /> */}
       </div>
       <div className="similar-card-content">
-        <h4>Ultimate Adventure Dessert Safari</h4>
+        <h4>{data?.name}</h4>
         {/* <p>(4 Persons)</p> */}
         <hr />
         <div className="price">
-          <h4 className="aed">AED 199.00</h4> <p className="per-night">(Per Person)</p>
+          <h4 className="aed">AED {data?.minPrice} /-</h4> <p className="per-night">(Per Person)</p>
         </div>
         <div className="xtreme">
           Desert Xtreme <StarIcon /> 4.5

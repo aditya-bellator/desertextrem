@@ -9,20 +9,19 @@ import DesertExtremeCard from "../../component/desertExtremeCard/DesertExtremeCa
 import { Outlet, useParams } from "react-router-dom";
 import BannerSection from "../../component/bannerSection/BannerSection"
 import FooterSection from "../../component/footerSec/FooterSection";
+import { detailPageJson } from "../../component/json/Json";
 
-// import BasicModal from "../../component/modal/Modal";
-// import EnquiryForm from "../../component/enquiryForm/EnquiryForm";
 
 
 const TourDetailLayout = () => {
 
 
  
-const checkLoaction = window.location.pathname
 const [open, setOpen] = useState(false);
 const handleOpen = () => setOpen(true);
 const {id} = useParams()
- 
+ const getSimilar= detailPageJson?.find((item)=>item?.similar == id  )
+ const getSimilarData = getSimilar ==undefined ?detailPageJson?.find((item)=>item?.similar == "kymko-mxu-250-cc"):getSimilar
   return (
     <>
   <BannerSection/>
@@ -34,7 +33,7 @@ const {id} = useParams()
         </div>
         <div className="tour-detail-right-col">
           <h3>Similar Package</h3>
-          <SimilarPackageCard fun={handleOpen}/>
+          <SimilarPackageCard fun={handleOpen} data={getSimilarData}/>
           {/* {checkLoaction != "/listing"
            &&
           <DesertExtremeCard fun={handleOpen}/>
@@ -53,9 +52,15 @@ const {id} = useParams()
             {/* </div> */}
             <div className="address">
 
-            <p><b>Address :</b> Retreat by Sharjah Collection - Madam Rd
+           <p>Address :</p> 
+            <p>Retreat by Sharjah Collection - Madam Rd
 Near Al Badayer - Al Badayer
 Sharjah - United Arab Emirates</p>
+            </div>
+            <div className="address">
+
+           <p>Mobile :</p> 
+            <p>+971 56 188 5977</p>
             </div>
           </div>
            </div>
