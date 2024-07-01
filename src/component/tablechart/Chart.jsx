@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.scss'
 
-const Chart = () => {
+const Chart = ({price}) => {
   return (
     <div className="col-xs-12 col-md-5" style={{borderRadius:"5px",overflow:"hidden",padding:"5px",background:"white",    filter: "drop-shadow(0px 6px 24.5px rgba(22, 19, 22, 0.09))"}}>
       <div className="maintainancecpm">
@@ -16,20 +16,20 @@ const Chart = () => {
             <div className="safari-value">Quad bike Safari (100 CC Bike) - *Inclusive of VAT</div>
           </div>
           <div className="safari-row">
-            <div className="safari-label"><strong>Pick Time :</strong></div>
-            <div className="safari-value">05:00 PM</div>
+            <div className="safari-label"><strong>Pick Time / Drop Time</strong></div>
+            <div className="safari-value">05:00 PM / 06:00 PM</div>
           </div>
-          <div className="safari-row">
+          {/* <div className="safari-row">
             <div className="safari-label"><strong>Drop off Time :</strong></div>
             <div className="safari-value">06:00 PM</div>
-          </div>
-          <div className="safari-row">
+          </div> */}
+          {/* <div className="safari-row">
             <div className="safari-label"><strong>Per Child :</strong> (4 to 10)</div>
             <div className="safari-value"><strong>100 AED</strong></div>
-          </div>
+          </div> */}
           <div className="safari-row">
-            <div className="safari-label"><strong>Per Adult :</strong></div>
-            <div className="safari-value"><strong>120 AED</strong></div>
+            <div className="safari-label"><strong>Price :</strong></div>
+            <div className="safari-value"><strong>{price} AED</strong></div>
           </div>
         </div>
       </div>

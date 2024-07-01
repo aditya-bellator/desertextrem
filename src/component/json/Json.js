@@ -279,3 +279,29 @@ export const Offroad = [
 
 
 ]
+
+
+export const FavoriteJson = [ {
+        img: cardImage,
+        name: "Polaris rzr 1000 cc 2 seater 30 min : 1000 aed 1 hour: 1500 aed",
+        id: "polaris-rzr-1000-cc",
+    
+    des: "For all the racing enthusiast who like to show off their racing skills and drive like there is no tomorrow, come and join the fun of driving the powerful beast POLARIS RZR 1000 cc in Dubai as the ride takes you for an adventure of speed, thrill and power as you cruise your way through the dessert, away from the hustle and bustle of the city for an unforgettable experience. With its ease of use and simple guidelines, be ready to feel that adrenaline rush kick in as you speed through the wild landscape. ",
+    price:999,
+},
+{
+    img: road1,
+
+    name: "CANNAM rzr 1000 cc (2 seater)",
+    id: "CANAM-RZR-1000CC-2-Seater",
+    des: "Let the adventure enthusiast in you satiate his/her quest for adventure with the thrill of speed and a chance to ride a CANAM RZR 1000CC and let the rush of speed, give you that necessary dopamine kick as you step away from the hustle of the city to step into the winds of the desert and take a moment to rejoice with the excitement of driving a really fast 1000CC Canam RZR in the desert for that once-in-a-lifetime moment.",
+    price:1800
+},
+{
+    img: sharmaATV250,
+
+    name: "SHARMAX ATV 250 CC",
+    id: "SHARMAX-ATV-250-CC",
+    des: "This goes to all the racing fans, who love to test their driving skills and their adrenaline rush knows no limits and boundaries as Dessert Extreme is here to bring you one of the most thrilling rides for you to experience in the desert of Dubai as you drive the beast SHARMAX ATV 250 CC. So brace yourself for an exhilarating ride of speed, thrill, adventure, and all the amazing rush your body will experience as you take this high-powered ATV for a spin in the desert of Dubai and far from the city congestion. The tour commits itself to providing you with an unforgettable journey with some other activities as well",
+    price:999
+},]
