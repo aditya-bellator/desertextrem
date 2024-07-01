@@ -12,8 +12,8 @@ import Modal from "../modal/Modal";
 import Form from "../form/Form";
 
 
-const DetailTabs = ({sliderData,fun}) => {
-  const [changeImage, setChangeImage] = useState(desert1)
+const DetailTabs = ({sliderData,fun,slides}) => {
+  const [changeImage, setChangeImage] = useState( slides?.length && slides[0])
   const [value, setValue] =useState(4);
   var settings = {
     dots: false,
@@ -111,7 +111,7 @@ const DetailTabs = ({sliderData,fun}) => {
           <Slider {...settings}>
               
          
-            {[desert2,desert3,desert4,desert,desert5].map((item) => (
+            {slides?.map((item) => (
               <img src={item} alt={item} key={item} onClick={()=>setChangeImage(item)}/>
             ))}
     </Slider>

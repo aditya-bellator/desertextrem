@@ -69,7 +69,7 @@ const TourDetail = () => {
               </FormControl> */}
         </div>
       </div>
-      <DetailTabs />
+      <DetailTabs slides={getData?.slides}/>
       <div className="short-description">
       {getData?.description}
       </div>
