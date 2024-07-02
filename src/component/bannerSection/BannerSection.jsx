@@ -1,5 +1,5 @@
 import React from "react";
-import { logo, tickIcon } from "../../assets";
+import { banner1, logo, tickIcon } from "../../assets";
 import { IoIosStar } from "react-icons/io";
 import { SiNike } from "react-icons/si";
 import banner from "../../assets/banner.png";
@@ -23,55 +23,48 @@ const BannerSection = () => {
             </span>
           </div>
           <nav className="navbart" id="">
-            <ul className="navbar-nav mx-auto centermanu">
-              {pathNameSplit == "tour-detail" ? (
-                ""
-              ) : (
-                <li className="nav-item active">
-                  <Link className="nav-link" to="/">
-                    Home
-                  </Link>
-                </li>
-              )}
-              {pathNameSplit == "tour-detail" ? (
-                ""
-              ) : (
-                <li className="nav-item">
-                  <a className="nav-link" href="#quad">
-                    QUAD BIKE
-                  </a>
-                </li>
-              )}
-              <li>
-                <Link className="navbar-brand" to="/">
-                  <img src={logo} className="img-fluid" alt="" />
-                </Link>
-                {/* <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span className="navbar-toggler-icon"></span>
-  </button> */}
-              </li>
-              {pathNameSplit == "tour-detail" ? (
-                ""
-              ) : (
-                <li className="nav-item">
-                  <a className="nav-link" href="#dune">
-                    Dune Buggy{" "}
-                  </a>
-                </li>
-              )}
-              {pathNameSplit == "tour-detail" ? (
-                ""
-              ) : (
-                <li className="nav-item">
-                  <a className="nav-link" href="#Gallery">
-                    Gallery
-                  </a>
-                </li>
-              )}
-            </ul>
+          {pathNameSplit != "tour-detail" && 
+          <ul className="navbar-nav mx-auto centermanu">
+             
+          <li className="nav-item active">
+            <Link className="nav-link" to="/">
+              Home
+            </Link>
+          </li>
+   
+       
+          <li className="nav-item">
+            <a className="nav-link" href="#quad">
+              QUAD BIKE
+            </a>
+          </li>
+        
+        <li>
+          <Link className="navbar-brand" to="/">
+            <img src={logo} className="img-fluid" alt="" />
+          </Link>
+          {/* <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span className="navbar-toggler-icon"></span>
+</button> */}
+        </li>
+       
+          <li className="nav-item">
+            <a className="nav-link" href="#dune">
+              Dune Buggy{" "}
+            </a>
+          </li>
+     
+          <li className="nav-item">
+            <a className="nav-link" href="#Gallery">
+              Gallery
+            </a>
+          </li>
+      </ul>
+          }
+            
           </nav>
         </div>
-        <img src={banner} className="img-fluid" alt="" />
+        <img src={pathNameSplit == "tour-detail" ?  banner1:banner} className="img-fluid" alt="" />
         <div className="top-banner-bottom-rectangle">
           <ul>
             <li>
@@ -90,7 +83,7 @@ const BannerSection = () => {
               <span>
                 <img src={tickIcon} alt="" />
               </span>
-              100% Customised trips
+              95% Customised trips
             </li>
             <li>
               <span>

@@ -62,7 +62,7 @@ Sharjah - United Arab Emirates</p>
             <div className="address">
 
            <p>Mobile :</p> 
-            <p>+971 56 188 5977</p>
+            <p style={{marginLeft:"10px"}}>+971 56 188 5977</p>
             </div>
           </div>
            </div>

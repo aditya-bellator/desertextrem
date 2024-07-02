@@ -24,6 +24,7 @@
           line-height: 40px;
           color: #464646;
           font-weight: bold;
+          letter-spacing: -1px;
           // @include media(largeHug){
           //   font-size: 28px;
           // }
@@ -239,9 +240,13 @@ font-weight: bold;
   background-color: #ffffff;
   color: rgb(106, 106, 106);
   font-size: 12px;
+  font-family: sans-serif;
   padding: 20px;
   margin-bottom: 10px;
   margin-top: 10px;
+  span{
+    font-weight: bold;
+  }
 }
 // .clr-gray{
 //   color: #949292;
