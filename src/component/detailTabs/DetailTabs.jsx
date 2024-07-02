@@ -10,6 +10,9 @@ import {desert,desert1,desert2,desert3,desert4,desert5}from "../../assets"
 import { openModelHandlerRef } from "../../pages/webHome/WebHome";
 import Modal from "../modal/Modal";
 import Form from "../form/Form";
+import axios from "axios";
+import { toast } from "react-toastify";
+import ThankYouModal from "../thankYouModal/ThankYouModal";
 
 
 const DetailTabs = ({sliderData,fun,slides}) => {
@@ -72,19 +75,65 @@ const DetailTabs = ({sliderData,fun,slides}) => {
   
   const [isOpen, setIsOpen] = useState(false);
 
+  
+  
+  
+  const [isOpen2, setIsOpen2] = useState(false);
+  
   const openModal = () => {
-    console.log("first")
     setIsOpen(true);
   };
 
+
   const closeModal = () => {
     setIsOpen(false);
+    setIsOpen2(false)
   };
+  const openModal2 = () => {
+  setIsOpen(false)
+    setIsOpen2(true);
+  };
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: '',
+    senderEmail: 'ad@example.com', // Add senderEmail to the initial state
+  });
+  const [loading, setLoading] = useState(false)
+  const submitHandler = async(e)=>{
+    e.preventDefault()
+    setLoading(true)
+    await axios.post("https://tripatours.com/api/enquiry/desertExtremeEnquiry",formData).then((response)=>{
+      if(response?.data?.status == "true"){
+         openModal2()
+         setLoading(false)
+        // toast.success(response?.data?.message,{
+        //   position: "top-right",
+        // });
+        //  setFormData((prev)=>{
+        //   return{
+        //     ...prev,name:"",email:"",phone:"",message:""
+        //   }
+        //  })
+       }else{
+        toast.error(response?.data?.message);
+        setLoading(false)
+       }
+     }).catch((error)=>{
+      toast.error(error?.response?.data?.message || 'An error occurred');
+      setLoading(false)
+    })
+     setLoading(false)
+   }
   return (
     <>
      
-     <Modal isOpen={isOpen} onClose={closeModal}>
-       <Form/>
+    <Modal isOpen={isOpen2} onClose={closeModal}>
+    <ThankYouModal />
+   </Modal>
+       <Modal isOpen={isOpen} onClose={closeModal}>
+     {loading ? <span style={{color:"black"}}>loading...</span>:<Form  setFormData={setFormData} formData={formData} submitHandler={submitHandler}/>}  
       </Modal>
     <div className="tabs-container">
       <div className="tabs-title">

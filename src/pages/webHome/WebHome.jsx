@@ -23,6 +23,9 @@ import BannerSection from "../../component/bannerSection/BannerSection";
 import FooterSection from "../../component/footerSec/FooterSection";
 import FavSliderComponent from "../../component/slider/FavSlider";
 import { Adultdouble, Adultsingle, DuneBuggy, ExperienceSlides, Offroad } from "../../component/json/Json";
+import ThankYouModal from "../../component/thankYouModal/ThankYouModal";
+import { toast } from "react-toastify";
+import axios from "axios";
 export let openModelHandlerRef;
 
 const WebHome = () => {
@@ -39,23 +42,10 @@ const WebHome = () => {
     beforeChange: (current, next) => setActiveSlide(next),
   };
 
-  const [isOpen, setIsOpen] = useState(false);
-
-  const openModal = () => {
   
-    setIsOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsOpen(false);
-  };
-  
-  const AdultdoubleData = Adultdouble
   return (
     <div>
-       <Modal isOpen={isOpen} onClose={closeModal}>
-       <Form/>
-      </Modal>
+      
       <BannerSection/>
 <div className="content-center-col">
 
@@ -94,7 +84,7 @@ const WebHome = () => {
       >
         {ExperienceSlides.map((item)=><SwiperSlide key={item} >
     
-    <SliderCard openModal={openModal} item={item}/>
+    <SliderCard  item={item}/>
   </SwiperSlide>)}
         
       
@@ -112,7 +102,7 @@ const WebHome = () => {
         <div id="quad">
 
       <SliderSection
-      openModal={openModal}
+      
       name={"QUAD (BIKE)"}
       data={Adultsingle}
       tag={true}
@@ -122,14 +112,14 @@ const WebHome = () => {
       <div id="dune">
 
       <SliderSection
-      openModal={openModal}
+      
       name={"DUNE BUGGY"}
       data={DuneBuggy}
       para={"EMBRACE ADVENTURE: THRILLING BUGGY TOURS AWAIT"}
       />
       </div>
       <SliderSection
-      openModal={openModal}
+      
       data={Offroad}
         name={"OTHER OFFROAD BIKES & ATV'S (SINGLE)"}
         para={"EMBRACE ADVENTURE: THRILLING BUGGY TOURS AWAIT"}

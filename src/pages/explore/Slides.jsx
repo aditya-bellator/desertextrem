@@ -200,23 +200,7 @@ const Slides = ({gallery}) => {
       </section>
 
 
-      {/* <section className="enquiry-section">
-        <div className="desert-img">
-          <img src={desertImg} alt="desert" />
-
-        </div>
-        <div className="thanks">
-          <h2>Thankyou</h2>
-          <div className="card-thank">
-            <p>We appreciate your interest in our services. One of our representatives
-              will get back to you shortly with the information you requested. If
-              you have any urgent questions, please feel free to contact us directly.</p>
-            <hr style={{ width: "40%", marginBottom: "5px", marginTop: "10px" }} />
-            <p className="phone-number">+971 52 606 3261</p>
-          </div>
-        </div>
-
-      </section> */}
+      
     
 
     </div>

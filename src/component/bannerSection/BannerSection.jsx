@@ -90,7 +90,7 @@ const BannerSection = () => {
               <span>
                 <img src={tickIcon} alt="" />
               </span>
-              100% Customised trips
+              95% Customised trips
             </li>
             <li>
               <span>

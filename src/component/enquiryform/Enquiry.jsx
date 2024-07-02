@@ -4,52 +4,51 @@ import { desertEx } from "../../assets";
 import axios from "axios";
 import { useState } from "react";
 import { toast } from "react-toastify";
+import Modal from "../modal/Modal";
+import ThankYouModal from "../thankYouModal/ThankYouModal"
 
 const Enquiry = () => {
-  const sendToEmail = (event) => {
-    event.preventDefault();
 
-    const email1 = "panthjyoti12@gmail.com"; // Replace with your first email address
-    const email2 = "addyrj20@gmail.com"; 
-    const email = `${email1},${email2}`;
-    const firstName = document.querySelector('input[name="firstName"]').value;
-    const lastName = document.querySelector('input[name="lastName"]').value;
-    const emailAddress = document.querySelector('input[name="email"]').value;
-    const phoneNumber = document.querySelector('input[name="phone_number"]').value;
-    const message = document.querySelector('textarea[name="message"]').value;
-
-    const subject = "New User Enquiry";
-    const body = `First Name: ${firstName}
-Last Name: ${lastName}
-Email: ${emailAddress}
-Mobile: ${phoneNumber}
-Message: ${message}`;
-
-    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-
-    window.location.href = mailtoLink;
-  };
   const [formData, setFormData] = useState({})
 
   const formHandler = (e)=>{
     const {name,value} = e.target
     setFormData({...formData, [name]: value})
   }
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openModal = () => {
+    setIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+  };
   const submitHandler = async(e)=>{
-    e.stopPropagation()
-    await axios.post("https://tripatours.com/api/enquiry/desertExtremeEnquiry/formData").then((response)=>{
-       if(response?.status){
-      toast.success(response?.message)
-         setFormData({})
+    e.preventDefault()
+    await axios.post("https://tripatours.com/api/enquiry/desertExtremeEnquiry",formData).then((response)=>{
+      if(response?.data?.status == "true"){
+         openModal()
+        // toast.success(response?.data?.message,{
+        //   position: "top-right",
+        // });
+         setFormData((prev)=>{
+          return{
+            ...prev,name:"",email:"",phone:"",message:""
+          }
+         })
        }else{
-         toast.error(response?.message)
+        toast.error(response?.data?.message);
        }
      }).catch((error)=>{
-      toast.error(error?.message)
+      toast.error(error?.response?.data?.message || 'An error occurred');
      })
    }
-   console.log(formData)
   return (
+    <>
+    <Modal isOpen={isOpen} onClose={closeModal}>
+    <ThankYouModal/>
+   </Modal>
     <div className="enquiry-main" id="enquire-now">
       <img src={desertEx} alt="" />
       <div className="enquiry-form-container">
@@ -90,6 +89,7 @@ Message: ${message}`;
         </div>
       </div>
     </div>
+    </>
   );
 };
 
