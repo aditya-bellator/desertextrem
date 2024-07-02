@@ -71,7 +71,7 @@ const {id} = useParams()
             </div>
           </div>
           <div className="mobile-detail-banner-bottom-col">
-            <img src={deal} alt="item" />
+            {/* <img src={deal} alt="item" /> */}
             {/* <ul>
               <li>
                 <div className="icon">
