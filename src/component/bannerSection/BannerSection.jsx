@@ -23,22 +23,23 @@ const BannerSection = () => {
             </span>
           </div>
           <nav className="navbart" id="">
-          {pathNameSplit != "tour-detail" && 
+            
           <ul className="navbar-nav mx-auto centermanu">
-             
+          {pathNameSplit != "tour-detail"?
           <li className="nav-item active">
             <Link className="nav-link" to="/">
               Home
             </Link>
           </li>
+         :"" }
    
-       
+   {pathNameSplit != "tour-detail"?
           <li className="nav-item">
             <a className="nav-link" href="#quad">
               QUAD BIKE
             </a>
           </li>
-        
+        :""}
         <li>
           <Link className="navbar-brand" to="/">
             <img src={logo} className="img-fluid" alt="" />
@@ -47,20 +48,22 @@ const BannerSection = () => {
 <span className="navbar-toggler-icon"></span>
 </button> */}
         </li>
-       
+        {pathNameSplit != "tour-detail"?
           <li className="nav-item">
             <a className="nav-link" href="#dune">
               Dune Buggy{" "}
             </a>
           </li>
-     
+     :""}
+      {pathNameSplit != "tour-detail"?
           <li className="nav-item">
             <a className="nav-link" href="#Gallery">
               Gallery
             </a>
           </li>
+          :""}
       </ul>
-          }
+       
             
           </nav>
         </div>
