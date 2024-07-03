@@ -10,7 +10,7 @@ import { favorite2, favorite1, favorite } from "../../assets";
 import "./styles.scss";
 import SliderCard2 from "../sliderCard2/SliderCard2";
 import { FavoriteJson } from "../json/Json";
-const FavSliderComponent = ({ data }) => {
+const FavSliderComponent = ({ data ,desc}) => {
   var settings = {
     dots: false,
     infinite: true,
@@ -62,8 +62,10 @@ const FavSliderComponent = ({ data }) => {
       image={item?.img}
       name={item?.name}
       id={item?.id}
+      desc={desc}
       description={
-       item?.des}
+        desc ?
+       item?.des:""}
       price={item?.price}
     />
   )

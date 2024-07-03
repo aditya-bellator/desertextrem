@@ -1,5 +1,30 @@
 .enquire-form{
     color: black;
+    .country-select{
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        border: 1px solid #e4e4e4;
+        width: calc(100% - 0px);
+        select{
+          width: 40% !important;
+          background-color: transparent;
+          border:none;
+          outline: none;
+          padding: 12px;
+          border-right: 1px solid #e4e4e4;
+         
+        }
+        input{
+          width: 80%;
+          background-color: transparent !important;
+          border:none !important;
+          outline: none !important;
+          padding: 12px;
+          
+        }
+      }
     h3{
         font-size: 22px;
         // margin: 0px 0px 20px 0px;
@@ -21,8 +46,9 @@
 
         input{
             width:calc(100%  - 24px);
-          
+            border: 1px solid #e4e4e4;
             padding: 12px;
+            border-radius: 5px;
         }
         textarea{
             width: 100%;

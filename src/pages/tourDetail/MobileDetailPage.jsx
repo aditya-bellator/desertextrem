@@ -340,7 +340,7 @@ loop:true,
         </div>
         <div className="slider-col2 slider-col" id="fav">
           <div className="slider-container" style={{width:"92%",margin:"2% auto"}}>
-            <FavSliderComponent />
+            <FavSliderComponent desc={false}/>
           </div>
           <div className="slider-bg"></div>
         </div>
