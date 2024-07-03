@@ -182,7 +182,7 @@ export const detailPageJson = [{
     Needtoknow: "<ul><li>Request for refund or any changes must be made in writing to the operation manager viaWhatsapp or Instagram Direct Messages.</li><li>If the trip is canceled before 24 hours then the complete amount will be refunded</li><li>In case you cancel within 24-12 hours of your travel date then 50 % of the amount will be refunded</li><li>If you cancel the trip less than 12 hours before the tour date, no refund will be made to you </li></ul> ",
     minPrice: 300,
     maxPrice: 500,
-    slide: [shar1, shar2, shar3, shar4,],
+    slide: [shar1, shar2, shar3, shar4],
     cancellationPollicy: cancellationPollicy,
     similar:"SHARMAX-ATV-250-CC",
 
@@ -191,6 +191,7 @@ export const detailPageJson = [{
 {
     id: "SHARMAX-ATV-250-CC",
     name: "SHARMAX ATV 250 CC",
+    slide: [shar1, shar2, shar3, shar4,],
     description: "This goes to all the racing fans, who love to test their driving skills and their adrenaline rush knows no limits and boundaries as desert Extreme is here to bring you one of the most thrilling rides for you to experience in the desert of Dubai as you drive the beast SHARMAX ATV 250 CC. So brace yourself for an exhilarating ride of speed, thrill, adventure, and all the amazing rush your body will experience as you take this high-powered ATV for a spin in the desert of Dubai and far from the city congestion. The tour commits itself to providing you with an unforgettable journey with some other activities as well",
     inclusion:highlights,
     // inclusion: "<ul><li>	Pick-up and drop service provided by the hotel </li><li>	Supervisors monitor your journey as you drive the ATV for your safety at all times. </li><li>	Pause, and take a moment to capture all the excitement and thrill in a fun photo session. </li><li>	If skiing on snow is too mainstream, then how about doing it on sand for some out-of-the-box approach? </li><li>	Enjoying a calming camel ride</li><li>	Soft drinks and refreshments to keep you hydrated at all times. </li><li>	Gloves and sunglasses were provided. </li></ul>",

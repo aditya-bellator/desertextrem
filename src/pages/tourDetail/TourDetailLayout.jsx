@@ -55,14 +55,14 @@ const {id} = useParams()
             <div className="address">
 
            <p>Address :</p> 
-            <p>Retreat by Sharjah Collection - Madam Rd
+            <p className="para-addres">Retreat by Sharjah Collection - Madam Rd
 Near Al Badayer - Al Badayer
 Sharjah - United Arab Emirates</p>
             </div>
             <div className="address">
 
            <p>Mobile :</p> 
-            <p style={{marginLeft:"10px"}}>+971 56 188 5977</p>
+            <p style={{marginLeft:"10px"}} className="para-addres">+971 56 188 5977</p>
             </div>
           </div>
            </div>

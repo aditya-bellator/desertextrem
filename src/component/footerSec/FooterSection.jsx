@@ -35,7 +35,7 @@ const FooterSection = () => {
         </ul>
     <div className="copywrite">
       <p><MdCopyright />
-      2024 DESERT XTREME ADVENTURE</p>
+      2024 DESERT XTREME ADVENTURES</p>
     </div>
     </div>
     </section>

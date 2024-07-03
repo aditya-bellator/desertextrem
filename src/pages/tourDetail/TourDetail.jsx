@@ -32,7 +32,7 @@ const TourDetail = () => {
     window.scrollTo(0, 500);
   }, [id]);
 
-  const getData = detailPageJson.find((item)=>item.id == id)
+  const getData = detailPageJson?.find((item)=>item?.id == id)
   return (
     <>
       <div className="heading">
