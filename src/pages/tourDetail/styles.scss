@@ -341,3 +341,11 @@ font-weight: bold;
     }
   }
 }
+#fav{
+  .slick-dots{
+    bottom: -30px !important;
+    li{
+      width: 18px !important;
+    }
+  }
+}

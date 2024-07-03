@@ -12,13 +12,14 @@ import SliderCard2 from "../sliderCard2/SliderCard2";
 import { FavoriteJson } from "../json/Json";
 const FavSliderComponent = ({ data ,desc}) => {
   var settings = {
-    dots: false,
+    dots:desc !=false?false: true,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 3,
     variableWidth: false,
     autoPlay: true,
+    arrows:desc ==false?false: true,
     responsive: [
       {
         breakpoint: 1024,
