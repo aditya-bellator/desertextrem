@@ -24,6 +24,7 @@
           line-height: 40px;
           color: #464646;
           font-weight: bold;
+          letter-spacing: -1px;
           // @include media(largeHug){
           //   font-size: 28px;
           // }
@@ -101,6 +102,7 @@ font-size: 22px;
           color: black;
           font-size: 12px;
           font-family: sans-serif;
+          // line-height: 25px;
             font-weight: 100;
           &:nth-child(1){
             width: 10px;

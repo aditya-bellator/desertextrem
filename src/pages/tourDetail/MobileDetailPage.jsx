@@ -17,6 +17,8 @@ import Slides from "../explore/Slides";
 import { detailPageJson } from "../../component/json/Json";
 import Navbar from "../../component/navbar/Navbar";
 import { deal } from "../../assets";
+import Greatcard from "../../component/greatcard/Greatcard";
+import Slider from "react-slick";
 
 const MobileDetailPage = () => {
 
@@ -41,6 +43,15 @@ const {id} = useParams()
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [id]);
+  const settings = {
+    infinite: true,
+    slidesToShow: 1,
+    speed: 1500,
+    arrows: false,
+
+    dots: true,
+    autoplay: true,
+  };
   return (
     <>
     <Modal isOpen={isOpen} onClose={closeModal}>
@@ -52,8 +63,26 @@ const {id} = useParams()
        {/* <BasicModal  Children={<EnquiryForm setOpen={setOpen} id={id} width={"100%"}/>}  setOpen={setOpen} open={open}/> */}
 
       <div className="detail-center-col">
-        <div className="mobile-detail-top-banner" style={{backgroundImage:`url(${ getData?.slide?.length && getData?.slide[0]})`}}>
+        <div className="mobile-detail-top-banner" >
            {/* style={{backgroundImage:`url("")`}}> */}
+           <div className="slider">
+              <Slider {...settings}>
+                {/* <div>
+                  <Greatcard />
+                </div>
+                <div>
+                  <Greatcard />
+                </div> */}
+                { getData?.slide.map((item)=>{
+                  return(
+                    <img src={item} alt="" key={item}/>
+                  )
+                })}
+                <div>
+                  {/* <Greatcard /> */}
+                </div>
+              </Slider>
+            </div>
           <div className="mobile-deatil-banner-head">
             <div className="head-left-col">
               <Link to={"/"}> 
