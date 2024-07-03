@@ -38,8 +38,6 @@ const Form = ({formData,setFormData,submitHandler}) => {
           onChange={formHandler}
         />
     <div className="country-select">
-
-   
 <select name="countryCode" id="" onChange={formHandler}>
 <option data-countryCode="AE" value="971">United Arab Emirates (+971)</option>
 <option data-countryCode="IN" value="91">India (+91)</option>
