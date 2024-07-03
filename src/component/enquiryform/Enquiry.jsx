@@ -78,12 +78,12 @@ const Enquiry = () => {
                 <input type="tel" name="phone"  required  value={formData?.phone}  onChange={formHandler}/>
               </div>
             </div>
-            <div className="form-col">
+            {/* <div className="form-col">
               <div className="input-col">
                 <label htmlFor="message">Message</label>
                 <textarea name="message" required value={formData?.message}  onChange={formHandler}/>
               </div>
-            </div>
+            </div> */}
             <button type="submit" onClick={submitHandler}>Submit Query</button>
           </form>
         </div>

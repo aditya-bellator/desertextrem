@@ -12,8 +12,8 @@ const Navbar = () => {
         <Link to={"/"}>
         <img src={logo} alt="logo" className='logo'/>
         </Link>
-        <a href="https://api.whatsapp.com/send?phone=+971526063261&amp;text=Hi,%20I%20would%20like%20to%20know%20more%20details">
-        <img src={WhatsApp} alt="logo" className='whts-icon'/>
+        <a className='whts-app' href="https://api.whatsapp.com/send?phone=+971526063261&amp;text=Hi,%20I%20would%20like%20to%20know%20more%20details">
+      Whatsapp Us  <img src={WhatsApp} alt="logo" className='whts-icon'/>
         </a>
         {/* <FiAlignLeft /> */}
 

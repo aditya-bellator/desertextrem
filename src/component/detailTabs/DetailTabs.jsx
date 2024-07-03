@@ -1,13 +1,12 @@
 import { useEffect, useState } from "react"
 import Slider from "react-slick";
-import StarIcon from '@mui/icons-material/Star';
+
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 ///styles
 import "./styles.scss"
-import { Rating } from "@mui/material";
+
 import FavoriteOutlinedIcon from '@mui/icons-material/FavoriteOutlined';
-import {desert,desert1,desert2,desert3,desert4,desert5}from "../../assets"
-import { openModelHandlerRef } from "../../pages/webHome/WebHome";
+
 import Modal from "../modal/Modal";
 import Form from "../form/Form";
 import axios from "axios";
@@ -16,8 +15,12 @@ import ThankYouModal from "../thankYouModal/ThankYouModal";
 
 
 const DetailTabs = ({sliderData,fun,slides}) => {
-  const [changeImage, setChangeImage] = useState( slides?.length && slides[0])
+  const [changeImage, setChangeImage] = useState(null)
   const [value, setValue] =useState(4);
+  useEffect(() => {
+   setChangeImage(slides?.length && slides[0])
+  }, [slides])
+  
   var settings = {
     dots: false,
     infinite: true,

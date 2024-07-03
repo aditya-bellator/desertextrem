@@ -19,6 +19,8 @@ import Navbar from "../../component/navbar/Navbar";
 import { deal } from "../../assets";
 import Greatcard from "../../component/greatcard/Greatcard";
 import Slider from "react-slick";
+import Enquiry from "../../component/enquiryform/Enquiry";
+import FavSliderComponent from "../../component/slider/FavSlider";
 
 const MobileDetailPage = () => {
 
@@ -34,7 +36,14 @@ const closeModal = () => {
 };
 const {id} = useParams()
 
-  const getData = detailPageJson?.find((item)=>item?.id == id)
+const [getData, setGetData] = useState(null)
+useEffect(() => {
+
+
+  const getData2 = detailPageJson?.find((item)=>item?.id == id)
+ setGetData(getData2)
+}, [id])
+console.log(getData?.slide)
   const [showFull, setShowFull] = useState(false);
 
   const toggleShowFull = () => {
@@ -46,9 +55,9 @@ const {id} = useParams()
   const settings = {
     infinite: true,
     slidesToShow: 1,
-    speed: 1500,
+    // speed: 1500,
     arrows: false,
-
+loop:true,
     dots: true,
     autoplay: true,
   };
@@ -73,10 +82,11 @@ const {id} = useParams()
                 <div>
                   <Greatcard />
                 </div> */}
-                { getData?.slide.map((item)=>{
-                  return(
-                    <img src={item} alt="" key={item}/>
-                  )
+                {getData?.slide.map((item)=>{
+
+                    return(
+                      <img src={item} alt={item} key={item}/>
+                    )
                 })}
                 <div>
                   {/* <Greatcard /> */}
@@ -90,7 +100,7 @@ const {id} = useParams()
                   <KeyboardBackspaceOutlinedIcon />
                 </div>
               </Link>
-              <button>Buggy Tours</button>
+              <button>{getData?.tag}</button>
             </div>
             <div className="head-right-col">
              
@@ -167,10 +177,9 @@ const {id} = useParams()
 </div>
 </div>
         <hr />
-        <div className="detail-description">
+        {/* <div className="detail-description">
         Embrace Adventure: Thrilling Buggy <br /> Tours Await
-          {/* <span>SHOW MORE</span> */}
-        </div>
+        </div> */}
         <div className="experience-section m-collapse">
           <h2>Experience</h2>
           <CustomAccordion >
@@ -237,16 +246,16 @@ const {id} = useParams()
                     borderRadius: "100px",
                   }}
                 ></span>
-                Inclusions
+                Highlights
               </div>
             </AccordionSummary>
             <AccordionDetails>
               <div
-                dangerouslySetInnerHTML={{ __html: getData?.inclusion}}
+                dangerouslySetInnerHTML={{ __html: getData?.highlights}}
               />
             </AccordionDetails>
           </CustomAccordion>
-          <CustomAccordion>
+          {/* <CustomAccordion>
             <AccordionSummary
            expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1-content"
@@ -317,10 +326,29 @@ const {id} = useParams()
                 dangerouslySetInnerHTML={{ __html: getData?.cancellationPollicy }}
               />
             </AccordionDetails>
-          </CustomAccordion>
+          </CustomAccordion> */}
         </div>
       </div>
-      <Slides gallery={true}/>
+      {/* <Slides gallery={true}/>
+       */}
+        <div className="slider-section">
+        <div className="slider-heading">
+          Travellers' favorite choice
+          <p className="para" style={{color:"black",fontSize:"12px"}}>
+            From Desert Sands to Celestial Canopies: Dubai Safari Expeditions
+          </p>
+        </div>
+        <div className="slider-col2 slider-col" id="fav">
+          <div className="slider-container" style={{width:"92%",margin:"2% auto"}}>
+            <FavSliderComponent />
+          </div>
+          <div className="slider-bg"></div>
+        </div>
+      </div>
+        <section id='enquiry'>
+
+<Enquiry />
+</section>
    <FooterSection/>
     </>
 

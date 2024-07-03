@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 const Card = ({title,hours,min,img,id,tag,double}) => {
   const nav =useNavigate()
   return (
-    <div className='card-container'>
+    <div className='card-container' onClick={()=>nav(`/tour-detail/${id}`)}>
       
       {tag && 
       <div className="rating">
@@ -29,7 +29,7 @@ const Card = ({title,hours,min,img,id,tag,double}) => {
             <span>{hours}</span>
           </div>
           <div className="booknow">
-          <button className="book-btn" onClick={()=>nav(`/tour-detail/${id}`)}>
+          <button className="book-btn" >
               book now
             </button>
 

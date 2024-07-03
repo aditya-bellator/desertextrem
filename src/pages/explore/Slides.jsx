@@ -46,7 +46,7 @@ const Slides = ({gallery}) => {
           <img src={twinRider} alt="" />
         </div>
         <div className="twin-detail">
-          <h1>ADULT (DOUBLE)</h1>
+          <h1>QUAD (BIKE)</h1>
          <p>
             Embrace Adventure: Thrilling Buggy <br /> Tours Await
           </p>
@@ -57,10 +57,10 @@ const Slides = ({gallery}) => {
         <div className="twin-rider-slider">
 
           <Slider {...settings2}>
-            {Adultdouble?.map((item,index)=>{
+            {Adultsingle?.map((item,index)=>{
               return(
 
-                <Card  id={item?.id} title={item?.title} min={item?.min} hours={item?.hour} img={item?.img} key={index}/>
+                <Card tag={true} double={item?.double} id={item?.id} title={item?.title} min={item?.min} hours={item?.hour} img={item?.img} key={index}/>
               )
             })}
 
@@ -71,7 +71,7 @@ const Slides = ({gallery}) => {
       </section>
 
 
-      <section className='single-rider-section'>
+      {/* <section className='single-rider-section'>
         <div className="twin-rider-title">
 
           <img src={adventureImg} alt="desert" />
@@ -101,7 +101,7 @@ const Slides = ({gallery}) => {
           </Slider>
           <div className="overlay"></div>
         </div>
-      </section>
+      </section> */}
 
 
       <section className='Dune-buggy-section'>

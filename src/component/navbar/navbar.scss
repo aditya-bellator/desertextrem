@@ -9,6 +9,15 @@
    align-items: center;
    padding: 10px;
 }
+.whts-app{
+   display: flex;
+   align-items: center;
+   font-size: 12px;
+   white-space: nowrap;
+   gap: 10px;
+   color: black;
+
+}
 .nav-logo
 {
    .logo{
@@ -17,6 +26,7 @@
    }
    .whts-icon{
       width: 40px;
+      padding-top: 5px;
    }
 
    

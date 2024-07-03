@@ -26,13 +26,14 @@ const TourDetail = () => {
   ];
   // const {data:houseRule} = useHouseRuleQuery(id)
   // const houseRuleData = houseRule && houseRule?.data[0]
-
+  const [getData, setgetData] = useState([])
   const {id} = useParams()
   useEffect(() => {
+    const getData2 = detailPageJson?.find((item)=>item?.id == id)
     window.scrollTo(0, 500);
+    setgetData(getData2)
   }, [id]);
 
-  const getData = detailPageJson?.find((item)=>item?.id == id)
   return (
     <>
       <div className="heading">
@@ -77,7 +78,7 @@ const TourDetail = () => {
       </div>
       <div id="highlights">
         <div className="highlights-section m-collapse2">
-          <DetailCard name={"Hightlight"} list={getData?.inclusion}/>
+          <DetailCard name={"Highlights"} list={getData?.highlights}/>
           <DetailCard name={"Inclusions"} data={getData}/>
           {/* <DetailCard name={"Need To Know"} list={getData?.Needtoknow}/>
           <DetailCard name={"Cancellation Policy"}list={getData?.cancellationPollicy}/> */}

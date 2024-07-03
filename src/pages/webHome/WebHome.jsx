@@ -55,7 +55,7 @@ const WebHome = () => {
             <div className="titleHeading">
               <h2>
                 Experience an <br />
-                exhilarating adventure
+                Exhilarating Adventure
               </h2>
               <p>
                 driving a desert buggy <br />

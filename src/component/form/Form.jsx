@@ -39,19 +39,19 @@ const Form = ({formData,setFormData,submitHandler}) => {
         />
         <input
           type="text"
-          placeholder='Enter Number'
+          placeholder='Enter Phone'
           name='phone'
           value={formData?.phone}
           onChange={formHandler}
         />
-        <textarea
+        {/* <textarea
           placeholder='Enter Message'
           name='message'
           // cols={50}
           // rows={40}
           value={formData?.message}
           onChange={formHandler}
-        />
+        /> */}
         <button className='submit-btn'  onClick={submitHandler}> Submit</button>
       </form>
     </div>
