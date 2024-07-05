@@ -80,13 +80,13 @@ const BannerSection = () => {
               <span>
                 <img src={tickIcon} alt="" />
               </span>
-              100% Customised trips
+              Luxury Travel Services
             </li>
             <li>
               <span>
                 <img src={tickIcon} alt="" />
               </span>
-              95% Customised trips
+              Local Travel Expert
             </li>
             <li>
               <span>
