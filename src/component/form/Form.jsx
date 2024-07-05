@@ -44,7 +44,7 @@ const Form = ({formData,setFormData,submitHandler}) => {
         />
     <div className="country-select">
 <select name="countryCode" id="" onChange={formHandler}>
-<option data-countryCode="AE" value="+971">United Arab Emirates (+971)</option>
+<option data-countryCode="AE" value="+971">UAE (+971)</option>
 <option data-countryCode="IN" value="+91">India (+91)</option>
     <optgroup label="Other countries">
 		<option data-countryCode="DZ" value="+213">Algeria (+213)</option>
@@ -246,7 +246,7 @@ const Form = ({formData,setFormData,submitHandler}) => {
 		<option data-countryCode="UG" value="+256">Uganda (+256)</option>
 		<option data-countryCode="GB" value="+44">UK (+44)</option> 
 		<option data-countryCode="UA" value="+380">Ukraine (+380)</option>
-		<option data-countryCode="AE" value="+971">United Arab Emirates (+971)</option>
+		<option data-countryCode="AE" value="+971">UAE (+971)</option>
 		<option data-countryCode="UY" value="+598">Uruguay (+598)</option>
 	<option data-countryCode="US" value="+1">USA (+1)</option> 
 		<option data-countryCode="UZ" value="+7">Uzbekistan (+7)</option>
@@ -263,7 +263,7 @@ const Form = ({formData,setFormData,submitHandler}) => {
 		<option data-countryCode="ZW" value="+263">Zimbabwe (+263)</option>
 	</optgroup>
 </select>
- <input name="phone" type="number" required value={formData?.phone} onChange={formHandler} />
+ <input name="phone" type="Tel" required value={formData?.phone} onChange={formHandler} />
  </div>
         {/* <textarea
           placeholder='Enter Message'
