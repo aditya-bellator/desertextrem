@@ -178,7 +178,9 @@ loop:true,
         <p>AED {getData?.maxPrice}/-</p>
 <div className="book-btn">
 
-<button onClick={()=>openModal()} >Book Now</button>
+<a href="#enquiry">
+  <button>Book Now</button>
+  </a>
 </div>
 </div>
         <hr />
