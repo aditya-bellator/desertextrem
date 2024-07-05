@@ -263,7 +263,7 @@ const Form = ({formData,setFormData,submitHandler}) => {
 		<option data-countryCode="ZW" value="+263">Zimbabwe (+263)</option>
 	</optgroup>
 </select>
- <input name="phone" type="Tel" required value={formData?.phone} onChange={formHandler} />
+ <input name="phone" type="number" required value={formData?.phone} onChange={formHandler} />
  </div>
         {/* <textarea
           placeholder='Enter Message'

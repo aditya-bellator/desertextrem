@@ -317,7 +317,7 @@ const Enquiry = () => {
 	</optgroup>
 </select>
  
-     <input name="phone" type="Tel" required value={formData?.phone} onChange={formHandler} />
+     <input name="phone" type="number" required value={formData?.phone} onChange={formHandler} />
      </div>
 
 {/* </form> */}
