@@ -215,7 +215,7 @@ const WebHome = () => {
               Retreat by Sharjah Collection - Madam Rd <br /> Near Al Badayer - Al
               Badayer <br /> Sharjah - United Arab Emirates
             </p>
-            <p>Phone Number : +971 56 188 5977</p>
+            <p>Phone Number : +971 567877222</p>
           </div>
           <div className="map">
             {/* <div className="innerWrap1"> */}

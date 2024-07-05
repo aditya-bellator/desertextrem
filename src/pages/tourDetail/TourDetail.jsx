@@ -9,6 +9,7 @@ import {favorite}from "../../assets"
 import { detailPageJson } from "../../component/json/Json";
 import { useParams } from "react-router-dom";
 import { useMediaQuery } from "../../useMediaQuery";
+import { Helmet } from "react-helmet";
 
 const TourDetail = () => {
   const isMobile = useMediaQuery("(max-width:480px)")
@@ -36,6 +37,10 @@ const TourDetail = () => {
 
   return (
     <>
+      <Helmet>
+<title>{getData?.name}</title>
+<meta name="description" content={getData?.description}/>
+    </Helmet>
       <div className="heading">
         <div className="heading-left-col">
           <h1>{getData?.name} 

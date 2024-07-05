@@ -21,6 +21,7 @@ import Greatcard from "../../component/greatcard/Greatcard";
 import Slider from "react-slick";
 import Enquiry from "../../component/enquiryform/Enquiry";
 import FavSliderComponent from "../../component/slider/FavSlider";
+import { Helmet } from "react-helmet";
 
 const MobileDetailPage = () => {
 
@@ -43,7 +44,7 @@ useEffect(() => {
   const getData2 = detailPageJson?.find((item)=>item?.id == id)
  setGetData(getData2)
 }, [id])
-console.log(getData?.slide)
+
   const [showFull, setShowFull] = useState(false);
 
   const toggleShowFull = () => {
@@ -63,6 +64,10 @@ loop:true,
   };
   return (
     <>
+    <Helmet>
+<title>{getData?.name}</title>
+<meta name="description" content={getData?.description}/>
+    </Helmet>
     <Modal isOpen={isOpen} onClose={closeModal}>
        <Form/>
       </Modal>

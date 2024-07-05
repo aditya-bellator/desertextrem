@@ -16,9 +16,9 @@ const BannerSection = () => {
         <div className="manuWapper">
           <div className="whatupbox">
             <span>
-              <a href="https://api.whatsapp.com/send?phone=+971561885977&amp;text=Hi,%20I%20would%20like%20to%20know%20more%20details">
+              <a href="https://api.whatsapp.com/send?phone=+971567877222&amp;text=Hi,%20I%20would%20like%20to%20know%20more%20details">
                 <img src={whatsApp} alt="" />
-                <p>+971 56 188 5977</p>
+                <p>+971 567877222</p>
               </a>
             </span>
           </div>

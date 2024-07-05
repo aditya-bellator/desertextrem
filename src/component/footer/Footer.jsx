@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="footer-container">
 
       <Button />
-      <a href="https://api.whatsapp.com/send?phone=+971526063261&amp;text=Hi,%20I%20would%20like%20to%20know%20more%20details">
+      <a href="https://api.whatsapp.com/send?phone=+971567877222&amp;text=Hi,%20I%20would%20like%20to%20know%20more%20details">
       <img src={logo1} alt="logo" />
       </a>
     

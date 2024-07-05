@@ -12,6 +12,7 @@ import Form from "../form/Form";
 import axios from "axios";
 import { toast } from "react-toastify";
 import ThankYouModal from "../thankYouModal/ThankYouModal";
+import { isMobile } from "react-device-detect";
 
 
 const DetailTabs = ({sliderData,fun,slides}) => {
@@ -101,12 +102,14 @@ const DetailTabs = ({sliderData,fun,slides}) => {
     email: '',
     phone: '',
     message: '',
+    deviceType:isMobile?"Mobile":"Desktop",
     senderEmail: 'ad@example.com', // Add senderEmail to the initial state
   });
   const [loading, setLoading] = useState(false)
   const submitHandler = async(e)=>{
     e.preventDefault()
     setLoading(true)
+    console.log(formData)
     await axios.post("https://tripatours.com/api/enquiry/desertExtremeEnquiry",formData).then((response)=>{
       if(response?.data?.status == "true"){
          openModal2()
