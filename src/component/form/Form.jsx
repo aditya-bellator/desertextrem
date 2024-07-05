@@ -11,8 +11,15 @@ const Form = ({formData,setFormData,submitHandler}) => {
   };
 
 
-
- 
+  const handleKeyDown = (e) => {
+    const charCode = e.keyCode;
+    // Allow letters only (both uppercase and lowercase)
+    if ((charCode >= 65 && charCode <= 90) || (charCode >= 97 && charCode <= 122) || charCode === 8 || charCode === 32) {
+      return true;
+    }
+    e.preventDefault();
+    return false;
+  };
 
   return (
     <>
@@ -26,6 +33,7 @@ const Form = ({formData,setFormData,submitHandler}) => {
           name='name'
           value={formData?.name}
           onChange={formHandler}
+		  onKeyDown={handleKeyDown}
         />
         <input
           type="email"

@@ -24,8 +24,17 @@ const Enquiry = () => {
   };
 
   const closeModal = () => {
-    setIsOpen(false);
-  };
+	  setIsOpen(false);
+	};
+	const handleKeyDown = (e) => {
+	 const charCode = e.keyCode;
+	 // Allow letters only (both uppercase and lowercase)
+	 if ((charCode >= 65 && charCode <= 90) || (charCode >= 97 && charCode <= 122) || charCode === 8 || charCode === 32) {
+	   return true;
+	 }
+	 e.preventDefault();
+	 return false;
+   };
 
   const submitHandler = async(e)=>{
     e.preventDefault()
@@ -48,6 +57,9 @@ const Enquiry = () => {
       toast.error(error?.response?.data?.message || 'An error occurred');
      })
    }
+
+
+
   return (
     <>
     <Modal isOpen={isOpen} onClose={closeModal}>
@@ -67,7 +79,7 @@ const Enquiry = () => {
             <div className="form-col">
               <div className="input-col">
                 <label htmlFor="firstName">Name</label>
-                <input type="text" name="name" value={formData?.name} required onChange={formHandler}/>
+                <input type="text" name="name" value={formData?.name} required onChange={formHandler}  onKeyDown={handleKeyDown}/>
               </div>
               <div className="input-col">
                 <label htmlFor="email">Email Address</label>
