@@ -16,20 +16,75 @@ import "swiper/css";
 import SliderCard from "../../component/sliderCard/SliderCard";
 import { bluebuggy, cardImage, great, kymko250, last, polaris1000, sharmaATV250, sharmaatv250 } from "../../assets";
 import Greatcard from "../../component/greatcard/Greatcard";
-import Modal from "../../component/modal/Modal";
 import { Autoplay } from "swiper/modules";
-import Form from "../../component/form/Form";
+
 import BannerSection from "../../component/bannerSection/BannerSection";
 import FooterSection from "../../component/footerSec/FooterSection";
 import FavSliderComponent from "../../component/slider/FavSlider";
 import { Adultdouble, Adultsingle, DuneBuggy, ExperienceSlides, Offroad } from "../../component/json/Json";
-import ThankYouModal from "../../component/thankYouModal/ThankYouModal";
+
+import Modal from "../../component/modal/Modal";
+import Form from "../../component/form/Form";
 import { toast } from "react-toastify";
+import ThankYouModal from "../../component/thankYouModal/ThankYouModal";
 import axios from "axios";
 export let openModelHandlerRef;
 
 const WebHome = () => {
   const [activeSlide, setActiveSlide] = useState(0);
+  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen2, setIsOpen2] = useState(false);
+
+  const openModal = () => {
+    setIsOpen(true);
+  };
+
+
+  const closeModal = () => {
+    setIsOpen(false);
+    setIsOpen2(false)
+  };
+  const openModal2 = () => {
+  setIsOpen(false)
+    setIsOpen2(true);
+  };
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: '',
+    senderEmail: 'ad@example.com', // Add senderEmail to the initial state
+  });
+  const [loading, setLoading] = useState(false)
+  const submitHandler = async(e)=>{
+    e.preventDefault()
+    setLoading(true)
+    await axios.post("https://tripatours.com/api/enquiry/desertExtremeEnquiry",formData).then((response)=>{
+      if(response?.data?.status == "true"){
+         openModal2()
+         setLoading(false)
+        // toast.success(response?.data?.message,{
+        //   position: "top-right",
+        // });
+         setFormData((prev)=>{
+          return{
+            ...prev,name:"",email:"",phone:"",countryCode:"",
+          }
+         })
+       }else{
+        toast.error(response?.data?.message);
+        setLoading(false)
+       }
+     }).catch((error)=>{
+      toast.error(error?.response?.data?.message || 'An error occurred');
+      setLoading(false)
+    })
+     setLoading(false)
+   }
+
+
+
+
 
   const settings = {
     infinite: true,
@@ -44,6 +99,13 @@ const WebHome = () => {
 
   
   return (
+    <>
+        <Modal isOpen={isOpen2} onClose={closeModal}>
+    <ThankYouModal />
+   </Modal>
+       <Modal isOpen={isOpen} onClose={closeModal}>
+     {loading ? <span style={{color:"black"}}>loading...</span>:<Form  setFormData={setFormData} formData={formData} submitHandler={submitHandler}/>}  
+      </Modal>
     <div>
       
       <BannerSection/>
@@ -235,6 +297,7 @@ const WebHome = () => {
 </div>
 <FooterSection/>
     </div>
+    </>
   );
 };
 

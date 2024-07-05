@@ -1,13 +1,13 @@
 import React from 'react'
 ////styles
 import "./styles.scss"
-import  cardImage  from '../../assets/gallery_img1.jpg'
-import  cardImage1  from '../../assets/cardImage1.jpg'
-import  cardImage2  from '../../assets/cardImage2.jpg'
-import  cardImage3  from '../../assets/cardImage3.jpg'
-import  cardImage4  from '../../assets/cardImage4.jpg'
-import  cardImage5  from '../../assets/cardImage5.jpg'
-import  cardImage6  from '../../assets/cardImage6.jpg'
+// import  cardImage  from '../../assets/gallery_img1.jpg'
+import  cardImage1  from '../../assets/gallery/card1.jpg'
+import  cardImage2  from '../../assets/gallery/card2.jpg'
+import  cardImage3  from '../../assets/gallery/card3.jpg'
+import  cardImage4  from '../../assets/gallery/card4.jpg'
+import  cardImage5  from '../../assets/gallery/card5.jpg'
+import  cardImage6  from '../../assets/gallery/card6.jpg'
 
 const MiniGalleryCard = () => {
   return (
