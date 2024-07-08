@@ -16,6 +16,10 @@ import { isMobile } from "react-device-detect";
 
 
 const DetailTabs = ({sliderData,fun,slides}) => {
+  const [activeSlide, setActiveSlide] = useState(0);
+  const [isOpen, setIsOpen] = useState(false);
+  const [checkErorr,setCheckError] = useState({})
+  const [isOpen2, setIsOpen2] = useState(false);
   const [changeImage, setChangeImage] = useState(null)
   const [value, setValue] =useState(4);
   useEffect(() => {
@@ -77,12 +81,12 @@ const DetailTabs = ({sliderData,fun,slides}) => {
    setValue(4)
   }, [sliderData])
   
-  const [isOpen, setIsOpen] = useState(false);
+  // const [isOpen, setIsOpen] = useState(false);
 
   
   
   
-  const [isOpen2, setIsOpen2] = useState(false);
+  // const [isOpen2, setIsOpen2] = useState(false);
   
   const openModal = () => {
     setIsOpen(true);
@@ -108,20 +112,55 @@ const DetailTabs = ({sliderData,fun,slides}) => {
   const [loading, setLoading] = useState(false)
   const submitHandler = async(e)=>{
     e.preventDefault()
-    setLoading(true)
-    console.log(formData)
-    await axios.post("https://tripatours.com/api/enquiry/desertExtremeEnquiry",formData).then((response)=>{
+    // setLoading(true)
+    let errors = {};
+    for (let key in formData) {
+      if (formData[key] === "") {
+        errors[key] = true;
+      } else {
+        errors[key] = false;
+      }
+    }
+    setCheckError(errors);
+  
+    let checkErr = false;
+    for (let key in errors) {
+      if (errors[key] === true) {
+        checkErr = true;
+        break;
+      }
+    }
+
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if(!emailRegex.test(formData?.email)){
+      alert("Invalid email format");
+      return
+    }
+ if(!checkErr) {
+    // return Object.values(errors).every(value => value === false);
+   
+      const formData2 = {
+        deviceType: isMobile ? "Mobile" : "Desktop",
+        name: formData?.name,
+        email: formData?.email,
+        phone: formData?.phone,
+        countryCode: formData?.countryCode,
+      };
+    await axios.post("https://tripatours.com/api/enquiry/desertExtremeEnquiry",formData2).then((response)=>{
+    
+        console.log(formData,"dd")
+      
       if(response?.data?.status == "true"){
          openModal2()
          setLoading(false)
         // toast.success(response?.data?.message,{
         //   position: "top-right",
         // });
-        //  setFormData((prev)=>{
-        //   return{
-        //     ...prev,name:"",email:"",phone:"",message:""
-        //   }
-        //  })
+         setFormData((prev)=>{
+          return{
+            ...prev,name:"",email:"",phone:"",message:""
+          }
+         })
        }else{
         toast.error(response?.data?.message);
         setLoading(false)
@@ -132,6 +171,9 @@ const DetailTabs = ({sliderData,fun,slides}) => {
     })
      setLoading(false)
    }
+   console.log(formData,"dd")
+  }
+  
   return (
     <>
      
@@ -139,7 +181,7 @@ const DetailTabs = ({sliderData,fun,slides}) => {
     <ThankYouModal />
    </Modal>
        <Modal isOpen={isOpen} onClose={closeModal}>
-     {loading ? <span style={{color:"black"}}>loading...</span>:<Form  setFormData={setFormData} formData={formData} submitHandler={submitHandler}/>}  
+     {loading ? <span style={{color:"black"}}>loading...</span>:<Form setCheckError={setCheckError}checkErorr={checkErorr} setFormData={setFormData} formData={formData} submitHandler={submitHandler}/>}  
       </Modal>
     <div className="tabs-container">
       <div className="tabs-title">

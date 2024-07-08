@@ -16,6 +16,9 @@
    white-space: nowrap;
    gap: 10px;
    color: black;
+   position: fixed;
+   bottom: 20px;
+   right: 20px;
 
 }
 .nav-logo
@@ -25,7 +28,7 @@
       width: 45%;
    }
    .whts-icon{
-      width: 40px;
+      width: 80px;
       padding-top: 5px;
    }
 
