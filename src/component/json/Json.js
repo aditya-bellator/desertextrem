@@ -111,7 +111,7 @@ export const detailPageJson = [
    
 },
 {
-    name: "KYMKO MXU 250 CC ",
+    name: "KYMKO MXU 250 CC",
     id: "kymko-mxu-250-cc",
     
      tag:"QUAD BIKE",
@@ -125,6 +125,8 @@ export const detailPageJson = [
     maxPrice: 300,
     similar:"dirt-bike-280-320-cc"
 },
+
+
 {
     id: "dirt-bike-280-320-cc",
     name: "Dirt bike 280/320 cc",
