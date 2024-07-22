@@ -105,14 +105,13 @@ const DetailTabs = ({sliderData,fun,slides}) => {
     name: '',
     email: '',
     phone: '',
-    message: '',
     deviceType:isMobile?"Mobile":"Desktop",
     senderEmail: 'ad@example.com', // Add senderEmail to the initial state
   });
   const [loading, setLoading] = useState(false)
   const submitHandler = async(e)=>{
     e.preventDefault()
-    // setLoading(true)
+    
     let errors = {};
     for (let key in formData) {
       if (formData[key] === "") {
@@ -136,6 +135,7 @@ const DetailTabs = ({sliderData,fun,slides}) => {
       alert("Invalid email format");
       return
     }
+    console.log(checkErorr)
  if(!checkErr) {
     // return Object.values(errors).every(value => value === false);
    
@@ -146,9 +146,9 @@ const DetailTabs = ({sliderData,fun,slides}) => {
         phone: formData?.phone,
         countryCode: formData?.countryCode,
       };
+      setLoading(true)
     await axios.post("https://tripatours.com/api/enquiry/desertExtremeEnquiry",formData2).then((response)=>{
     
-        console.log(formData,"dd")
       
       if(response?.data?.status == "true"){
          openModal2()
@@ -158,7 +158,7 @@ const DetailTabs = ({sliderData,fun,slides}) => {
         // });
          setFormData((prev)=>{
           return{
-            ...prev,name:"",email:"",phone:"",message:""
+            ...prev,name:"",email:"",phone:""
           }
          })
        }else{
@@ -171,7 +171,6 @@ const DetailTabs = ({sliderData,fun,slides}) => {
     })
      setLoading(false)
    }
-   console.log(formData,"dd")
   }
   
   return (

@@ -43,7 +43,7 @@ const settings = {
   return (
     <>
     <Modal isOpen={isOpen} onClose={closeModal}>
-       <Form/>
+       <Form />
       </Modal>
     <div className="navbar-layout">
     <Navbar />

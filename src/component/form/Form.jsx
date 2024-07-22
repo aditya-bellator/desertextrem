@@ -726,7 +726,7 @@ const Form = ({ formData, setFormData, submitHandler,setCheckError ,checkErorr})
           </div>
 
           <button className="submit-btn" onClick={submitHandler}>
-            {" "}
+           
             Submit
           </button>
         </form>

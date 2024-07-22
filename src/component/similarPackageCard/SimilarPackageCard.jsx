@@ -25,6 +25,10 @@ const SimilarPackageCard = ({fun,data}) => {
     setIsOpen(false);
     setIsOpen2(false)
   };
+  const closeModal2 = () => {
+    setIsOpen(false);
+    setIsOpen2(false)
+  };
   const openModal2 = () => {
   setIsOpen(false)
     setIsOpen2(true);
@@ -82,19 +86,21 @@ const SimilarPackageCard = ({fun,data}) => {
    
       
       if(response?.data?.status == "true"){
-         openModal()
+        openModal2()
          setLoading(false)
         // toast.success(response?.data?.message,{
         //   position: "top-right",
         // });
+        // setIsOpen2(false)
          setFormData((prev)=>{
           return{
-            ...prev,name:"",email:"",phone:"",message:""
+            ...prev,name:"",email:"",phone:""
           }
          })
        }else{
         toast.error(response?.data?.message);
         setLoading(false)
+        setIsOpen2(false)
        }
      }).catch((error)=>{
       toast.error(error?.response?.data?.message || 'An error occurred');
@@ -107,7 +113,7 @@ const SimilarPackageCard = ({fun,data}) => {
   return (
     <>
          
-         <Modal isOpen={isOpen2} onClose={closeModal}>
+         <Modal isOpen={isOpen2} onClose={closeModal2}>
     <ThankYouModal />
    </Modal>
        <Modal isOpen={isOpen} onClose={closeModal}>

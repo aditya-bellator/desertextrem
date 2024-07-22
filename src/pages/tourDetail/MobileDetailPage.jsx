@@ -22,10 +22,22 @@ import Slider from "react-slick";
 import Enquiry from "../../component/enquiryform/Enquiry";
 import FavSliderComponent from "../../component/slider/FavSlider";
 import { Helmet } from "react-helmet";
+import axios from "axios";
+import { isMobile } from "react-device-detect";
+import { toast } from "react-toastify";
 
 const MobileDetailPage = () => {
 
 const [isOpen, setIsOpen] = useState(false);
+const [formData, setFormData] = useState({
+  name:"",
+  email:"",
+  countryCode:"",
+  phone:"",
+  deviceType:isMobile?"Mobile":"Desktop",
+  senderEmail: "ad@example.com", // Add senderEmail to the initial state
+});
+const [checkErorr,setCheckError] = useState({})
 
 const openModal = () => {
 
@@ -62,6 +74,71 @@ loop:true,
     dots: true,
     autoplay: true,
   };
+  
+  const submitHandler = async (e) => {
+    e.preventDefault();
+    let errors = {};
+    for (let key in formData) {
+      if (formData[key] === "") {
+        errors[key] = true;
+      } else {
+        errors[key] = false;
+      }
+    }
+    setCheckError(errors);
+  
+    let checkErr = false;
+    for (let key in errors) {
+      if (errors[key] === true) {
+        checkErr = true;
+        break;
+      }
+    }
+
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if(!emailRegex.test(formData?.email)){
+      alert("Invalid email format");
+      return
+    }
+ if(!checkErr) {
+    // return Object.values(errors).every(value => value === false);
+   
+      const formData2 = {
+        deviceType: isMobile ? "Mobile" : "Desktop",
+        name: formData?.name,
+        email: formData?.email,
+        phone: formData?.phone,
+        countryCode: formData?.countryCode,
+      };
+     await axios.post("https://tripatours.com/api/enquiry/desertExtremeEnquiry",formData2).then((response)=>{
+   
+
+          if (response?.data?.status == "true") {
+            openModal();
+            // toast.success(response?.data?.message,{
+            //   position: "top-right",
+            // });
+            setFormData((prev) => {
+              return {
+                ...prev,
+                name: "",
+                email: "",
+                phone: "",
+                message: "",
+              };
+            });
+          } else {
+            toast.error(response?.data?.message);
+          }
+          
+        })
+        .catch((error) => {
+          toast.error(error?.response?.data?.message || "An error occurred");
+        });
+    
+ }
+
+  };
   return (
     <>
     <Helmet>
@@ -69,7 +146,7 @@ loop:true,
 <meta name="description" content={getData?.description}/>
     </Helmet>
     <Modal isOpen={isOpen} onClose={closeModal}>
-       <Form/>
+       <Form submitHandler={submitHandler} formData = {formData} setFormData ={setFormData}setCheckError={setCheckError}checkErorr={checkErorr}/>
       </Modal>
       <div className="navbar-layout">
     <Navbar />
@@ -175,7 +252,7 @@ loop:true,
         </div>
         <div className="price-btn">
 
-        <p>AED {getData?.maxPrice}/-</p>
+        <p>AED {getData?.minPrice}/-</p>
 <div className="book-btn">
 
 <a href="#enquiry">

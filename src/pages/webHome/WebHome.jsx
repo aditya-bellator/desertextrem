@@ -265,8 +265,8 @@ const WebHome = () => {
               <h3>Flexible? Rides by your style & budget</h3>
               <p>
                 Find your perfect travel destinations with our expert
-                advice,travel trips, destination information and inspiration
-                from usthat match your travel style in less than 2 minutest.
+                advice, travel trips, destination information and inspiration
+                from us that match your travel style in less than 2 minutes.
               </p>
             </div>
             <div className="btn-sec">
